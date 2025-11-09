@@ -8,12 +8,26 @@ import App from './App.jsx'
 import Pesquisa from './Pesquisa.jsx'
 import Favoritos from './Favoritos.jsx'
 import Perfil from './Perfil.jsx'
+import CriarConta from './CriarConta.jsx'
+import Login from './Login.jsx'
+import Home from './Home.jsx'
+import Bares from './Bares.jsx'
+import Universitarias from './Universitarias.jsx'
+import Festas from './Festas.jsx'
+import Shows from './Shows.jsx'
 
 const router = createBrowserRouter([
   { path: "/", Component: App },
+  { path: "criarConta", Component: CriarConta },
+  { path: "login", Component: Login },
+  { path: "home", Component: Home },
   { path: "pesquisa", Component: Pesquisa },
   { path: "favoritos", Component: Favoritos },
   { path: "perfil", Component: Perfil },
+  { path: "shows", Component: Shows },
+  { path: "festas", Component: Festas },
+  { path: "universitarias", Component: Universitarias },
+  { path: "bares", Component: Bares },
 ])
 
 createRoot(document.getElementById('root')).render(
