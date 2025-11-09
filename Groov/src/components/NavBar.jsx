@@ -1,18 +1,47 @@
 import { Link, useLocation } from "react-router"
+import { GoHomeFill, GoHome } from "react-icons/go";
+import { RiSearch2Fill, RiSearch2Line } from "react-icons/ri";
+import { FaStar, FaRegStar  } from "react-icons/fa";
+import { MdAccountCircle, MdOutlineAccountCircle } from "react-icons/md";
+
+
+
+
 
 
 export default function NavBar() {
-    const location = useLocation();
-    const path = location.pathname;
+    const { pathname } = useLocation();
+
+    const home = pathname === "/home";
+    const pesquisa = pathname === "/pesquisa";
+    const favoritos = pathname === "/favoritos";
+    const perfil = pathname === "/perfil";
     
     return (
         <>
             <nav className="py-2 border-t-2 border-roxop fixed bottom-0 w-full">
                 <ul className="flex justify-between px-4">
-                    <Link to="/"><img src={path === "/home" ? "/NavBar/MenuP.png" : "/NavBar/Menu.png"} alt="" /></Link>
-                    <Link to="/pesquisa"><img src={path === "/pesquisa" ? "/NavBar/PesquisaP.png" : "/NavBar/Pesquisa.png"} alt="" /></Link>
-                    <Link to="/favoritos"><img src={path === "/favoritos" ? "/NavBar/FavoritosP.png" : "/NavBar/Favoritos.png"} alt="" /></Link>
-                    <Link to="/perfil"><img src={path === "/perfil" ? "/NavBar/PerfilP.png" : "/NavBar/Perfil.png"} alt="" /></Link>
+                    <li>
+                        <Link to="/home">
+                            {home ? <GoHomeFill className="w-10.25 h-auto text-roxop"/> : <GoHome className="w-10.25 h-auto text-roxop "/>}
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/pesquisa">
+                            {pesquisa ? <RiSearch2Fill className="w-10.25 h-auto text-roxop"/> : <RiSearch2Line className="w-10.25 h-auto text-roxop"/>}
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/favoritos">
+                            {favoritos ? <FaStar className="w-10.25 h-auto text-roxop"/> : <FaRegStar className="w-10.25 h-auto text-roxop"/>}
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/perfil">
+                            {perfil ? <MdAccountCircle className="w-10.25 h-auto text-roxop"/> : <MdOutlineAccountCircle className="w-10.25 h-auto text-roxop"/>}
+                        </Link>
+                    </li>
+                    
                 </ul>
             </nav>
         </>
