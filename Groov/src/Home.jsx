@@ -65,9 +65,9 @@ function Home() {
                         </div>
                         </Link>
                     </section>
-                    <section>
+                    <section className="flex flex-col items-start w-full">
                         <h2></h2>
-                        {listaEventos}
+                        <div>{listaEventos}</div>
                     </section>
                     <NavBar/>
                 </main>
