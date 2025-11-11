@@ -1,9 +1,32 @@
 import NavBar from "./components/NavBar"
 import Header from "./components/Header"
+import CardEvento from "./components/CardEvento"
 import { Link, useLocation } from "react-router"
+import { useEffect, useState } from "react"
 
 
 function Home() {
+   const[eventos, setEventos] = useState([])
+   
+    useEffect(() => {
+        async function buscarEventos() {
+            try{
+                const resposta = await fetch("http://localhost:3000/eventos")
+                if (!resposta.ok) throw new Error("Erro ao consultar eventos")
+                const dados = await resposta.json()
+    
+                setEventos(dados.reverse())
+            } catch (erro) {
+                console.log("Erro: ", erro.message)
+            } 
+        }
+        buscarEventos()
+    }, [])
+
+    const listaEventos = eventos.map( evento => (
+        <CardEvento key={evento.id} evento ={evento} setEventos={setEventos}/>
+    ))
+
     return(
             <>
                 <Header/>
@@ -41,6 +64,10 @@ function Home() {
                                 </h2>
                         </div>
                         </Link>
+                    </section>
+                    <section>
+                        <h2></h2>
+                        {listaEventos}
                     </section>
                     <NavBar/>
                 </main>
