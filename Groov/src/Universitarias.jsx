@@ -27,8 +27,8 @@ function Pesquisa() {
     pesquisaFilmes();
   }, [])
 
-  const listaFilmes = filmes.map(eventos => (
-    <CardEvento key={eventos.id} eventos={eventos} />
+  const listaFilmes = filmes.map(evento => (
+    <CardEvento key={evento.id} eventos={evento} />
   ))
 
   return (
