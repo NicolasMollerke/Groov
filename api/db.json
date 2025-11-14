@@ -8,7 +8,7 @@
     "data": "19/11/2025",
     "hora": "22:00h - 04:00h",
     "local": "Espaço Universitário Prime (Rua da Alegria, 123 - Próximo ao Campus Central)",
-    "Atrações": ["DJ Lumina","DJ Vibe","Trovão Azul"],
+    "atrações": ["DJ Lumina","DJ Vibe","Trovão Azul"],
     "organizadores": [],
     "palavras_chave": ["Neon", "DJ", "Calourada"],
     "notas": []
