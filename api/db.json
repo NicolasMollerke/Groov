@@ -1,15 +1,16 @@
 {
-    "eventos": [{
+  "eventos": [{
     "id": "1",
     "nome": "A Calourada Neon",
+    "categoria": "Universitaria",
     "imagem": ["https://assets.pokemon.com/static2/_ui/img/global/rotom.png"],
     "descricao": "Preparem-se para a noite mais luminosa do semestre! A Calourada Neon está de volta para dar as boas-vindas aos calouros e reunir a galera! Uma noite épica com muita música eletrônica, funk e pop, em um ambiente totalmente transformado por luzes negras e tinta neon. Vista sua roupa branca ou neon e venha brilhar! Teremos distribuição gratuita de tintas e glowsticks para você se jogar na pista. É hora de fazer novas amizades e criar memórias inesquecíveis!",
-    "data": "Sábado, 19 de Outubro de 2025",
-    "hora": "Das 22:00h às 04:00h",
+    "data": "19/11/2025",
+    "hora": "22:00 - 4:00",
     "local": "Espaço Universitário Prime (Rua da Alegria, 123 - Próximo ao Campus Central)",
     "Atrações": ["DJ Lumina","DJ Vibe","Trovão Azul"],
     "organizadores": [],
     "palavras_chave": [],
     "notas": []
-    }]
+  }]
 }
