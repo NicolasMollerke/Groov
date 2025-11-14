@@ -15,6 +15,7 @@ import Bares from './Bares.jsx'
 import Universitarias from './Universitarias.jsx'
 import Festas from './Festas.jsx'
 import Shows from './Shows.jsx'
+import Evento from './Evento.jsx'
 
 const router = createBrowserRouter([
   { path: "/", Component: App },
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
   { path: "festas", Component: Festas },
   { path: "universitarias", Component: Universitarias },
   { path: "bares", Component: Bares },
+  { path: "evento/:eventoId", Component: Evento },
 ])
 
 createRoot(document.getElementById('root')).render(
