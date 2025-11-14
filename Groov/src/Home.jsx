@@ -65,7 +65,7 @@ function Home() {
                         </div>
                         </Link>
                     </section>
-                    <section className="flex flex-col items-start w-full">
+                    <section className="flex flex-col items-start w-full mt-5">
                         <h2></h2>
                         <div>{listaEventos}</div>
                     </section>

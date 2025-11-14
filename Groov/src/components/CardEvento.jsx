@@ -13,7 +13,7 @@ export default function CardEvento({evento}) {
         <>
             <div className="w-36">
                 <img className="h-[8.24838rem] w-full" src={evento.imagem[0]} alt="" />
-                <div className="flex flex-col gap-[0.2rem] justify-start">
+                <div className="flex flex-col justify-start">
                     <h3 className="text-[1rem] text-white font-semibold truncate">{evento.nome}</h3>
                     <div className="flex gap-[0.2rem]">{listaPalavrasChave}</div>
                     <div className="flex gap-1">
