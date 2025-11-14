@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste API</title>
+</head>
+<body>
+    <h1>Teste de API</h1>
+    <p id="result">Carregando...</p>
+    
+    <script>
+        fetch('http://localhost:3000/eventos')
+            .then(res => res.json())
+            .then(data => {
+                console.log('Dados recebidos:', data)
+                document.getElementById('result').innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>'
+            })
+            .catch(err => {
+                console.error('Erro:', err)
+                document.getElementById('result').innerHTML = 'Erro: ' + err.message
+            })
+    </script>
+</body>
+</html>
