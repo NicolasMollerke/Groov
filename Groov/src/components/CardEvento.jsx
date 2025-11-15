@@ -1,3 +1,5 @@
+import { Link } from "react-router"
+
 export default function CardEvento({evento}) {
     
     const listaPalavrasChave = []
@@ -11,7 +13,7 @@ export default function CardEvento({evento}) {
 
     return (
         <>
-            <div className="w-36">
+            <Link to={`/evento/${evento.id}`} className="w-36">
                 <img className="h-[8.24838rem] w-full" src={evento.imagem[0]} alt="" />
                 <div className="flex flex-col justify-start">
                     <h3 className="text-[1rem] text-white font-semibold truncate">{evento.nome}</h3>
@@ -21,7 +23,7 @@ export default function CardEvento({evento}) {
                         <p className="text-[0.5rem] text-white">{`${evento.hora}`}</p>
                     </div>
                 </div>
-            </div>
+            </Link>
         </>
     )
 }

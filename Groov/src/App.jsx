@@ -1,8 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import NavBar from './components/NavBar'
+
 import { Link } from "react-router"
 
 function App() {
@@ -19,7 +15,7 @@ function App() {
           <hr className='border-roxos border w-36'/>
         </div>
         <button className='w-full bg-roxop py-[0.8rem] rounded-[2.5rem]'>
-          <Link className='text-[1.25rem] text-white font-bold' to="criarConta">Criar conta</Link>
+          <Link to="/criarConta" className='text-[1.25rem] text-white font-bold'>Criar conta</Link>
         </button>
       </main>
     </>
