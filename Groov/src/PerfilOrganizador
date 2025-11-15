@@ -1,0 +1,3 @@
+function PerfilOrganizador() { }
+
+export default PerfilOrganizador;

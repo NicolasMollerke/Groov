@@ -17,6 +17,7 @@ import Festas from './Festas.jsx'
 import Shows from './Shows.jsx'
 import Evento from './Evento.jsx'
 import InclusaoEvento from './InclusaoEvento.jsx'
+import PerfilOrganizador from './PerfilOrganizador.jsx'
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
   { path: "bares", Component: Bares },
   { path: "evento/:eventoId", Component: Evento },
   { path: "inclusaoEvento", Component: InclusaoEvento },
+  { path: "perfilOrganizador/:usuarioId", Component: PerfilOrganizador },
 ])
 
 createRoot(document.getElementById('root')).render(
