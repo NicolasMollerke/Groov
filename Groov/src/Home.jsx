@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar"
 import Header from "./components/Header"
 import CardEvento from "./components/CardEvento"
-import { Link, useLocation } from "react-router"
+import { Link } from "react-router"
 import { useEffect, useState } from "react"
 
 
