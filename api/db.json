@@ -24,5 +24,12 @@
       ],
       "notas": []
     }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "jones",
+      "email": "jones@jonjones.com"
+    }
   ]
 }
