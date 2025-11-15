@@ -77,6 +77,20 @@ function CriarConta() {
                     {errors.email && <span className="text-red-500 text-sm">{errors.email.message}</span>}
                 </div>
 
+                <div>
+                    <label className="block text-sm font-medium mb-1">Senha *</label>
+                    <input
+                        type="password"
+                        placeholder="Sua senha"
+                        {...register("senha", {
+                            required: "Senha é obrigatória",
+                            pattern: { value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/, message: "Senha inválida" }
+                        })}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    {errors.senha && <span className="text-red-500 text-sm">{errors.senha.message}</span>}
+                </div>
+
                 <div className="flex gap-4 pt-4">
                     <button
                         type="submit"
