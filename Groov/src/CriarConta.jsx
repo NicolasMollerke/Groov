@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import Header from "./components/Header";
 
 function CriarConta() {
     const { register, handleSubmit, reset, formState: { errors } } = useForm({
@@ -14,16 +15,17 @@ function CriarConta() {
     const [successMessage, setSuccessMessage] = useState("");
 
     const onSubmit = async (data) => {
+        delete data.senha;
         setServerError("");
         setSuccessMessage("");
         setSubmitting(true);
+
         try {
+            // data NÃO TEM senha
             const res = await fetch("http://localhost:3000/usuarios", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data),
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data), // só nome e email
             });
 
             if (!res.ok) {
@@ -31,84 +33,81 @@ function CriarConta() {
                 throw new Error(`HTTP ${res.status}: ${txt}`);
             }
 
-            const created = await res.json();
-            console.log("Usuário criado:", created);
             setSuccessMessage("Conta criada com sucesso!");
             reset();
+
         } catch (err) {
             console.error(err);
-            setServerError("Não foi possível criar a conta. Tente novamente mais tarde.");
+            setServerError("Erro ao criar conta.");
         } finally {
             setSubmitting(false);
         }
     };
 
-    const limparForm = () => reset();
-
     return (
-        <div className="container mx-auto p-6">
-            <h1 className="text-3xl font-bold mb-6">Criar Conta</h1>
+        <>
+            <Header />
+            <div className="container mx-auto p-6 text-white">
+                <h1 className="text-3xl font-bold mb-6 text-purple-400">Criar Conta</h1>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-md text-white">
-                {serverError && <div className="text-red-400 mb-2">{serverError}</div>}
-                {successMessage && <div className="text-green-400 mb-2">{successMessage}</div>}
-                <div>
-                    <label className="block text-sm font-medium mb-1">Nome *</label>
-                    <input
-                        type="text"
-                        placeholder="Seu nome"
-                        {...register("nome", { required: "Nome é obrigatório" })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    {errors.nome && <span className="text-red-500 text-sm">{errors.nome.message}</span>}
-                </div>
+                {serverError && <p className="text-red-400">{serverError}</p>}
+                {successMessage && <p className="text-green-400">{successMessage}</p>}
 
-                <div>
-                    <label className="block text-sm font-medium mb-1">Email *</label>
-                    <input
-                        type="email"
-                        placeholder="seu@exemplo.com"
-                        {...register("email", {
-                            required: "Email é obrigatório",
-                            pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Email inválido" }
-                        })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    {errors.email && <span className="text-red-500 text-sm">{errors.email.message}</span>}
-                </div>
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-md">
 
-                <div>
-                    <label className="block text-sm font-medium mb-1">Senha *</label>
-                    <input
-                        type="password"
-                        placeholder="Sua senha"
-                        {...register("senha", {
-                            required: "Senha é obrigatória",
-                            pattern: { value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/, message: "Senha inválida" }
-                        })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    {errors.senha && <span className="text-red-500 text-sm">{errors.senha.message}</span>}
-                </div>
+                    <div>
+                        <label className="block text-sm font-medium mb-1">Nome *</label>
+                        <input
+                            type="text"
+                            placeholder="Seu nome"
+                            {...register("nome", { required: "Nome é obrigatório" })}
+                            className="w-full px-3 py-2 bg-zinc-900 border border-zinc-700 rounded-md"
+                        />
+                        {errors.nome && <span className="text-red-500 text-sm">{errors.nome.message}</span>}
+                    </div>
 
-                <div className="flex gap-4 pt-4">
-                    <button
-                        type="submit"
-                        disabled={submitting}
-                        className={`flex-1 bg-blue-500 text-white py-2 rounded-md font-medium transition ${submitting ? 'opacity-60 cursor-not-allowed' : 'hover:bg-blue-600'}`}
-                    >
-                        {submitting ? 'Enviando...' : 'Criar Conta'}
-                    </button>
-                    <button
-                        type="button"
-                        onClick={limparForm}
-                        className="flex-1 bg-gray-300 text-gray-700 py-2 rounded-md font-medium hover:bg-gray-400 transition"
-                    >
-                        Limpar
-                    </button>
-                </div>
-            </form>
-        </div>
+                    <div>
+                        <label className="block text-sm font-medium mb-1">Email *</label>
+                        <input
+                            type="email"
+                            placeholder="seu@exemplo.com"
+                            {...register("email", { required: "Email é obrigatório" })}
+                            className="w-full px-3 py-2 bg-zinc-900 border border-zinc-700 rounded-md"
+                        />
+                        {errors.email && <span className="text-red-500 text-sm">{errors.email.message}</span>}
+                    </div>
+
+                    {/* Campo senha agora é só visual, sem register */}
+                    <div>
+                        <label className="block text-sm font-medium mb-1">Senha *</label>
+                        <input
+                            type="password"
+                            placeholder="Sua senha (não será enviada)"
+                            className="w-full px-3 py-2 bg-zinc-900 border border-zinc-700 rounded-md"
+                        />
+                    </div>
+
+                    <div className="flex gap-4 pt-4">
+                        <button
+                            type="submit"
+                            disabled={submitting}
+                            className="flex-1 bg-purple-600 py-2 rounded-md hover:bg-purple-700 transition"
+                        >
+                            {submitting ? "Enviando..." : "Criar Conta"}
+                        </button>
+
+                        <button
+                            type="button"
+                            onClick={() => reset()}
+                            className="flex-1 bg-gray-600 py-2 rounded-md hover:bg-gray-500 transition"
+                        >
+                            Limpar
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </>
     );
 }
 
