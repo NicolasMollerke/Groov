@@ -49,8 +49,15 @@ function InclusaoEvento() {
             ...data,
             atracoes: data.atracoes.split(",").map(a => a.trim()),
             organizadores: data.organizadores.split(",").map(a => a.trim()),
-            palavrasChave: data.palavrasChave // já é array
+            palavrasChave: data.palavrasChave,
+
+            ingresso: {
+                preco: parseFloat(data.ingressoPreco),
+                lote: data.ingressoLote,
+                tipo: data.ingressoTipo
+            }
         };
+
 
         try {
             const response = await fetch("http://localhost:3000/eventos", {
@@ -274,6 +281,63 @@ function InclusaoEvento() {
                     {errors.palavrasChave && (
                         <span className="text-red-500 text-sm">{errors.palavrasChave.message}</span>
                     )}
+                </div>
+
+                <div className="mt-8 p-4 border border-gray-600 rounded-lg bg-gray-900">
+                    <h2 className="text-xl font-semibold mb-4 text-white">Informações do Ingresso</h2>
+
+                    {/* Tipo */}
+                    <div className="mb-4">
+                        <label className="block text-sm font-medium mb-1">Tipo de Ingresso *</label>
+                        <input
+                            type="text"
+                            placeholder="Pista, VIP, Mesanino..."
+                            {...register("ingressoTipo", {
+                                required: "O tipo é obrigatório"
+                            })}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md 
+                       focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        {errors.ingressoTipo && (
+                            <span className="text-red-500 text-sm">{errors.ingressoTipo.message}</span>
+                        )}
+                    </div>
+
+                    {/* Lote */}
+                    <div className="mb-4">
+                        <label className="block text-sm font-medium mb-1">Lote *</label>
+                        <input
+                            type="text"
+                            placeholder="1º lote, 2º lote..."
+                            {...register("ingressoLote", {
+                                required: "O lote é obrigatório"
+                            })}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md 
+                            focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        {errors.ingressoLote && (
+                            <span className="text-red-500 text-sm">{errors.ingressoLote.message}</span>
+                        )}
+                    </div>
+
+                    {/* Preço */}
+                    <div className="mb-2">
+                        <label className="block text-sm font-medium mb-1">Preço (R$) *</label>
+                        <input
+                            type="number"
+                            step="0.01"
+                            placeholder="Preço do ingresso"
+                            {...register("ingressoPreco", {
+                                required: "O preço é obrigatório",
+                                min: { value: 0, message: "O preço não pode ser negativo" }
+                            })}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md 
+                            focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        {errors.ingressoPreco && (
+                            <span className="text-red-500 text-sm">{errors.ingressoPreco.message}</span>
+                        )}
+                    </div>
                 </div>
 
                 {/* Botões */}
