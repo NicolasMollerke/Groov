@@ -44,7 +44,7 @@ function Home() {
                         <div className="bg-cover bg-center w-38.5 h-26.25 rounded-[0.1875rem] flex items-center justify-center"
                             style={{ backgroundImage: "url('/img/fundo.png')" }} >
                                 <h2 className=" text-center text-stroke-white text-transparent text-[2rem] uppercase font-black">
-                                    Shows ao vivo
+                                    Festas
                                 </h2>
                         </div>
                         </Link>

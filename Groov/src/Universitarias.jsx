@@ -1,8 +1,8 @@
 import Header from './components/Header'
 import { useState, useEffect } from "react"
-import CardEvento from "./components/CardEvento"
-
-function Pesquisa() {
+import CardEventoHorinzontal from "./components/CardEventoHorinzontal"
+import Navbar from "./components/NavBar"
+export default function Universitaria() {
   const [filmes, setFilmes] = useState([])
 
   const cat_fixa = "Universitaria"
@@ -28,18 +28,20 @@ function Pesquisa() {
   }, [])
 
   const listaFilmes = filmes.map(evento => (
-    <CardEvento key={evento.id} eventos={evento} />
+    <CardEventoHorinzontal key={evento.id} evento={evento} eventos={evento} />
+
   ))
 
   return (
     <>
-      <Header />
-      <h1 style={{ 'margin-top': 0 }}></h1>
+    <header>< Header /> </header>
+      <h1 className='text-center text-stroke-white text-transparent text-[2rem] uppercase font-black'>Universitária</h1>
       <section className='grid-filmes'>
         {listaFilmes}
       </section>
+      < Navbar/>
     </>
   )
 }
 
-export default Pesquisa
+
