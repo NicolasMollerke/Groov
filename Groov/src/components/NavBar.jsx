@@ -4,11 +4,6 @@ import { RiSearch2Fill, RiSearch2Line } from "react-icons/ri";
 import { FaStar, FaRegStar  } from "react-icons/fa";
 import { MdAccountCircle, MdOutlineAccountCircle } from "react-icons/md";
 
-
-
-
-
-
 export default function NavBar() {
     const { pathname } = useLocation();
 
@@ -19,7 +14,7 @@ export default function NavBar() {
     
     return (
         <>
-            <nav className="py-2 border-t-2 border-roxop fixed bottom-0 w-full">
+            <nav className="py-2 border-t-2 bg-fundo border-roxop fixed bottom-0 w-full">
                 <ul className="flex justify-between px-4">
                     <li>
                         <Link to="/home">

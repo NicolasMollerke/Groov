@@ -1,122 +1,94 @@
-import { useParams } from "react-router"
+import NavBar from "./components/NavBar"
+import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import Header from "./components/Header"
+import { MdAccountCircle } from "react-icons/md";
+import { IoTicket } from "react-icons/io5";
+
 
 function Evento() {
     const { eventoId } = useParams()
+    const [evento, setEvento] = useState(null)
+    const [menu, setMenu] = useState("info") // aba ativa: 'info' por padrão
 
-    const [evento, setEvento] = useState({})
-    const [usuarios, setUsuarios] = useState([])
-    
-     useEffect(() => {
+    useEffect(() => {
         if (!eventoId) return
-        async function getEvento() {
-            try {
-                const response = await fetch(`http://localhost:3000/eventos/${eventoId}`)
-                if (!response.ok) throw new Error(response.status)
-                const evento2 = await response.json()
-                setEvento(evento2)
-            } catch (e) {
-                console.error(e)
-                setEvento({})
-            }
-            fetch("http://localhost:3000/usuarios")
-            .then(res => res.ok ? res.json() : [])
-            .then(setUsuarios)
-            .catch(() => setUsuarios([]))
-        }
-        getEvento()
+        fetch(`http://localhost:3000/eventos/${eventoId}`)
+            .then(res => res.ok ? res.json() : Promise.reject(res.status))
+            .then(data => setEvento(data))
+            .catch(() => setEvento(null))
     }, [eventoId])
-    
-    const info = <>   
-           <div>
-                <h3>Localização</h3>
-                <p>{evento.local}</p>
-            </div>
-            <div>
-                <h3>Data e Hora</h3>
-                <p>{evento.data} - {evento.hora}</p>
-            </div>
 
-        </>
+    const ingressoArray = evento?.ingresso
+        ? (Array.isArray(evento.ingresso) ? evento.ingresso : [evento.ingresso])
+        : []
 
-        const listaOrganizadores = []
-            if (evento.organizadores) {
-                for (let i = 0; i < evento.organizadores.length; i++) {
-                    const nomeOrg = evento.organizadores[i]
-                    const usuario = usuarios.find(u => u.nome === nomeOrg)
-                    listaOrganizadores.push(
-                        <Link to={`/perfilOrganizador/${usuario.id}`} className="text-[2.4375rem] text-white font-bold">{evento.organizadores[i]}</Link>
-                    )
-                }
-        }
-
-        const organizadores = <>
-            <div>
-                <h3>Organizadores</h3>
-                {listaOrganizadores}
-            </div>
-        </>
-       
-        const listaIngressos = []
-            if (evento.ingresso) {
-                if (Array.isArray(evento.ingresso)) {
-                    for (let i = 0; i < evento.ingresso.length; i++) {
-                        const ing = evento.ingresso[i]
-                        listaIngressos.push(
-                            <div key={i} className="mb-2 p-2 border rounded">
-                                <p>Tipo: {ing.tipo ?? "-"}</p>
-                                <p>Lote: {ing.lote ?? "-"}</p>
-                                <p>Preço: {typeof ing.preco === "number" ? ing.preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) : (ing.preco ?? "-")}</p>
-                            </div>
-                        )
-                    }
-                } else {
-                    const ing = evento.ingresso
-                    listaIngressos.push(
-                        <div key="single" className="mb-2 p-2 border rounded">
-                            <p>Tipo: {ing.tipo ?? "-"}</p>
-                            <p>Lote: {ing.lote ?? "-"}</p>
-                            <p>Preço: {typeof ing.preco === "number" ? ing.preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) : (ing.preco ?? "-")}</p>
-                        </div>
-                    )
-                }
-            } else {
-                <p>Esse evento é gratuito e não precisa de ingresso.</p>
-            }
-        
-        const ingressos = <>
-            <div>
-                {listaIngressos}
-            </div>
-        </>
-        const [ menu, setMenu ] = useState (info)
-    
-    return(
-            <>
-                <Header/>
-                <main className="flex flex-col items-center mx-auto justify-center ">
-                    <section className='flex flex-col items-start w-full mx-auto'>
+    return (
+        <>
+            <Header/>
+            <main className="flex flex-col items-center mx-auto justify-center">
+                <section className="w-full">
                     {evento?.imagem?.length ? (
-                        <img className="h-56 w-full object-cover" src={evento.imagem[0]} alt={evento.nome || ""} />
+                        <img className="h-56 max-w-full mx-auto object-cover" src={evento.imagem[0]} alt={evento?.nome ?? ""} />
                     ) : null}
-                    <h3 className="text-[1rem] text-white font-semibold truncate">{evento.nome}</h3>
-                    <p className="text-[0.655rem] text-roxos font-normal">{evento.descricao}</p>
-                    </section>
-                    <section className="w-full">
-                        <nav className="w-full">
-                            <ul className="flex w-full justify-between">
-                                <li className="text-[0.755rem]" onClick={() => setMenu(info)}>Informações</li>
-                                <li className="text-[0.755rem]" onClick={() => setMenu(ingressos)}>Ingressos</li>
-                                <li className="text-[0.755rem]" onClick={() => setMenu(organizadores)}>Organizadores</li>
-                            </ul>
-                        </nav>
-                        {menu}
-                    </section>
-                </main>
+                    <h3 className="w-fulltext-lg text-white font-semibold truncate mt-3">{evento?.nome ?? "-"}</h3>
+                    <p className="text-sm text-roxos  font-semibold mt-2">{evento?.descricao ?? ""}</p>
+                </section>
 
-            </>
-        )
+                <section className="w-full mx-auto mt-4 gap-4">
+                    <nav>
+                        <ul className="flex w-full justify-between text-[0.9rem]">
+                            <li className={`cursor-pointer ${menu === "info" ? "font-bold text-roxop" : "text-white"}`} onClick={() => setMenu("info")} >Informações</li>
+                            <li className={`cursor-pointer ${menu === "ingressos" ? "font-bold text-roxop" : "text-white"}`} onClick={() => setMenu("ingressos")}>Ingressos</li>
+                            <li className={`cursor-pointer ${menu === "organizadores" ? "font-bold text-roxop" : "text-white"}`} onClick={() => setMenu("organizadores")}>Organizadores</li>
+                        </ul>
+                    </nav>
+                    {menu === "info" && (
+                        <di className="flex flex-col gap-5 p-6 border border-roxop rounded-2xl mt-6">
+                            <div className="">
+                                <h4 className="text-white font-semibold">Localização</h4>
+                                <p className="text-roxop font-semibold text-[0.750rem]">{evento?.local ?? "-"}</p>
+                            </div>
+                            <div>
+                                <h4 className="text-white font-semibold mt-2">Data e Hora</h4>
+                                <p className="text-roxop font-semibold text-[0.750rem]">{(evento?.data ?? "-") + " • " + (evento?.hora ?? "-")}</p>
+                            </div>
+                        </di>
+                    )}
+
+                    {menu === "ingressos" && (
+                        <div className="mt-4">
+                            {ingressoArray.length ? ingressoArray.map((ing, i) => (
+                                <div key={i}  className="flex gap-5 w-56 py-4 justify-between px-4 border border-roxop rounded-2xl mt-6">
+                                    <IoTicket className="w-16 h-auto text-roxop"/>
+                                    <div>
+                                        <p className="text-roxop font-semibold">{ing?.tipo ?? "-"}</p>
+                                        <p className="text-roxop font-semibold">{ing?.lote ?? "-"}</p>
+                                        <p className="text-roxop font-semibold">R${ing?.preco ?? "-"}</p>
+                                    </div>
+                                </div>
+                            )) : <p>Sem ingressos</p>}
+                        </div>
+                    )}
+
+                    {menu === "organizadores" && (
+                        <div className="mt-4">
+                            {(evento?.organizadores ?? []).length
+                                ? (evento.organizadores.map((o, i) => <p key={i}>{o}</p>))
+                                : 
+                                <div className="flex items-center gap-2">
+                                    <MdAccountCircle className="w-10.25 h-auto text-roxop"/>
+                                    <p>Sem organizadores</p>
+                                </div>
+                            }
+                        </div>
+                    )}
+                </section>
+                <NavBar/>
+            </main>
+        </>
+    )
 }
 
 export default Evento
+// ...existing code...

@@ -5,7 +5,7 @@ import Navbar from "./components/NavBar"
 export default function Universitaria() {
   const [filmes, setFilmes] = useState([])
 
-  const cat_fixa = "Universitaria"
+  const cat_fixa = "Universitária"
   async function pesquisaFilmes() {
     try {
       const resposta = await fetch("http://localhost:3000/eventos")
@@ -35,7 +35,7 @@ export default function Universitaria() {
   return (
     <>
     <header>< Header /> </header>
-      <h1 className='text-center text-stroke-white text-transparent text-[2rem] uppercase font-black'>Universitária</h1>
+      <h1 className='text-center text-stroke-white text-transparent text-[2rem] uppercase font-black'>Universitárias</h1>
       <section className='grid-filmes'>
         {listaFilmes}
       </section>

@@ -3,7 +3,8 @@ export default function Header() {
     return (
         <>
             <header className="h-[3.7rem] flex justify-center items-center">
-                <img src="/img/GROOV.png" alt="" />
+                <h2 className="text-center text-stroke-roxo text-transparent text-[3.0rem] uppercase font-black">Groov
+                </h2>
             </header>
         </>
     )

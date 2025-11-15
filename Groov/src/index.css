@@ -136,6 +136,7 @@
 body  {
   background-color: #1D1D1D;
   font-family: var(--font-fonte);
+  padding-bottom: var(--nav-height);
 }
 
 main {
@@ -144,10 +145,19 @@ main {
 }
 
 .text-stroke-white {
-  /* Torna o texto transparente para que o fundo apareça */
   color: transparent; 
   
   /* Aplica o contorno (largura e cor branca) */
   -webkit-text-stroke: 1px white; 
   text-stroke: 1px white;
 }
+
+.text-stroke-roxo{
+  color: transparent; 
+  
+  /* Aplica o contorno (largura e cor branca) */
+  -webkit-text-stroke: 1px #9A7CFF; 
+  text-stroke: 1px #9A7CFF;
+}
+
+:root { --nav-height: 4rem; } /* h-16 = 4rem */
