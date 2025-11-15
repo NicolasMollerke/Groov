@@ -21,7 +21,7 @@
                 "Maximize"
             ],
             "ingresso": {
-                "preco": 40.00,
+                "preco": 40,
                 "lote": "1º lote",
                 "tipo": "Mesanino"
             },
@@ -38,11 +38,6 @@
             "id": "1",
             "nome": "jones",
             "email": "jones@jonjones.com"
-        },
-        {
-            "id": "2",
-            "nome": "Containe",
-            "email": "paulo@paulo.com"
         }
     ]
 }
