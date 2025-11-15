@@ -4,23 +4,21 @@ export default function CardEvento({evento}) {
     if (evento.palavras_chave) {
     for (let i = 0; i < evento.palavras_chave.length; i++) {
       listaPalavrasChave.push(
-        <div key={evento.palavras_chave[i]} className="flex gap-3">
-          <td className="w-40 text-center">{evento.palavras_chave[i]}</td>
-        </div>
+          <p className="text-[0.4375rem] text-white py-[0.06rem] px-[0.15rem] bg-roxop rounded-[0.625rem] border-roxos border-2">{evento.palavras_chave[i]}</p>
       )
     }
   }
 
     return (
         <>
-            <div>
-                <img className="h-9" src={evento.imagem[0]} alt="" />
-                <div>
-                    <h3 className="text-[1rem] text-white font-semibold">{evento.nome}</h3>
-                    {listaPalavrasChave}
-                    <div>
-                        <p>{evento.local}</p>
-                        <p>{evento.hora}</p>
+            <div className="w-36">
+                <img className="h-[8.24838rem] w-full" src={evento.imagem[0]} alt="" />
+                <div className="flex flex-col justify-start">
+                    <h3 className="text-[1rem] text-white font-semibold truncate">{evento.nome}</h3>
+                    <div className="flex gap-[0.2rem]">{listaPalavrasChave}</div>
+                    <div className="flex gap-1">
+                        <p className="text-[0.5rem] text-white">{`${evento.data},`}</p>
+                        <p className="text-[0.5rem] text-white">{`${evento.hora}`}</p>
                     </div>
                 </div>
             </div>
