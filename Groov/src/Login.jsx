@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+
 
 function Login() {
     const { register, handleSubmit, formState: { errors } } = useForm({
@@ -13,6 +15,8 @@ function Login() {
     const [submitting, setSubmitting] = useState(false);
     const [serverError, setServerError] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
+    const navigate = useNavigate();
+
 
     const onSubmit = async (data) => {
         setServerError("");
@@ -39,6 +43,7 @@ function Login() {
             }
 
             setSuccessMessage("Login realizado com sucesso!");
+            navigate("/home");
 
         } catch (err) {
             console.error(err);
@@ -49,10 +54,11 @@ function Login() {
     };
 
     return (
+        
         <div className="container mx-auto p-6">
             <h1 className="text-3xl font-bold mb-6">Login</h1>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-md text-white">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-md [&_input::placeholder]:text-gray-400">
 
                 {serverError && (
                     <div className="text-red-400 mb-2">{serverError}</div>
