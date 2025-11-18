@@ -1,3 +1,5 @@
+import { Link } from "react-router"
+
 export default function CardEventoHorinzontal({evento}) {
     
     const listaPalavrasChave = []
@@ -11,8 +13,8 @@ export default function CardEventoHorinzontal({evento}) {
 
     return (
         <>
-            <div className="w-36 flex flex-row  ml-8 gap-2.5">
-                <img className="h-[8.24838rem] w-36" src={evento.imagem[0]} alt="" />
+            <div to={`/evento/${evento.id}`} className="w-full flex items-end gap-3">
+                <Link to={`/evento/${evento.id}`}>< img className="h-[8.24838rem] w-36" src={evento.imagem[0]} alt=""/></Link>
                 <div className="flex flex-col justify-start mt-12  ">
                     <h3 className="text-[1rem] text-white font-semibold truncate">{evento.nome}</h3>
                     <div className="flex gap-[0.2rem]">{listaPalavrasChave}</div>
