@@ -1,7 +1,5 @@
-// CardOrganizador.js
 import React from 'react';
 
-// Este componente recebe o objeto completo do organizador (id, nome, email)
 export default function CardOrganizador({ organizador }) {
     if (!organizador) return null;
 

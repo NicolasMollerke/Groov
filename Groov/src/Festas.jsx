@@ -2,13 +2,6 @@ import Header from './components/Header'
 import { useState, useEffect } from "react"
 import CardEventoHorinzontal from "./components/CardEventoHorinzontal"
 import Navbar from "./components/NavBar"
-<<<<<<< HEAD
-import Header_pc from './components/Header_pc'
-
-    
-=======
-
->>>>>>> main
 export default function Festas() {
   const [eventos, setEventos] = useState([])
 
@@ -40,16 +33,6 @@ export default function Festas() {
 
   return (
     <>
-<<<<<<< HEAD
-    <header>
-        < Header />
-        <Header_pc />
-     </header>
-      <h1 className='text-center text-stroke-white text-transparent text-[2rem] uppercase font-black'>Festa</h1>
-      <section className='grid-filmes'>
-        {listaFilmes}
-      </section>
-=======
       < Header />
       <main className='flex flex-col items-center mx-auto justify-center'>
         <h1 className='text-center text-stroke-white text-transparent text-[2rem] uppercase font-black'>Festa</h1>
@@ -57,7 +40,6 @@ export default function Festas() {
           {listaEventos}
         </section>
       </main>
->>>>>>> main
       < Navbar/>
     </>
   )

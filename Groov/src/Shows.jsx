@@ -35,16 +35,6 @@ export default function Shows() {
 
   return (
     <>
-<<<<<<< HEAD
-    <header>
-        < Header />
-        < Header_pc />
-         </header>
-      <h1 className='text-center text-stroke-white text-transparent text-[2rem] uppercase font-black'>Shows</h1>
-      <section className='grid-filmes'>
-        {listaFilmes}
-      </section>
-=======
       < Header />
       <main className='flex flex-col items-center mx-auto justify-center'>
         <h1 className='text-center text-stroke-white text-transparent text-[2rem] uppercase font-black'>Festa</h1>
@@ -52,7 +42,6 @@ export default function Shows() {
           {listaEventos}
         </section>
       </main>
->>>>>>> main
       < Navbar/>
     </>
   )
