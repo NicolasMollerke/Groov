@@ -4,7 +4,7 @@ import { Controller } from "react-hook-form";
 
 
 function InclusaoEvento() {
-    const { register, handleSubmit, reset, control, formState: { errors } } = useForm({
+    const { register, handleSubmit, reset, control, setValue, formState: { errors } } = useForm({
         defaultValues: {
             tipo: "shows",
             nome: "",
@@ -15,8 +15,13 @@ function InclusaoEvento() {
             hora: "",
             local: "",
             atracoes: "",
-            organizadores: "",
-            palavrasChave: []
+            organizadores: [],
+            palavrasChave: [],
+            ingresso: {
+                tipo: "",
+                lote: "",
+                preco: ""
+            }
         }
     });
 
@@ -31,26 +36,56 @@ function InclusaoEvento() {
         "Centro", "Praia", "Eventos Especiais", "Rolês Temáticos", "Festivais", "Shows"
     ];
 
-    // state to toggle visibility of the keyword picker
     const [showKeywords, setShowKeywords] = useState(false);
     const keywordsRef = useRef(null);
 
+    const [buscaOrg, setBuscaOrg] = useState("");
+    const [sugestoesOrg, setSugestoesOrg] = useState([]);
+    const [organizadoresSelecionados, setOrganizadoresSelecionados] = useState([]);
+
     useEffect(() => {
         if (showKeywords) {
-            // focus the first keyword button for accessibility
             const firstBtn = keywordsRef.current?.querySelector("button");
             firstBtn?.focus();
         }
     }, [showKeywords]);
 
+    useEffect(() => {
+        if (buscaOrg.length === 0) {
+            setSugestoesOrg([]);
+            return;
+        }
+
+        const delay = setTimeout(async () => {
+            try {
+                const res = await fetch("http://localhost:3000/usuarios");
+                const data = await res.json();
+
+                const termo = buscaOrg.toLowerCase();
+
+                const filtrados = data.filter((u) =>
+                    u.nome.toLowerCase().includes(termo)
+                );
+
+                setSugestoesOrg(filtrados);
+            } catch (err) {
+                console.error("Erro ao buscar organizadores:", err);
+            }
+        }, 200);
+
+        return () => clearTimeout(delay);
+    }, [buscaOrg]);
 
     const onSubmit = async (data) => {
         const payload = {
             ...data,
             atracoes: data.atracoes.split(",").map(a => a.trim()),
-            organizadores: data.organizadores.split(",").map(a => a.trim()),
-            palavrasChave: data.palavrasChave // já é array
+            organizadores: data.organizadores,
+            palavrasChave: data.palavrasChave,
+
+            ingresso: data.ingresso
         };
+
 
         try {
             const response = await fetch("http://localhost:3000/eventos", {
@@ -81,152 +116,195 @@ function InclusaoEvento() {
         reset();
     };
 
+
     return (
-        <div className="container mx-auto p-6">
-            <h1 className="text-3xl font-bold mb-6">Criar Novo Evento</h1>
+        <div className="min-h-screen bg-[#0F0F0F] text-white p-6">
+            <h1 className="text-3xl font-bold mb-8 text-purple-400">Criar Novo Evento</h1>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="text-white space-y-4 max-w-2xl">
-
-                {/* Campo Nome */}
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 max-w-xl mx-auto">
+                {/* Nome */}
                 <div>
-                    <label className="block text-sm font-medium mb-1">Nome do Evento *</label>
+                    <label className="block text-sm font-medium mb-1 text-gray-200">Nome do Evento *</label>
                     <input
                         type="text"
                         placeholder="Nome do evento"
-                        {...register("nome", {
-                            required: "Nome é obrigatório"
-                        })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        {...register("nome", { required: "Nome é obrigatório" })}
+                        className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white 
+                    focus:outline-none focus:ring-2 focus:ring-purple-500"
                     />
                     {errors.nome && <span className="text-red-500 text-sm">{errors.nome.message}</span>}
                 </div>
 
-                {/* Campo Categoria */}
-                <div>
-                    <label className="block text-sm font-medium mb-1">Categoria *</label>
+                {/* Categoria */}
+                <div className="mb-4 relative">
+                    <label className="block text-sm font-medium mb-1 text-gray-200">Categoria *</label>
                     <select
-                        {...register("categoria", {
-                            required: "Categoria é obrigatória"
-                        })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        {...register("categoria", { required: "Categoria é obrigatória" })}
+                        className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white
+                        focus:outline-none focus:ring-2 focus:ring-purple-500 appearance-none"
                     >
                         <option value="shows">Shows</option>
                         <option value="festas">Festas</option>
                         <option value="bares">Bares</option>
                         <option value="universitarias">Universitárias</option>
                     </select>
+                    {/* Triângulo da seta */}
+                    <div className="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 flex items-center">
+                        <svg className="w-4 h-4 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
                     {errors.categoria && <span className="text-red-500 text-sm">{errors.categoria.message}</span>}
                 </div>
 
-                {/* Campo Imagem */}
+                {/* Imagem */}
                 <div>
-                    <label className="block text-sm font-medium mb-1">Imagem do Evento *</label>
+                    <label className="block text-sm font-medium mb-1 text-gray-200">Imagem do Evento *</label>
                     <input
                         type="url"
                         placeholder="https://link-da-imagem.com"
-                        {...register("imagem", {
-                            required: "Imagem é obrigatória"
-                        })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        {...register("imagem", { required: "Imagem é obrigatória" })}
+                        className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white 
+                    focus:outline-none focus:ring-2 focus:ring-purple-500"
                     />
-                    {errors.imagem && (
-                        <span className="text-red-500 text-sm">{errors.imagem.message}</span>
-                    )}
+                    {errors.imagem && <span className="text-red-500 text-sm">{errors.imagem.message}</span>}
                 </div>
 
 
-                {/* Campo Descrição */}
+                {/* Descrição */}
                 <div>
-                    <label className="block text-sm font-medium mb-1">Descrição *</label>
+                    <label className="block text-sm font-medium mb-1 text-gray-200">Descrição *</label>
                     <textarea
-                        placeholder="Descreva o evento..."
+                        {...register("descricao", { required: "Descrição é obrigatória" })}
                         rows="4"
-                        {...register("descricao", {
-                            required: "Descrição é obrigatória"
-                        })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Descreva o evento..."
+                        className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white
+                    focus:outline-none focus:ring-2 focus:ring-purple-500"
                     />
                     {errors.descricao && <span className="text-red-500 text-sm">{errors.descricao.message}</span>}
                 </div>
 
-                {/* Campo Data */}
-                <div>
-                    <label className="block text-sm font-medium mb-1">Data *</label>
-                    <input
-                        type="date"
-                        {...register("data", {
-                            required: "Data é obrigatória"
-                        })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    {errors.data && <span className="text-red-500 text-sm">{errors.data.message}</span>}
+                {/* Data + Hora */}
+                <div className="flex gap-4">
+                    <div className="flex-1">
+                        <label className="block text-sm font-medium mb-1 text-gray-200">Data *</label>
+                        <input
+                            type="date"
+                            {...register("data", { required: "Data é obrigatória" })}
+                            className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white
+                        focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        />
+                        {errors.data && <span className="text-red-500 text-sm">{errors.data.message}</span>}
+                    </div>
+
+                    <div className="flex-1">
+                        <label className="block text-sm font-medium mb-1 text-gray-200">Hora *</label>
+                        <input
+                            type="time"
+                            {...register("hora", { required: "Hora é obrigatória" })}
+                            className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white
+                        focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        />
+                        {errors.hora && <span className="text-red-500 text-sm">{errors.hora.message}</span>}
+                    </div>
                 </div>
 
-                {/* Campo Hora */}
+                {/* Local */}
                 <div>
-                    <label className="block text-sm font-medium mb-1">Hora *</label>
-                    <input
-                        type="time"
-                        {...register("hora", {
-                            required: "Hora é obrigatória"
-                        })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    {errors.hora && <span className="text-red-500 text-sm">{errors.hora.message}</span>}
-                </div>
-
-                {/* Campo Local */}
-                <div>
-                    <label className="block text-sm font-medium mb-1">Local *</label>
+                    <label className="block text-sm font-medium mb-1 text-gray-200">Local *</label>
                     <input
                         type="text"
                         placeholder="Endereço do evento"
-                        {...register("local", {
-                            required: "Local é obrigatório"
-                        })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        {...register("local", { required: "Local é obrigatório" })}
+                        className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white
+                    focus:outline-none focus:ring-2 focus:ring-purple-500"
                     />
                     {errors.local && <span className="text-red-500 text-sm">{errors.local.message}</span>}
                 </div>
 
-                {/* Campo Atrações */}
+                {/* Atrações */}
                 <div>
-                    <label className="block text-sm font-medium mb-1">Atrações *</label>
+                    <label className="block text-sm font-medium mb-1 text-gray-200">Atrações *</label>
                     <textarea
-                        placeholder="Liste as atrações (bandas, DJs, artistas, etc.)"
+                        {...register("atracoes", { required: "Atrações é obrigatório" })}
                         rows="3"
-                        {...register("atracoes", {
-                            required: "Atrações é obrigatório"
-                        })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Liste as atrações..."
+                        className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white
+                    focus:outline-none focus:ring-2 focus:ring-purple-500"
                     />
                     {errors.atracoes && <span className="text-red-500 text-sm">{errors.atracoes.message}</span>}
                 </div>
 
-                {/* Campo Organizadores */}
-                <div>
-                    <label className="block text-sm font-medium mb-1">Organizadores *</label>
-                    <textarea
-                        placeholder="Nomes dos organizadores/produtoras"
-                        rows="3"
-                        {...register("organizadores", {
-                            required: "Organizadores é obrigatório"
-                        })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                <div className="relative">
+                    <label className="block text-sm font-medium mb-1 text-gray-200">Organizadores *</label>
+
+                    <input
+                        type="text"
+                        placeholder="Digite o nome do organizador"
+                        className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white
+        focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        onChange={(e) => setBuscaOrg(e.target.value)}
                     />
-                    {errors.organizadores && <span className="text-red-500 text-sm">{errors.organizadores.message}</span>}
+
+                    {sugestoesOrg.length > 0 && (
+                        <ul className="absolute z-10 bg-[#1A1A1A] w-full border border-purple-500/40 rounded-md mt-1 max-h-40 overflow-y-auto text-white">
+                            {sugestoesOrg.map((u) => (
+                                <li
+                                    key={u.id}
+                                    className="px-3 py-2 cursor-pointer hover:bg-purple-500/20"
+                                    onClick={() => {
+                                        if (!organizadoresSelecionados.includes(u.nome)) {
+                                            const atualizado = [...organizadoresSelecionados, u.nome];
+                                            setOrganizadoresSelecionados(atualizado);
+                                            setValue("organizadores", atualizado);
+                                        }
+
+                                        setBuscaOrg("");
+                                        setSugestoesOrg([]);
+                                    }}
+                                >
+                                    {u.nome}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+
+                    <div className="flex flex-wrap gap-2 mt-2">
+                        {organizadoresSelecionados.map((org) => (
+                            <span
+                                key={org}
+                                className="px-3 py-1 bg-purple-600 rounded-full cursor-pointer"
+                                onClick={() => {
+                                    const atualizado = organizadoresSelecionados.filter(o => o !== org);
+                                    setOrganizadoresSelecionados(atualizado);
+                                    setValue("organizadores", atualizado);
+                                }}
+                            >
+                                {org} ✕
+                            </span>
+                        ))}
+                    </div>
+
+                    <input
+                        type="hidden"
+                        {...register("organizadores", { required: "Organizadores é obrigatório" })}
+                    />
+
+                    {errors.organizadores && (
+                        <span className="text-red-500 text-sm">{errors.organizadores.message}</span>
+                    )}
                 </div>
 
                 {/* Campo Palavras-chave */}
                 <div>
-                    <label className="block text-sm font-medium mb-1">Palavras-chave *</label>
+                    <label className="block text-sm font-medium mb-1 text-gray-200">Palavras-chave *</label>
 
                     <button
                         type="button"
                         aria-expanded={showKeywords}
                         aria-controls="keywords-panel"
                         onClick={() => setShowKeywords(v => !v)}
-                        className="mt-2 inline-flex items-center gap-2 px-3 py-2 bg-gray-800 text-white rounded-md"
+                        className="mt-2 w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white text-left"
                     >
                         {showKeywords ? "Ocultar palavras-chave" : "Selecionar palavras-chave"}
                     </button>
@@ -258,7 +336,9 @@ function InclusaoEvento() {
                                                         key={kw}
                                                         type="button"
                                                         onClick={() => toggle(kw)}
-                                                        className={`px-3 py-2 rounded-full text-sm border transition ${selected ? "bg-white text-black border-white font-semibold" : "border-gray-500 text-gray-300"}`}
+                                                        className={`px-3 py-2 rounded-full text-sm border transition 
+                                            ${selected ? "bg-purple-500 text-white border-purple-500 font-semibold"
+                                                                : "border-purple-500 text-white/70 hover:bg-purple-500/20"}`}
                                                     >
                                                         {kw}
                                                     </button>
@@ -276,18 +356,66 @@ function InclusaoEvento() {
                     )}
                 </div>
 
+                {/* Card Ingresso */}
+                <div className="mt-8 p-4 border border-purple-500/40 rounded-lg bg-[#161616]">
+                    <h2 className="text-xl font-semibold mb-4 text-purple-300">Informações do Ingresso</h2>
+
+                    {/* Tipo */}
+                    <div className="mb-4">
+                        <label className="block text-sm font-medium mb-1 text-gray-200">Tipo de Ingresso</label>
+                        <input
+                            type="text"
+                            placeholder="Pista, VIP, Mesanino..."
+                            {...register("ingresso.tipo")}
+                            className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white
+                        focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        />
+                    </div>
+
+                    {/* Lote */}
+                    <div className="mb-4">
+                        <label className="block text-sm font-medium mb-1 text-gray-200">Lote</label>
+                        <input
+                            type="text"
+                            placeholder="1º lote, 2º lote..."
+                            {...register("ingresso.lote")}
+                            className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white
+                        focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        />
+                    </div>
+
+
+                    {/* Preço */}
+                    <div>
+                        <label className="block text-sm font-medium mb-1 text-gray-200">Preço (R$)</label>
+                        <input
+                            type="number"
+                            step="0.01"
+                            placeholder="Preço do ingresso"
+                            {...register("ingresso.preco", {
+                                min: { value: 0, message: "O preço não pode ser negativo" },
+                                setValueAs: v => parseFloat(v)
+                            })}
+                            className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white
+                        focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        />
+                        {errors.ingressoPreco && <span className="text-red-500 text-sm">{errors.ingressoPreco.message}</span>}
+                    </div>
+                </div>
+
                 {/* Botões */}
                 <div className="flex gap-4 pt-4">
                     <button
                         type="submit"
-                        className="flex-1 bg-blue-500 text-white py-2 rounded-md font-medium hover:bg-blue-600 transition"
+                        className="flex-1 bg-purple-600 text-white py-2 rounded-md font-medium hover:bg-purple-700 transition"
                     >
                         Criar Evento
                     </button>
+
                     <button
                         type="button"
                         onClick={limparForm}
-                        className="flex-1 bg-gray-300 text-gray-700 py-2 rounded-md font-medium hover:bg-gray-400 transition"
+                        className="flex-1 bg-gray-700 text-gray-300 py-2 rounded-md font-medium hover:bg-gray-600 transition"
                     >
                         Limpar
                     </button>

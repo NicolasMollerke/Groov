@@ -2,123 +2,130 @@ import React, { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import CardEvento from "./components/Cardevento";
+import CardOrganizador from "./components/CardOrganizador"; 
 
 const MODOS_PESQUISA = {
-    EVENTO: 'evento',
-    ORGANIZADOR: 'organizador',
+  EVENTO: 'evento',
+ORGANIZADOR: 'organizador',
+};
+
+const API_ENDPOINTS = {
+    [MODOS_PESQUISA.EVENTO]: "http://localhost:3000/eventos",
+    [MODOS_PESQUISA.ORGANIZADOR]: "http://localhost:3000/usuarios", 
 };
 
 export default function Pesquisa() {
-    const [modoFiltro, setModoFiltro] = useState(MODOS_PESQUISA.EVENTO);
-    
-    const [todosOsEventos, setTodosOsEventos] = useState([]);
-    const [termoPesquisa, setTermoPesquisa] = useState('');
-    const [eventosFiltrados, setEventosFiltrados] = useState([]);
-    const [carregando, setCarregando] = useState(true);
+  const [modoFiltro, setModoFiltro] = useState(MODOS_PESQUISA.EVENTO);
+  
+  const [dadosCarregados, setDadosCarregados] = useState([]); 
+  const [termoPesquisa, setTermoPesquisa] = useState('');
+  const [resultadosFiltrados, setResultadosFiltrados] = useState([]); 
+  const [carregando, setCarregando] = useState(true);
 
-    useEffect(() => {
-        async function carregarTodosOsEventos() {
-            setCarregando(true);
-            try {
-                const resposta = await fetch("http://localhost:3000/eventos");
-                if (!resposta.ok) throw new Error("Erro ao consultar os eventos");
-                const dados = await resposta.json();
-                const eventosArray = Array.isArray(dados) ? dados : dados.eventos || [];
-                setTodosOsEventos(eventosArray);
-            } catch (erro) {
-                console.error("Erro ao carregar eventos: ", erro.message);
-            } finally {
-                setCarregando(false);
-            }
-        }
-        carregarTodosOsEventos();
-    }, []);
+  useEffect(() => {
+    async function carregarDados() {
+      setCarregando(true);
+            setResultadosFiltrados([]); 
 
-    useEffect(() => {
-        const termo = termoPesquisa.toUpperCase().trim();
+            const endpoint = API_ENDPOINTS[modoFiltro];
 
-        if (!termo) {
-            setEventosFiltrados([]);
-            return;
-        }
+      try {
+        const resposta = await fetch(endpoint);
+        if (!resposta.ok) throw new Error("Erro ao consultar a API.");
+        const dados = await resposta.json();
 
-        const resultados = todosOsEventos.filter(evento => {
-            if (modoFiltro === MODOS_PESQUISA.EVENTO) {
-                const nomeEvento = evento.nome ? evento.nome.toUpperCase() : '';
-                return nomeEvento.includes(termo);
-            } else if (modoFiltro === MODOS_PESQUISA.ORGANIZADOR) {
-                let organizadoresMatch = false;
-                if (Array.isArray(evento.organizadores)) {
-                    organizadoresMatch = evento.organizadores.some(org => 
-                        org.toUpperCase().includes(termo)
-                    );
-                } else if (typeof evento.organizadores === 'string') {
-                    organizadoresMatch = evento.organizadores.toUpperCase().includes(termo);
+                let listaDados;
+                if (modoFiltro === MODOS_PESQUISA.EVENTO) {
+                    listaDados = Array.isArray(dados) ? dados : dados.eventos || []; 
+                } else { 
+                    listaDados = Array.isArray(dados) ? dados : dados.usuarios || []; 
                 }
-                return organizadoresMatch;
-            }
-            return false;
-        });
 
-        setEventosFiltrados(resultados);
-    }, [termoPesquisa, todosOsEventos, modoFiltro]); 
+        setDadosCarregados(listaDados);
+      } catch (erro) {
+        console.error(`Erro ao carregar ${modoFiltro}: `, erro.message);
+                setDadosCarregados([]); 
+      } finally {
+        setCarregando(false);
+      }
+    }
+    carregarDados();
+  }, [modoFiltro]); 
 
+  useEffect(() => {
+    const termo = termoPesquisa.toUpperCase().trim();
 
-    const listaEventos = eventosFiltrados.map(evento => (
-        <CardEvento key={evento.id} evento={evento} />
-    ));
+    if (!termo) {
+      setResultadosFiltrados([]);
+      return;
+    }
+
+    const resultados = dadosCarregados.filter(item => {
+            const nomeItem = item.nome ? item.nome.toUpperCase() : '';
+            return nomeItem.includes(termo);
+    });
+
+    setResultadosFiltrados(resultados);
+  }, [termoPesquisa, dadosCarregados]); 
+
+  const listaResultados = resultadosFiltrados.map(item => {
+        if (modoFiltro === MODOS_PESQUISA.EVENTO) {
+            return <CardEvento key={item.id} evento={item} />;
+        } else {
+            return <CardOrganizador key={item.id} organizador={item} />;
+        }
+    });
+  
+  const placeholderText = modoFiltro === MODOS_PESQUISA.EVENTO 
+    ? "Pesquise pelo nome do evento" 
+    : "Pesquise pelo nome do organizador";
     
-    const placeholderText = modoFiltro === MODOS_PESQUISA.EVENTO 
-        ? "Pesquise pelo nome do evento" 
-        : "Pesquise pelo nome do organizador";
+  const modoAtualTexto = modoFiltro === MODOS_PESQUISA.EVENTO ? 'Eventos' : 'Organizadores';
+
+
+  return (
+    <>
+      <Header/>
+      <main className="w-full">
+        <div className="flex justify-center p-4 gap-4">
+          <button 
+            onClick={() => setModoFiltro(MODOS_PESQUISA.ORGANIZADOR)}
+            className={`px-4 py-2 rounded-lg font-bold ${modoFiltro === MODOS_PESQUISA.ORGANIZADOR ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
+          >
+            Organizador
+          </button>
+          <button 
+            onClick={() => setModoFiltro(MODOS_PESQUISA.EVENTO)}
+            className={`px-4 py-2 rounded-lg font-bold ${modoFiltro === MODOS_PESQUISA.EVENTO ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
+          >
+            Eventos
+          </button>
+        </div>
+
+        <div className='flex justify-center mx-auto w-full' style={{marginBottom: '20px'}}>
+          <input 
+            type="text" 
+            className='w-[20rem] h-[2rem] text-white bg-gray-800 text-[15px] text-center rounded-[1.25rem] border-solid border-2 border-roxop' 
+            placeholder={placeholderText} 
+            value={termoPesquisa}
+            onChange={(e) => setTermoPesquisa(e.target.value)}
+          />
+        </div>
         
-    const modoAtualTexto = modoFiltro === MODOS_PESQUISA.EVENTO ? 'Eventos' : 'Organizadores';
+        {carregando && <p className="text-center text-white">Carregando dados...</p>}
 
-
-    return (
-        <>
-            <Header/>
-            <main className="w-full">
-                <div className="flex justify-center p-4 gap-4">
-                    <button 
-                        onClick={() => setModoFiltro(MODOS_PESQUISA.ORGANIZADOR)}
-                        className={`px-4 py-2 rounded-lg font-bold ${modoFiltro === MODOS_PESQUISA.ORGANIZADOR ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
-                    >
-                        Organizador
-                    </button>
-                    <button 
-                        onClick={() => setModoFiltro(MODOS_PESQUISA.EVENTO)}
-                        className={`px-4 py-2 rounded-lg font-bold ${modoFiltro === MODOS_PESQUISA.EVENTO ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
-                    >
-                        Eventos
-                    </button>
-                </div>
-
-                <div className='flex justify-center mx-auto w-full' style={{marginBottom: '20px'}}>
-                    <input 
-                        type="text" 
-                        className='w-[20rem] h-[2rem] text-white text-[15px] text-center rounded-[1.25rem] border-solid border-2 border-roxop' 
-                        placeholder={placeholderText} 
-                        value={termoPesquisa}
-                        onChange={(e) => setTermoPesquisa(e.target.value)}
-                    />
-                </div>
+        {!carregando && termoPesquisa.trim() !== '' && resultadosFiltrados.length === 0 && (
+          <p className="text-center justify-center text-white">
+            Não encontramos resultados em **"{modoAtualTexto}"** para a busca: **"{termoPesquisa}"**
+          </p>
+        )}
                 
-                {carregando && <p className="text-center text-white">Carregando dados...</p>}
-
-                {!carregando && termoPesquisa.trim() !== '' && eventosFiltrados.length === 0 && (
-                    <p className="text-center justify-center text-white">
-                        Não encontramos resultados em **"{modoAtualTexto}"** para a busca: **"{termoPesquisa}"**
-                    </p>
-                )}
-
-
-                <section className='grid-filmes'>
-                    {listaEventos}
-                </section>
-                
-                <NavBar/>
-            </main> 
-        </>
-    );
+        <section className='grid-filmes'> 
+          {listaResultados}
+        </section>
+        
+        <NavBar/>
+      </main> 
+    </>
+  );
 }

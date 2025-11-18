@@ -1,38 +1,912 @@
 {
-  "eventos": [
-    {
-      "id": "1",
-      "nome": "A Calourada Neon",
-      "categoria": "Universitária",
-      "imagem": [
-        "https://pt.vecteezy.com/arte-vetorial/9169455-ceu-dourado-por-do-sol-na-costa-natureza-paisagem"
-      ],
-      "descricao": "Preparem-se para a noite mais luminosa do semestre! A Calourada Neon está de volta para dar as boas-vindas aos calouros e reunir a galera! Uma noite épica com muita música eletrônica, funk e pop, em um ambiente totalmente transformado por luzes negras e tinta neon. Vista sua roupa branca ou neon e venha brilhar! Teremos distribuição gratuita de tintas e glowsticks para você se jogar na pista. É hora de fazer novas amizades e criar memórias inesquecíveis!",
-      "data": "19/11/2025",
-      "hora": "22:00h - 04:00h",
-      "local": "Espaço Universitário Prime (Rua da Alegria, 123 - Próximo ao Campus Central)",
-      "atrações": [
-        "DJ Lumina",
-        "DJ Vibe",
-        "Trovão Azul"
-      ],
-      "organizadores": [
-        "Container",
-        "Maximize"
-      ],
-      "palavras_chave": [
-        "Neon",
-        "DJ",
-        "Calourada"
-      ],
-      "notas": []
-    }
-  ],
-  "usuarios": [
-    {
-      "id": "1",
-      "nome": "jones",
-      "email": "jones@jonjones.com"
-    }
-  ]
+    "eventos": [
+        {
+            "id": "1",
+            "nome": "A Calourada Neon",
+            "categoria": "Universitária",
+            "imagem": [
+                "https://pt.vecteezy.com/arte-vetorial/9169455-ceu-dourado-por-do-sol-na-costa-natureza-paisagem"
+            ],
+            "descricao": "Preparem-se para a noite mais luminosa do semestre! A Calourada Neon está de volta para dar as boas-vindas aos calouros e reunir a galera! Uma noite épica com muita música eletrônica, funk e pop, em um ambiente totalmente transformado por luzes negras e tinta neon. Vista sua roupa branca ou neon e venha brilhar! Teremos distribuição gratuita de tintas e glowsticks para você se jogar na pista. É hora de fazer novas amizades e criar memórias inesquecíveis!",
+            "data": "19/11/2025",
+            "hora": "22:00h - 04:00h",
+            "local": "Espaço Universitário Prime (Rua da Alegria, 123 - Próximo ao Campus Central)",
+            "atrações": [
+                "DJ Lumina",
+                "DJ Vibe",
+                "Trovão Azul"
+            ],
+            "organizadores": [
+                "Container",
+                "Maximize"
+            ],
+            "ingresso": {
+                "preco": 40,
+                "lote": "1º lote",
+                "tipo": "Mesanino"
+            },
+            "palavras_chave": [
+                "Neon",
+                "DJ",
+                "Calourada"
+            ],
+            "notas": []
+        },
+        {
+            "id": "2",
+            "nome": "Ressaca Universitária: Festa à Fantasia",
+            "categoria": "Universitária",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2017/08/07/20/07/party-2607147_1280.jpg"
+            ],
+            "descricao": "O after oficial da semana de provas! Venha fantasiado com o tema 'Heróis e Vilões do Século XXI'. Premiação para as 3 melhores fantasias. Pista 1 (Funk e Pop) e Pista 2 (Eletrônica e Hip Hop). Drinks temáticos e Open Bar de Cerveja por 1h.",
+            "data": "05/12/2025",
+            "hora": "23:00h - 05:00h",
+            "local": "Clube Universitário Central (Avenida dos Estudantes, 404)",
+            "atrações": [
+                "DJ Caos",
+                "MC Profeta",
+                "Banda Zero"
+            ],
+            "organizadores": [
+                "Agência Caótica",
+                "Maximiza"
+            ],
+            "ingresso": {
+                "preco": 60,
+                "lote": "2º lote",
+                "tipo": "Pista Comum"
+            },
+            "palavras_chave": [
+                "Fantasia",
+                "Open Bar",
+                "Ressaca",
+                "Heróis"
+            ],
+            "notas": [
+                "Obrigatória a apresentação de documento com foto."
+            ]
+        },
+        {
+            "id": "3",
+            "nome": "Festival Sabores do Mundo",
+            "categoria": "Festas",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2017/06/20/23/15/food-festival-2424881_1280.jpg"
+            ],
+            "descricao": "Uma celebração da cultura global com food trucks de culinária internacional (Mexicana, Tailandesa, Italiana), cervejas artesanais e apresentações folclóricas. Um evento para toda a família e amigos, com espaço kids e muita música ao ar livre.",
+            "data": "10/01/2026",
+            "hora": "16:00h - 23:00h",
+            "local": "Parque da Cidade (Área Gourmet)",
+            "atrações": [
+                "Grupo de Dança Andaluz",
+                "Banda Terra Brasilis"
+            ],
+            "organizadores": [
+                "Eventos Global",
+                "Sabores Produções"
+            ],
+            "ingresso": {
+                "preco": 15,
+                "lote": "Único",
+                "tipo": "Entrada"
+            },
+            "palavras_chave": [
+                "Gastronomia",
+                "Cultura",
+                "Festival",
+                "Família"
+            ],
+            "notas": [
+                "Entrada gratuita para crianças até 12 anos."
+            ]
+        },
+        {
+            "id": "4",
+            "nome": "Noite de Degustação - Maltes Raros",
+            "categoria": "Bares e Pubs",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2016/11/19/11/56/beer-1839556_1280.jpg"
+            ],
+            "descricao": "Uma experiência exclusiva para apreciadores de cervejas artesanais. Degustação guiada de 5 rótulos raros e premiados, harmonizados com petiscos gourmet. Edição limitada para 30 pessoas, com o sommelier mestre Cervejeiro Rafael Silva.",
+            "data": "28/11/2025",
+            "hora": "20:00h - 22:30h",
+            "local": "The Old Barrel Pub (Rua da Gole, 333 - Centro Histórico)",
+            "atrações": [
+                "Rafael Silva (Sommelier)"
+            ],
+            "organizadores": [
+                "The Old Barrel Pub"
+            ],
+            "ingresso": {
+                "preco": 85,
+                "lote": "Único",
+                "tipo": "Experiência Completa"
+            },
+            "palavras_chave": [
+                "Cerveja Artesanal",
+                "Degustação",
+                "Pub",
+                "Sommelier"
+            ],
+            "notas": [
+                "Vagas limitadas. Necessário agendamento prévio."
+            ]
+        },
+        {
+            "id": "5",
+            "nome": "Show Acústico: Marina e o Mar",
+            "categoria": "Shows ao vivo",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg"
+            ],
+            "descricao": "Marina e sua banda apresentam um show intimista no formato acústico, revisitando clássicos do MPB e do Pop nacional. Uma noite agradável e cheia de boas vibrações. Ingressos com opção de mesa reservada.",
+            "data": "03/01/2026",
+            "hora": "21:00h - 23:00h",
+            "local": "Teatro Municipal da Paz (Praça Central, S/N)",
+            "atrações": [
+                "Marina e o Mar (Show Acústico)"
+            ],
+            "organizadores": [
+                "Paz Produções"
+            ],
+            "ingresso": {
+                "preco": 90,
+                "lote": "Lote Único",
+                "tipo": "Cadeira Especial"
+            },
+            "palavras_chave": [
+                "Acústico",
+                "MPB",
+                "Show",
+                "Teatro"
+            ],
+            "notas": [
+                "Chegar com 30 minutos de antecedência."
+            ]
+        },
+        {
+            "id": "6",
+            "nome": "Integração InterCursos: Pool Party",
+            "categoria": "Universitária",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2016/11/23/00/01/party-1852441_1280.jpg"
+            ],
+            "descricao": "A festa na piscina mais esperada! Traga sua boia e seu biquíni/sunga para um dia inteiro de sol, música, drinks tropicais e jogos aquáticos. Barbecue e DJ Sets de house music.",
+            "data": "12/12/2025",
+            "hora": "14:00h - 22:00h",
+            "local": "Clube Campestre Universitário (Rodovia Sul, KM 10)",
+            "atrações": [
+                "DJ Sol",
+                "MC Praia"
+            ],
+            "organizadores": [
+                "Atlantic Events"
+            ],
+            "ingresso": {
+                "preco": 35,
+                "lote": "1º lote",
+                "tipo": "Entrada Única"
+            },
+            "palavras_chave": [
+                "Pool Party",
+                "Integração",
+                "Verão",
+                "Drinks"
+            ],
+            "notas": [
+                "Uso obrigatório de traje de banho."
+            ]
+        },
+        {
+            "id": "7",
+            "nome": "Trote Solidário: Baile à Caráter",
+            "categoria": "Universitária",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2017/06/13/20/00/party-2399238_1280.jpg"
+            ],
+            "descricao": "Baile de Gala beneficente. Vista-se com sua melhor roupa social e ajude uma causa! Parte da renda será revertida para o projeto 'Universidade Cidadã'. Jazz e música clássica ao vivo, seguido por DJ set.",
+            "data": "20/02/2026",
+            "hora": "21:00h - 03:00h",
+            "local": "Salão Nobre da Reitoria (Rua Central, 500)",
+            "atrações": [
+                "Quinteto de Jazz da Cidade",
+                "DJ Lux"
+            ],
+            "organizadores": [
+                "Diretório Acadêmico Central"
+            ],
+            "ingresso": {
+                "preco": 120,
+                "lote": "Único",
+                "tipo": "Mesa Individual"
+            },
+            "palavras_chave": [
+                "Trote",
+                "Gala",
+                "Solidário",
+                "Jazz"
+            ],
+            "notas": [
+                "Traje social obrigatório."
+            ]
+        },
+        {
+            "id": "8",
+            "nome": "Batalha de Bandas Universitárias",
+            "categoria": "Universitária",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2016/11/22/19/27/acoustic-1850117_1280.jpg"
+            ],
+            "descricao": "Quem tem o melhor som? Vote na sua banda favorita! Competição de bandas de rock, pop e indie formadas por alunos da universidade. Entrada gratuita e food trucks no local.",
+            "data": "01/03/2026",
+            "hora": "18:00h - 23:00h",
+            "local": "Praça de Eventos do Campus",
+            "atrações": [
+                "Banda Vencedora",
+                "Bandas competidoras"
+            ],
+            "organizadores": [
+                "Atlética das Engenharias"
+            ],
+            "ingresso": {
+                "preco": 0,
+                "lote": "Único",
+                "tipo": "Entrada Gratuita"
+            },
+            "palavras_chave": [
+                "Bandas",
+                "Rock",
+                "Competição",
+                "Gratuito"
+            ],
+            "notas": [
+                "Evento aberto ao público."
+            ]
+        },
+        {
+            "id": "9",
+            "nome": "Churrasco da Aprovação",
+            "categoria": "Universitária",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2016/09/27/12/35/barbecue-1748238_1280.jpg"
+            ],
+            "descricao": "Para celebrar o fim de mais um semestre, o tradicional churrasco da galera! Carne de qualidade, cerveja gelada (open bar por 2h) e muito pagode. Venda de camisetas personalizadas no local.",
+            "data": "15/12/2025",
+            "hora": "17:00h - 00:00h",
+            "local": "Sítio da Turma (Estrada da Fazenda, 78)",
+            "atrações": [
+                "Grupo Pagode Universitário"
+            ],
+            "organizadores": [
+                "Comissão de Formatura"
+            ],
+            "ingresso": {
+                "preco": 75,
+                "lote": "2º lote",
+                "tipo": "Open Food/Open Bar"
+            },
+            "palavras_chave": [
+                "Churrasco",
+                "Pagode",
+                "Open Bar",
+                "Formatura"
+            ],
+            "notas": [
+                "Evento exclusivo para alunos e convidados."
+            ]
+        },
+        {
+            "id": "10",
+            "nome": "Mega Baile: A Volta aos Anos 2000",
+            "categoria": "Festas",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2017/03/12/10/58/discotheque-2136014_1280.jpg"
+            ],
+            "descricao": "Prepare seu look mais 'Y2K' e venha reviver a era de Britney, Avril e É o Tchan! Uma viagem nostálgica com os maiores hits do pop, funk e axé dos anos 2000. Open bar de refrigerante e água a noite toda.",
+            "data": "01/02/2026",
+            "hora": "22:00h - 04:00h",
+            "local": "Clube Metrópole (Rua do Passado, 2000)",
+            "atrações": [
+                "DJ VJ Flashback",
+                "Cover Spice Girls"
+            ],
+            "organizadores": [
+                "Flashback Eventos"
+            ],
+            "ingresso": {
+                "preco": 50,
+                "lote": "1º lote",
+                "tipo": "Pista Nostalgia"
+            },
+            "palavras_chave": [
+                "Anos 2000",
+                "Nostalgia",
+                "Pop",
+                "Axé"
+            ],
+            "notas": [
+                "Fantasia temática é bem-vinda."
+            ]
+        },
+        {
+            "id": "11",
+            "nome": "Luau à Beira-Mar: Eletrônico e Chill",
+            "categoria": "Festas",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2017/08/06/08/33/beach-2591694_1280.jpg"
+            ],
+            "descricao": "Sinta a brisa do mar com a melhor trilha sonora eletrônica e chillout. Uma festa pé na areia com fogueira, malabares de fogo e drinks tropicais. Ambiente descontraído e mágico.",
+            "data": "25/01/2026",
+            "hora": "19:00h - 03:00h",
+            "local": "Praia do Sol (Quiosque 7)",
+            "atrações": [
+                "DJ Coast",
+                "Percussionista Léo"
+            ],
+            "organizadores": [
+                "Maré Produções"
+            ],
+            "ingresso": {
+                "preco": 45,
+                "lote": "Único",
+                "tipo": "Acesso Luau"
+            },
+            "palavras_chave": [
+                "Luau",
+                "Praia",
+                "Eletrônico",
+                "Chillout"
+            ],
+            "notas": []
+        },
+        {
+            "id": "12",
+            "nome": "Festa da Espuma: Summer Edition",
+            "categoria": "Festas",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2015/06/07/20/00/foam-party-800473_1280.jpg"
+            ],
+            "descricao": "A maior e mais molhada festa do verão! Uma pista de dança coberta por muita espuma, com DJ's tocando os hits do momento. Vestiários disponíveis no local.",
+            "data": "14/02/2026",
+            "hora": "23:00h - 05:00h",
+            "local": "Galpão Central de Eventos (Av. da Indústria, 99)",
+            "atrações": [
+                "DJ Bubble",
+                "MC Molhado"
+            ],
+            "organizadores": [
+                "Espuma Fest"
+            ],
+            "ingresso": {
+                "preco": 55,
+                "lote": "3º lote",
+                "tipo": "Pista Espuma"
+            },
+            "palavras_chave": [
+                "Espuma",
+                "Verão",
+                "Festa",
+                "Dance"
+            ],
+            "notas": [
+                "Recomendado o uso de roupas leves."
+            ]
+        },
+        {
+            "id": "13",
+            "nome": "Noite Cigana e Mistérios",
+            "categoria": "Festas",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2016/09/23/15/22/gypsy-1690021_1280.jpg"
+            ],
+            "descricao": "Uma festa temática inspirada na cultura cigana e no misticismo. Apresentações de dança, leitura de mãos, tarô e muita música balcânica e latina. Comidas e bebidas típicas.",
+            "data": "08/03/2026",
+            "hora": "20:00h - 02:00h",
+            "local": "Espaço Cultural Ouro Preto (Rua do Místico, 7)",
+            "atrações": [
+                "Trio Balcânico",
+                "Leitores de Tarô"
+            ],
+            "organizadores": [
+                "Mundo Místico"
+            ],
+            "ingresso": {
+                "preco": 70,
+                "lote": "Único",
+                "tipo": "Entrada Temática"
+            },
+            "palavras_chave": [
+                "Cigana",
+                "Mística",
+                "Tarô",
+                "Temática"
+            ],
+            "notas": []
+        },
+        {
+            "id": "14",
+            "nome": "Black & White Party: Elegance Edition",
+            "categoria": "Festas",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2015/05/15/10/24/champagne-768131_1280.jpg"
+            ],
+            "descricao": "Vista-se de preto ou branco para a festa mais elegante do ano. Ambiente sofisticado, drinks premium e música House e R&B. Espaço VIP com serviço de garçom exclusivo.",
+            "data": "22/03/2026",
+            "hora": "23:00h - 06:00h",
+            "local": "Salão Crystal Prime (Av. da Elegância, 50)",
+            "atrações": [
+                "DJ Gold",
+                "Sax Live"
+            ],
+            "organizadores": [
+                "Elegance Group"
+            ],
+            "ingresso": {
+                "preco": 150,
+                "lote": "2º lote",
+                "tipo": "Camarote"
+            },
+            "palavras_chave": [
+                "Elegante",
+                "Black Tie",
+                "House",
+                "Premium"
+            ],
+            "notas": [
+                "Traje social Black & White obrigatório."
+            ]
+        },
+        {
+            "id": "15",
+            "nome": "Happy Hour com Cerveja e Jazz",
+            "categoria": "Bares e Pubs",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2016/11/29/13/21/band-1869877_1280.jpg"
+            ],
+            "descricao": "Encerre o dia com a melhor seleção de jazz ao vivo e promoções em chopes artesanais. O ambiente perfeito para relaxar e conversar com amigos.",
+            "data": "05/12/2025",
+            "hora": "18:00h - 22:00h",
+            "local": "Jazz & Beer Corner (Rua do Sax, 45)",
+            "atrações": [
+                "Trio Bebop"
+            ],
+            "organizadores": [
+                "Jazz Corner Pub"
+            ],
+            "ingresso": {
+                "preco": 10,
+                "lote": "Couvert",
+                "tipo": "Couvert Artístico"
+            },
+            "palavras_chave": [
+                "Happy Hour",
+                "Jazz",
+                "Cerveja",
+                "Pub"
+            ],
+            "notas": []
+        },
+        {
+            "id": "16",
+            "nome": "Noite de Karaokê e Drinks Clássicos",
+            "categoria": "Bares e Pubs",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2018/06/25/08/32/microphone-3497746_1280.jpg"
+            ],
+            "descricao": "Solte a voz e brilhe no palco! Uma noite divertida com karaokê livre e promoção de drinks clássicos (Mojito, Negroni e Dry Martini). Prêmios para as melhores apresentações.",
+            "data": "19/12/2025",
+            "hora": "21:00h - 01:00h",
+            "local": "The Singer's Bar (Avenida do Palco, 10)",
+            "atrações": [
+                "Animação Karaokê"
+            ],
+            "organizadores": [
+                "The Singer's Bar"
+            ],
+            "ingresso": {
+                "preco": 0,
+                "lote": "Único",
+                "tipo": "Entrada Gratuita"
+            },
+            "palavras_chave": [
+                "Karaokê",
+                "Drinks",
+                "Bar",
+                "Canto"
+            ],
+            "notas": [
+                "Entrada gratuita, consumo no local."
+            ]
+        },
+        {
+            "id": "17",
+            "nome": "Rodízio de Petiscos Brasileiros",
+            "categoria": "Bares e Pubs",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2017/03/23/19/57/plate-2169528_1280.jpg"
+            ],
+            "descricao": "Experimente o melhor da culinária de boteco do Brasil em um rodízio completo: coxinhas, pastéis, bolinhos de feijoada e muito mais. Cerveja super gelada e música popular ao vivo.",
+            "data": "07/01/2026",
+            "hora": "19:00h - 23:00h",
+            "local": "Boteco do Zeca (Praça da Matriz, 22)",
+            "atrações": [
+                "Duo Caipira"
+            ],
+            "organizadores": [
+                "Boteco do Zeca"
+            ],
+            "ingresso": {
+                "preco": 59.90,
+                "lote": "Único",
+                "tipo": "Rodízio"
+            },
+            "palavras_chave": [
+                "Petiscos",
+                "Rodízio",
+                "Boteco",
+                "Brasileiro"
+            ],
+            "notas": [
+                "Bebidas não inclusas no rodízio."
+            ]
+        },
+        {
+            "id": "18",
+            "nome": "Trivia Night: Especial Geek",
+            "categoria": "Bares e Pubs",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2017/04/10/22/28/list-2219415_1280.jpg"
+            ],
+            "descricao": "Teste seus conhecimentos sobre filmes, séries, games e quadrinhos no nosso 'Trivia Night' temático. Monte sua equipe e concorra a prêmios! Hamburger artesanal em dobro a noite toda.",
+            "data": "14/01/2026",
+            "hora": "20:30h - 23:30h",
+            "local": "The Geek's Lair (Rua das Invenções, 42)",
+            "atrações": [
+                "Mestre de Cerimônias Nerd"
+            ],
+            "organizadores": [
+                "The Geek's Lair"
+            ],
+            "ingresso": {
+                "preco": 10,
+                "lote": "Taxa por Equipe",
+                "tipo": "Inscrição"
+            },
+            "palavras_chave": [
+                "Trivia",
+                "Geek",
+                "Nerd",
+                "Hamburguer"
+            ],
+            "notas": [
+                "Equipes de 2 a 4 pessoas."
+            ]
+        },
+        {
+            "id": "19",
+            "nome": "Festival de Chopp Artesanal",
+            "categoria": "Bares e Pubs",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2017/04/09/22/02/beer-2216834_1280.jpg"
+            ],
+            "descricao": "Mais de 20 torneiras de chopp de microcervejarias locais e regionais. Música Folk e Blues para acompanhar. Venda de kits de degustação.",
+            "data": "28/02/2026",
+            "hora": "17:00h - 00:00h",
+            "local": "Pátio Cervejeiro (Rua do Malte, 101)",
+            "atrações": [
+                "Banda Blues do Rio"
+            ],
+            "organizadores": [
+                "Cerveja Nossa"
+            ],
+            "ingresso": {
+                "preco": 25,
+                "lote": "Entrada",
+                "tipo": "Acesso"
+            },
+            "palavras_chave": [
+                "Chopp",
+                "Artesanal",
+                "Festival",
+                "Blues"
+            ],
+            "notas": [
+                "Consumo de chopp pago à parte."
+            ]
+        },
+        {
+            "id": "20",
+            "nome": "Lançamento do Álbum: O Fio",
+            "categoria": "Shows ao vivo",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2016/08/17/23/07/concert-1601726_1280.jpg"
+            ],
+            "descricao": "Show de lançamento do aguardado novo álbum da banda de indie rock 'O Fio'. Uma apresentação completa com participação especial de outros artistas do cenário local.",
+            "data": "10/01/2026",
+            "hora": "22:00h - 00:00h",
+            "local": "Casa de Shows RockZone (Av. do Som, 77)",
+            "atrações": [
+                "Banda O Fio",
+                "Banda Convidada: A Linha"
+            ],
+            "organizadores": [
+                "RockZone Produções"
+            ],
+            "ingresso": {
+                "preco": 80,
+                "lote": "2º Lote",
+                "tipo": "Pista Premium"
+            },
+            "palavras_chave": [
+                "Rock",
+                "Indie",
+                "Lançamento",
+                "Show"
+            ],
+            "notas": []
+        },
+        {
+            "id": "21",
+            "nome": "Concerto de Natal da Orquestra Filarmônica",
+            "categoria": "Shows ao vivo",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2016/09/21/04/43/violin-1684705_1280.jpg"
+            ],
+            "descricao": "O tradicional Concerto de Natal, com a Orquestra Filarmônica executando obras clássicas e canções natalinas. Um espetáculo emocionante para toda a família.",
+            "data": "20/12/2025",
+            "hora": "20:00h - 21:30h",
+            "local": "Auditório Principal do Centro Cultural (Rua da Cultura, 33)",
+            "atrações": [
+                "Orquestra Filarmônica da Cidade"
+            ],
+            "organizadores": [
+                "Centro Cultural"
+            ],
+            "ingresso": {
+                "preco": 50,
+                "lote": "Único",
+                "tipo": "Plateia"
+            },
+            "palavras_chave": [
+                "Clássica",
+                "Orquestra",
+                "Natal",
+                "Concerto"
+            ],
+            "notas": [
+                "Sugere-se traje esporte fino."
+            ]
+        },
+        {
+            "id": "22",
+            "nome": "Stand-Up Comedy com Lucas Riso",
+            "categoria": "Shows ao vivo",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2016/06/03/10/50/microphone-1433898_1280.jpg"
+            ],
+            "descricao": "Uma noite de risadas garantidas com o comediante Lucas Riso e convidados. Novo show 'Perrengues Modernos'. Classificação indicativa 16 anos.",
+            "data": "17/01/2026",
+            "hora": "21:30h - 23:00h",
+            "local": "Teatro do Riso (Rua do Humor, 12)",
+            "atrações": [
+                "Lucas Riso",
+                "Comediantes Convidados"
+            ],
+            "organizadores": [
+                "Humor Livre Produções"
+            ],
+            "ingresso": {
+                "preco": 40,
+                "lote": "1º lote",
+                "tipo": "Cadeira"
+            },
+            "palavras_chave": [
+                "Stand-Up",
+                "Comédia",
+                "Humor",
+                "Teatro"
+            ],
+            "notas": [
+                "Chegue cedo para escolher os melhores lugares."
+            ]
+        },
+        {
+            "id": "23",
+            "nome": "Noite de Samba e Choro",
+            "categoria": "Shows ao vivo",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2016/02/09/16/35/guitar-1189440_1280.jpg"
+            ],
+            "descricao": "O melhor do samba de raiz e do choro carioca. Uma roda de samba autêntica com músicos tradicionais. Feijoada e caipirinhas disponíveis no bar.",
+            "data": "06/02/2026",
+            "hora": "20:30h - 01:00h",
+            "local": "Casa do Samba (Largo da Bateria, 8)",
+            "atrações": [
+                "Roda de Samba Pura Tradição"
+            ],
+            "organizadores": [
+                "Samba Raiz"
+            ],
+            "ingresso": {
+                "preco": 20,
+                "lote": "Couvert",
+                "tipo": "Couvert Artístico"
+            },
+            "palavras_chave": [
+                "Samba",
+                "Choro",
+                "Roda de Samba",
+                "Ao Vivo"
+            ],
+            "notas": []
+        },
+        {
+            "id": "24",
+            "nome": "Tributo a Queen: Banda Mercury",
+            "categoria": "Shows ao vivo",
+            "imagem": [
+                "https://cdn.pixabay.com/photo/2015/05/02/20/03/concert-749749_1280.jpg"
+            ],
+            "descricao": "A banda Mercury, aclamada como um dos melhores tributos ao Queen, apresenta os maiores clássicos da lenda do rock. Um espetáculo visual e sonoro imperdível!",
+            "data": "14/03/2026",
+            "hora": "21:00h - 23:00h",
+            "local": "Arena ShowTime (Estrada dos Ídolos, 20)",
+            "atrações": [
+                "Banda Mercury (Tributo a Queen)"
+            ],
+            "organizadores": [
+                "Rock Legends Produções"
+            ],
+            "ingresso": {
+                "preco": 100,
+                "lote": "3º Lote",
+                "tipo": "Cadeira"
+            },
+            "palavras_chave": [
+                "Tributo",
+                "Queen",
+                "Rock",
+                "Show"
+            ],
+            "notas": []
+        }
+    ],
+    "usuarios": [
+        {
+            "id": "1",
+            "nome": "jones",
+            "email": "jones@jonjones.com"
+        },
+        {
+            "id": "2",
+            "nome": "Container Produtora",
+            "email": "container@produtora.com"
+        },
+        {
+            "id": "3",
+            "nome": "Maximize Eventos",
+            "email": "maximize@eventos.com"
+        },
+        {
+            "id": "4",
+            "nome": "Agência Caótica",
+            "email": "caotica@agencia.com"
+        },
+        {
+            "id": "5",
+            "nome": "Eventos Global",
+            "email": "global@eventos.com"
+        },
+        {
+            "id": "6",
+            "nome": "Sabores Produções",
+            "email": "sabores@producoes.com"
+        },
+        {
+            "id": "7",
+            "nome": "The Old Barrel Pub",
+            "email": "pub@oldbarrel.com"
+        },
+        {
+            "id": "8",
+            "nome": "Paz Produções",
+            "email": "paz@producoes.com"
+        },
+        {
+            "id": "9",
+            "nome": "Atlantic Events",
+            "email": "atlantic@events.com"
+        },
+        {
+            "id": "10",
+            "nome": "Diretório Acadêmico Central",
+            "email": "dac@universidade.com"
+        },
+        {
+            "id": "11",
+            "nome": "Atlética das Engenharias",
+            "email": "atletica.eng@uni.com"
+        },
+        {
+            "id": "12",
+            "nome": "Comissão de Formatura",
+            "email": "formatura@turma.com"
+        },
+        {
+            "id": "13",
+            "nome": "Flashback Eventos",
+            "email": "flashback@eventos.com"
+        },
+        {
+            "id": "14",
+            "nome": "Maré Produções",
+            "email": "mare@producoes.com"
+        },
+        {
+            "id": "15",
+            "nome": "Espuma Fest",
+            "email": "espuma@fest.com"
+        },
+        {
+            "id": "16",
+            "nome": "Mundo Místico",
+            "email": "mundo@mistico.com"
+        },
+        {
+            "id": "17",
+            "nome": "Elegance Group",
+            "email": "elegance@group.com"
+        },
+        {
+            "id": "18",
+            "nome": "Jazz Corner Pub",
+            "email": "jazz@cornerpub.com"
+        },
+        {
+            "id": "19",
+            "nome": "The Singer's Bar",
+            "email": "singers@bar.com"
+        },
+        {
+            "id": "20",
+            "nome": "Boteco do Zeca",
+            "email": "boteco@zeca.com"
+        },
+        {
+            "id": "21",
+            "nome": "The Geek's Lair",
+            "email": "geek@lair.com"
+        },
+        {
+            "id": "22",
+            "nome": "Cerveja Nossa",
+            "email": "cerveja@nossa.com"
+        },
+        {
+            "id": "23",
+            "nome": "RockZone Produções",
+            "email": "rockzone@producoes.com"
+        },
+        {
+            "id": "24",
+            "nome": "Centro Cultural",
+            "email": "centro@cultural.com"
+        },
+        {
+            "id": "25",
+            "nome": "Humor Livre Produções",
+            "email": "humor@livre.com"
+        },
+        {
+            "id": "26",
+            "nome": "Samba Raiz",
+            "email": "samba@raiz.com"
+        },
+        {
+            "id": "27",
+            "nome": "Rock Legends Produções",
+            "email": "rocklegends@producoes.com"
+        }
+    ]
 }
