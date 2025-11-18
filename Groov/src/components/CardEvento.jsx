@@ -14,7 +14,7 @@ export default function CardEvento({evento}) {
     return (
         <>
             <Link to={`/evento/${evento.id}`} className="w-36">
-                <img className="h-[8.24838rem] w-full" src={evento.imagem[0]} alt="" />
+                <img className="h-[8.24838rem] w-36" src={evento.imagem}alt=""/>
                 <div className="flex flex-col justify-start">
                     <h3 className="text-[1rem] text-white font-semibold truncate">{evento.nome}</h3>
                     <div className="flex gap-[0.2rem]">{listaPalavrasChave}</div>

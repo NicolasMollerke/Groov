@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { Link, useLocation } from "react-router"
 
 function CriarConta() {
     const { register, handleSubmit, reset, formState: { errors } } = useForm({
@@ -92,13 +93,13 @@ function CriarConta() {
                 </div>
 
                 <div className="flex gap-4 pt-4">
-                    <button
+                    <Link to="/home"
                         type="submit"
                         disabled={submitting}
-                        className={`flex-1 bg-blue-500 text-white py-2 rounded-md font-medium transition ${submitting ? 'opacity-60 cursor-not-allowed' : 'hover:bg-blue-600'}`}
+                        className={`flex-1 bg-roxop text-white py-2 rounded-md font-medium transition ${submitting ? 'opacity-60 cursor-not-allowed' : 'hover:bg-blue-600'}`}
                     >
                         {submitting ? 'Enviando...' : 'Criar Conta'}
-                    </button>
+                    </Link>
                     <button
                         type="button"
                         onClick={limparForm}
