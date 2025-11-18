@@ -59,7 +59,7 @@ function Evento() {
                     {menu === "ingressos" && (
                         <div className="mt-4">
                             {ingressoArray.length ? ingressoArray.map((ing, i) => (
-                                <div key={i}  className="flex gap-5 w-56 py-4 justify-between px-4 border border-roxop rounded-2xl mt-6">
+                                <div key={i}  className="flex gap-5 w-56 py-4 justify-between px-4 border border-roxop rounded-2xl mt-6 w-full">
                                     <IoTicket className="w-16 h-auto text-roxop"/>
                                     <div>
                                         <p className="text-roxop font-semibold">{ing?.tipo ?? "-"}</p>
