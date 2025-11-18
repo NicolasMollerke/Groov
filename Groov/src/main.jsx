@@ -30,7 +30,8 @@ const router = createBrowserRouter([
   { path: "festas", Component: Festas },
   { path: "universitarias", Component: Universitarias },
   { path: "bares", Component: Bares },
-  { path: "inclusaoEvento", Component: InclusaoEvento },
+  { path: "inclusaoEvento", Component: InclusaoEvento }
+
 ])
 
 createRoot(document.getElementById('root')).render(

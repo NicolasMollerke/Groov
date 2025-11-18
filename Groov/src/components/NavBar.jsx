@@ -19,7 +19,7 @@ export default function NavBar() {
     
     return (
         <>
-            <nav className="py-2 border-t-2 border-roxop fixed bottom-0 w-full">
+            <nav className="py-2 border-t-2 border-roxop fixed bottom-0 w-full md:hidden">
                 <ul className="flex justify-between px-4">
                     <li>
                         <Link to="/home">

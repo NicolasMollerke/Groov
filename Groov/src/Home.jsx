@@ -3,7 +3,7 @@ import Header from "./components/Header"
 import CardEvento from "./components/CardEvento"
 import { Link, useLocation } from "react-router"
 import { useEffect, useState } from "react"
-
+import Header_pc from "./components/Header_pc"
 
 function Home() {
    const[eventos, setEventos] = useState([])
@@ -29,11 +29,12 @@ function Home() {
 
     return(
             <>
-                <Header/>
-                <main className='flex flex-col items-center mx-auto justify-center '>
-                    <section className="flex flex-wrap justify-between w-full gap-y-1.5">
+                    <Header />
+                    <Header_pc />
+                <main className='flex flex-col items-center mx-auto w-full justify-center '>
+                    <section className="flex flex-wrap justify-around  w-full gap-y-1.5">
                         <Link to="/shows">
-                        <div className="bg-cover bg-center w-38.5 h-26.25 rounded-[0.1875rem] flex items-center justify-center"
+                        <div className="bg-cover bg-center w-38.5 h-26.25 rounded-[0.1875rem] flex items-center justify-center md:w-50 md:h-40"
                             style={{ backgroundImage: "url('/img/fundo.png')" }} >
                                 <h2 className=" text-center text-stroke-white text-transparent text-[2rem] uppercase font-black">
                                     Shows ao vivo
@@ -41,7 +42,7 @@ function Home() {
                         </div>
                         </Link>
                         <Link to="/festas">
-                        <div className="bg-cover bg-center w-38.5 h-26.25 rounded-[0.1875rem] flex items-center justify-center"
+                        <div className="bg-cover bg-center w-38.5 h-26.25 rounded-[0.1875rem] flex items-center justify-center md:w-50 md:h-40"
                             style={{ backgroundImage: "url('/img/fundo.png')" }} >
                                 <h2 className=" text-center text-stroke-white text-transparent text-[2rem] uppercase font-black">
                                     Festas
@@ -49,7 +50,7 @@ function Home() {
                         </div>
                         </Link>
                         <Link to="/universitarias">
-                        <div className="bg-cover bg-center w-38.5 h-26.25 rounded-[0.1875rem] flex items-center justify-center"
+                        <div className="bg-cover bg-center w-38.5 h-26.25 rounded-[0.1875rem] flex items-center justify-center md:w-50 md:h-40"
                             style={{ backgroundImage: "url('/img/fundo.png')" }} >
                                 <h2 className="px-1 break-all text-center text-stroke-white text-transparent text-[2rem] uppercase font-black">
                                     Universitárias
@@ -57,7 +58,7 @@ function Home() {
                         </div>
                         </Link>
                         <Link to="/bares">
-                        <div className="bg-cover bg-center w-38.5 h-26.25 rounded-[0.1875rem] flex items-center justify-center"
+                        <div className="bg-cover bg-center w-38.5 h-26.25 rounded-[0.1875rem] flex items-center justify-center md:w-50 md:h-40"
                             style={{ backgroundImage: "url('/img/fundo.png')" }} >
                                 <h2 className=" text-center text-stroke-white text-transparent text-[2rem] uppercase font-black">
                                     Bares e Pubs
