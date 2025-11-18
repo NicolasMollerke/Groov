@@ -26,9 +26,9 @@
                 "tipo": "Mesanino"
             },
             "palavras_chave": [
-                "Neon",
-                "DJ",
-                "Calourada"
+                "Eletrônica",
+                "Funk",
+                "Universitário"
             ],
             "notas": []
         },
@@ -58,10 +58,9 @@
                 "tipo": "Pista Comum"
             },
             "palavras_chave": [
-                "Fantasia",
                 "Open Bar",
-                "Ressaca",
-                "Heróis"
+                "Funk",
+                "Universitário"
             ],
             "notas": [
                 "Obrigatória a apresentação de documento com foto."
@@ -92,10 +91,9 @@
                 "tipo": "Entrada"
             },
             "palavras_chave": [
-                "Gastronomia",
-                "Cultura",
-                "Festival",
-                "Família"
+                "Festivais",
+                "Food Trucks",
+                "Casual"
             ],
             "notas": [
                 "Entrada gratuita para crianças até 12 anos."
@@ -124,10 +122,9 @@
                 "tipo": "Experiência Completa"
             },
             "palavras_chave": [
-                "Cerveja Artesanal",
-                "Degustação",
                 "Pub",
-                "Sommelier"
+                "Cerveja Artesanal",
+                "Petiscos"
             ],
             "notas": [
                 "Vagas limitadas. Necessário agendamento prévio."
@@ -156,10 +153,9 @@
                 "tipo": "Cadeira Especial"
             },
             "palavras_chave": [
-                "Acústico",
                 "MPB",
-                "Show",
-                "Teatro"
+                "Música ao vivo",
+                "Clima Romântico"
             ],
             "notas": [
                 "Chegar com 30 minutos de antecedência."
@@ -189,10 +185,9 @@
                 "tipo": "Entrada Única"
             },
             "palavras_chave": [
-                "Pool Party",
-                "Integração",
-                "Verão",
-                "Drinks"
+                "House Party",
+                "Drinks Artesanais",
+                "Universitário"
             ],
             "notas": [
                 "Uso obrigatório de traje de banho."
@@ -222,10 +217,9 @@
                 "tipo": "Mesa Individual"
             },
             "palavras_chave": [
-                "Trote",
-                "Gala",
-                "Solidário",
-                "Jazz"
+                "Música ao vivo",
+                "Luxuoso",
+                "Universitário"
             ],
             "notas": [
                 "Traje social obrigatório."
@@ -255,9 +249,8 @@
                 "tipo": "Entrada Gratuita"
             },
             "palavras_chave": [
-                "Bandas",
                 "Rock",
-                "Competição",
+                "Indie",
                 "Gratuito"
             ],
             "notas": [
@@ -287,10 +280,9 @@
                 "tipo": "Open Food/Open Bar"
             },
             "palavras_chave": [
-                "Churrasco",
                 "Pagode",
                 "Open Bar",
-                "Formatura"
+                "Open Food"
             ],
             "notas": [
                 "Evento exclusivo para alunos e convidados."
@@ -320,10 +312,9 @@
                 "tipo": "Pista Nostalgia"
             },
             "palavras_chave": [
-                "Anos 2000",
-                "Nostalgia",
                 "Pop",
-                "Axé"
+                "Balada",
+                "Rolês Temáticos"
             ],
             "notas": [
                 "Fantasia temática é bem-vinda."
@@ -353,10 +344,9 @@
                 "tipo": "Acesso Luau"
             },
             "palavras_chave": [
-                "Luau",
-                "Praia",
-                "Eletrônico",
-                "Chillout"
+                "Eletrônica",
+                "Chill",
+                "Praia"
             ],
             "notas": []
         },
@@ -384,10 +374,9 @@
                 "tipo": "Pista Espuma"
             },
             "palavras_chave": [
-                "Espuma",
-                "Verão",
-                "Festa",
-                "Dance"
+                "Balada",
+                "Alta Energia",
+                "DJ ao vivo"
             ],
             "notas": [
                 "Recomendado o uso de roupas leves."
@@ -417,10 +406,9 @@
                 "tipo": "Entrada Temática"
             },
             "palavras_chave": [
-                "Cigana",
-                "Mística",
-                "Tarô",
-                "Temática"
+                "Rolês Temáticos",
+                "Música ao vivo",
+                "Alternativo"
             ],
             "notas": []
         },
@@ -448,10 +436,9 @@
                 "tipo": "Camarote"
             },
             "palavras_chave": [
-                "Elegante",
-                "Black Tie",
-                "House",
-                "Premium"
+                "Luxuoso",
+                "Eletrônica",
+                "Clube Noturno"
             ],
             "notas": [
                 "Traje social Black & White obrigatório."
@@ -480,10 +467,9 @@
                 "tipo": "Couvert Artístico"
             },
             "palavras_chave": [
-                "Happy Hour",
-                "Jazz",
-                "Cerveja",
-                "Pub"
+                "Barzinho",
+                "Relax",
+                "Cerveja Artesanal"
             ],
             "notas": []
         },
@@ -511,9 +497,8 @@
             },
             "palavras_chave": [
                 "Karaokê",
-                "Drinks",
-                "Bar",
-                "Canto"
+                "Drinks Artesanais",
+                "Gratuito"
             ],
             "notas": [
                 "Entrada gratuita, consumo no local."
@@ -542,10 +527,9 @@
                 "tipo": "Rodízio"
             },
             "palavras_chave": [
-                "Petiscos",
-                "Rodízio",
                 "Boteco",
-                "Brasileiro"
+                "Petiscos",
+                "Chopp Gelado"
             ],
             "notas": [
                 "Bebidas não inclusas no rodízio."
@@ -574,10 +558,9 @@
                 "tipo": "Inscrição"
             },
             "palavras_chave": [
-                "Trivia",
-                "Geek",
-                "Nerd",
-                "Hamburguer"
+                "Barzinho",
+                "Jogos",
+                "Comida de Bar"
             ],
             "notas": [
                 "Equipes de 2 a 4 pessoas."
@@ -606,10 +589,9 @@
                 "tipo": "Acesso"
             },
             "palavras_chave": [
-                "Chopp",
-                "Artesanal",
-                "Festival",
-                "Blues"
+                "Cerveja Artesanal",
+                "Festivais",
+                "Áreas externas"
             ],
             "notas": [
                 "Consumo de chopp pago à parte."
@@ -641,8 +623,7 @@
             "palavras_chave": [
                 "Rock",
                 "Indie",
-                "Lançamento",
-                "Show"
+                "Banda ao vivo"
             ],
             "notas": []
         },
@@ -669,10 +650,9 @@
                 "tipo": "Plateia"
             },
             "palavras_chave": [
-                "Clássica",
-                "Orquestra",
-                "Natal",
-                "Concerto"
+                "Música ao vivo",
+                "Clima Romântico",
+                "Mais Adulto (25+)"
             ],
             "notas": [
                 "Sugere-se traje esporte fino."
@@ -702,10 +682,9 @@
                 "tipo": "Cadeira"
             },
             "palavras_chave": [
-                "Stand-Up",
-                "Comédia",
-                "Humor",
-                "Teatro"
+                "Stand-up",
+                "Casual",
+                "Shows"
             ],
             "notas": [
                 "Chegue cedo para escolher os melhores lugares."
@@ -735,9 +714,8 @@
             },
             "palavras_chave": [
                 "Samba",
-                "Choro",
-                "Roda de Samba",
-                "Ao Vivo"
+                "Boteco",
+                "Música ao vivo"
             ],
             "notas": []
         },
@@ -764,10 +742,9 @@
                 "tipo": "Cadeira"
             },
             "palavras_chave": [
-                "Tributo",
-                "Queen",
                 "Rock",
-                "Show"
+                "Banda ao vivo",
+                "Shows"
             ],
             "notas": []
         }
@@ -776,137 +753,218 @@
         {
             "id": "1",
             "nome": "jones",
-            "email": "jones@jonjones.com"
+            "email": "jones@jonjones.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "2",
             "nome": "Container Produtora",
-            "email": "container@produtora.com"
+            "email": "container@produtora.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "3",
             "nome": "Maximize Eventos",
-            "email": "maximize@eventos.com"
+            "email": "maximize@eventos.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "4",
             "nome": "Agência Caótica",
-            "email": "caotica@agencia.com"
+            "email": "caotica@agencia.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "5",
             "nome": "Eventos Global",
-            "email": "global@eventos.com"
+            "email": "global@eventos.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "6",
             "nome": "Sabores Produções",
-            "email": "sabores@producoes.com"
+            "email": "sabores@producoes.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "7",
             "nome": "The Old Barrel Pub",
-            "email": "pub@oldbarrel.com"
+            "email": "pub@oldbarrel.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "8",
             "nome": "Paz Produções",
-            "email": "paz@producoes.com"
+            "email": "paz@producoes.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "9",
             "nome": "Atlantic Events",
-            "email": "atlantic@events.com"
+            "email": "atlantic@events.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "10",
             "nome": "Diretório Acadêmico Central",
-            "email": "dac@universidade.com"
+            "email": "dac@universidade.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "11",
             "nome": "Atlética das Engenharias",
-            "email": "atletica.eng@uni.com"
+            "email": "atletica.eng@uni.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "12",
             "nome": "Comissão de Formatura",
-            "email": "formatura@turma.com"
+            "email": "formatura@turma.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "13",
             "nome": "Flashback Eventos",
-            "email": "flashback@eventos.com"
+            "email": "flashback@eventos.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "14",
             "nome": "Maré Produções",
-            "email": "mare@producoes.com"
+            "email": "mare@producoes.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "15",
             "nome": "Espuma Fest",
-            "email": "espuma@fest.com"
+            "email": "espuma@fest.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "16",
             "nome": "Mundo Místico",
-            "email": "mundo@mistico.com"
+            "email": "mundo@mistico.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "17",
             "nome": "Elegance Group",
-            "email": "elegance@group.com"
+            "email": "elegance@group.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "18",
             "nome": "Jazz Corner Pub",
-            "email": "jazz@cornerpub.com"
+            "email": "jazz@cornerpub.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "19",
             "nome": "The Singer's Bar",
-            "email": "singers@bar.com"
+            "email": "singers@bar.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "20",
             "nome": "Boteco do Zeca",
-            "email": "boteco@zeca.com"
+            "email": "boteco@zeca.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "21",
             "nome": "The Geek's Lair",
-            "email": "geek@lair.com"
+            "email": "geek@lair.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "22",
             "nome": "Cerveja Nossa",
-            "email": "cerveja@nossa.com"
+            "email": "cerveja@nossa.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "23",
             "nome": "RockZone Produções",
-            "email": "rockzone@producoes.com"
+            "email": "rockzone@producoes.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "24",
             "nome": "Centro Cultural",
-            "email": "centro@cultural.com"
+            "email": "centro@cultural.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "25",
             "nome": "Humor Livre Produções",
-            "email": "humor@livre.com"
+            "email": "humor@livre.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "26",
             "nome": "Samba Raiz",
-            "email": "samba@raiz.com"
+            "email": "samba@raiz.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         },
         {
             "id": "27",
             "nome": "Rock Legends Produções",
-            "email": "rocklegends@producoes.com"
+            "email": "rocklegends@producoes.com",
+            "nome_usuario": [],
+            "comentário": [],
+            "nota": []
         }
     ]
 }
