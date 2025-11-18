@@ -9,7 +9,7 @@ import { IoTicket } from "react-icons/io5";
 function Evento() {
     const { eventoId } = useParams()
     const [evento, setEvento] = useState(null)
-    const [menu, setMenu] = useState("info") // aba ativa: 'info' por padrão
+    const [menu, setMenu] = useState("info")
 
     useEffect(() => {
         if (!eventoId) return
