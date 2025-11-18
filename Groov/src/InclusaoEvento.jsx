@@ -26,7 +26,7 @@ function InclusaoEvento() {
     });
 
     const KEYWORDS = [
-        "Eletrônica", "Funk", "Hip Hop", "Trap", "Pop", "Sertanejo", "Pagode", "Samba", "Rock", "Indie", "Reggaeton", "MPB",
+        "Eletrônica", "Funk", "Hip Hop", "Trap", "Pop", "Sertanejo", "Pagode", "Samba", "Rock", "Indie", "Gratuito", "MPB",
         "Barzinho", "Pub", "Balada", "Lounge", "Boteco", "Rooftop", "Karaokê", "Clube Noturno", "Beach Club", "House Party",
         "Clima Romântico", "Good Vibes", "Alta Energia", "Relax", "Chill", "Open Bar", "Open Food", "After", "Pré-night",
         "Universitário", "LGBTQ+ Friendly", "Mais Adulto (25+)", "Turístico", "Alternativo", "Casual", "Luxuoso",
