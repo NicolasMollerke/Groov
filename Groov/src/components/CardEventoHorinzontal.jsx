@@ -66,7 +66,6 @@ export default function CardEventoHorinzontal({ evento }) {
                 <Link to={`/evento/${evento.id}`}>
                     <img className="h-[8.24838rem] w-36" src={evento.imagem} alt="" />
                 </Link>
-
                 <div className="flex flex-col justify-start mt-12 flex-1 min-w-0">
                     <div
                         ref={titleContainerRef}

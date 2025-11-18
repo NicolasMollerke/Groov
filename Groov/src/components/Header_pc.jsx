@@ -18,7 +18,7 @@ export default function Header_pc() {
     return (
         <><div className="hidden md:block">
             < Pesquisa />
-                <header className="h-[3.7rem] w-[80rem]  flex  justify-around  mt-6 items-center  flex-row mb-12  ">
+                <header className="h-[3.7rem] w-7x1  flex  justify-around  mt-6 items-center  flex-row mb-12  ">
                     <img src="/img/GROOV.png" alt="" />
                         <div className="flex">
                             <ul className="flex justify-center px-4 gap-9 ">
