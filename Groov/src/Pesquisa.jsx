@@ -72,7 +72,7 @@ export default function Pesquisa() {
         if (modoFiltro === MODOS_PESQUISA.EVENTO) {
             return <CardEvento key={item.id} evento={item} />;
         } else {
-            return <CardOrganizador key={item.id} organizador={item} />;
+            return <CardOrganizador key={item.id} usuario={item} />;
         }
     });
   
@@ -86,30 +86,29 @@ export default function Pesquisa() {
   return (
     <>
       <Header/>
-      <main className="w-full">
+      <main className='flex flex-col items-center mx-auto justify-center'>
+        <div className='flex justify-center mx-auto w-full' style={{marginBottom: '20px'}}>
+          <input 
+            type="text" 
+            className='w-[20rem] h-8 text-white bg-gray-800 text-[15px] text-center rounded-[1.25rem] border-solid border-2 border-roxop' 
+            placeholder={placeholderText} 
+            value={termoPesquisa}
+            onChange={(e) => setTermoPesquisa(e.target.value)}
+          />
+        </div>
         <div className="flex justify-center p-4 gap-4">
-          <button 
-            onClick={() => setModoFiltro(MODOS_PESQUISA.ORGANIZADOR)}
-            className={`px-4 py-2 rounded-lg font-bold ${modoFiltro === MODOS_PESQUISA.ORGANIZADOR ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
-          >
-            Organizador
-          </button>
           <button 
             onClick={() => setModoFiltro(MODOS_PESQUISA.EVENTO)}
             className={`px-4 py-2 rounded-lg font-bold ${modoFiltro === MODOS_PESQUISA.EVENTO ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
           >
             Eventos
           </button>
-        </div>
-
-        <div className='flex justify-center mx-auto w-full' style={{marginBottom: '20px'}}>
-          <input 
-            type="text" 
-            className='w-[20rem] h-[2rem] text-white bg-gray-800 text-[15px] text-center rounded-[1.25rem] border-solid border-2 border-roxop' 
-            placeholder={placeholderText} 
-            value={termoPesquisa}
-            onChange={(e) => setTermoPesquisa(e.target.value)}
-          />
+          <button 
+            onClick={() => setModoFiltro(MODOS_PESQUISA.ORGANIZADOR)}
+            className={`px-4 py-2 rounded-lg font-bold ${modoFiltro === MODOS_PESQUISA.ORGANIZADOR ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
+          >
+            Organizador
+          </button>
         </div>
         
         {carregando && <p className="text-center text-white">Carregando dados...</p>}
@@ -119,11 +118,9 @@ export default function Pesquisa() {
             Não encontramos resultados em **"{modoAtualTexto}"** para a busca: **"{termoPesquisa}"**
           </p>
         )}
-                
-        <section className='grid-filmes'> 
+        <section className='grid-cols-2 w-full grid gap-3 md:gap-13 md:flex md:flex-wrap justify-center items-center'> 
           {listaResultados}
         </section>
-        
         <NavBar/>
       </main> 
     </>

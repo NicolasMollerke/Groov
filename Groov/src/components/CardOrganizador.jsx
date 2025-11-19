@@ -1,29 +1,17 @@
 import React from 'react';
+import { CgProfile } from "react-icons/cg";
+import { Link } from "react-router"
 
-export default function CardOrganizador({ organizador }) {
-    if (!organizador) return null;
+
+export default function Cardusuario({ usuario }) {
+    if (!usuario) return null;
 
     return (
-        <div className="bg-gray-800 rounded-lg shadow-lg p-4 m-2 flex flex-col items-center max-w-sm">
-            
-            <h3 className="text-xl font-bold text-roxop mb-2 text-center">
-                {organizador.nome}
-            </h3>
-            
-            <p className="text-gray-300 text-md mb-2">
-                {organizador.email}
-            </p>
-            
-            <p className="text-gray-500 text-sm mb-4">
-                ID: {organizador.id}
-            </p>
-            
-            <button 
-                className="bg-roxop hover:bg-roxo-claro text-white font-bold py-2 px-4 rounded transition duration-300"
-                onClick={() => alert(`Você clicou em: ${organizador.nome}`)}
-            >
-                Ver Detalhes do Organizador
-            </button>
-        </div>
+        <>
+            <Link to={`/usuario/${usuario.id}`} className='flex flex-col items-center col-span-1 border border-roxos rounded-2xl p-2 justify-center'>
+                {usuario.foto? (<img src={usuario.foto} alt="" className='h-32 w-32 rounded-full object-cover'/>) : (<CgProfile className="text-9xl text-roxop" />)}
+                <h2 className='text-center text-white font-bold text-[1rem]'>{usuario.nome}</h2>
+            </Link>
+        </>
     );
 }
