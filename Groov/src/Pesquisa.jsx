@@ -98,16 +98,16 @@ export default function Pesquisa() {
         </div>
         <div className="flex justify-center p-4 gap-4">
           <button 
-            onClick={() => setModoFiltro(MODOS_PESQUISA.ORGANIZADOR)}
-            className={`px-4 py-2 rounded-lg font-bold ${modoFiltro === MODOS_PESQUISA.ORGANIZADOR ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
-          >
-            Organizador
-          </button>
-          <button 
             onClick={() => setModoFiltro(MODOS_PESQUISA.EVENTO)}
             className={`px-4 py-2 rounded-lg font-bold ${modoFiltro === MODOS_PESQUISA.EVENTO ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
           >
             Eventos
+          </button>
+          <button 
+            onClick={() => setModoFiltro(MODOS_PESQUISA.ORGANIZADOR)}
+            className={`px-4 py-2 rounded-lg font-bold ${modoFiltro === MODOS_PESQUISA.ORGANIZADOR ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
+          >
+            Organizador
           </button>
         </div>
         
@@ -121,7 +121,6 @@ export default function Pesquisa() {
         <section className='grid-cols-2 w-full grid gap-3'> 
           {listaResultados}
         </section>
-        
         <NavBar/>
       </main> 
     </>
