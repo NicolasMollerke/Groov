@@ -17,7 +17,7 @@ export default function CardEvento({evento}) {
                 <img className="h-[8.24838rem] w-36" src={evento.imagem}alt=""/>
                 <div className="flex flex-col justify-start">
                     <h3 className="text-[1rem] text-white font-semibold truncate">{evento.nome}</h3>
-                    <div className="flex gap-[0.2rem]">{listaPalavrasChave}</div>
+                    <div className="flex gap-[0.2rem] md:truncate">{listaPalavrasChave}</div>
                     <div className="flex gap-1">
                         <p className="text-[0.5rem] text-white">{`${evento.data},`}</p>
                         <p className="text-[0.5rem] text-white">{`${evento.hora}`}</p>

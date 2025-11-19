@@ -2,7 +2,6 @@ import Header from './components/Header'
 import { useState, useEffect } from "react"
 import CardEventoHorinzontal from "./components/CardEventoHorinzontal"
 import Navbar from "./components/NavBar"
-import Header_pc from './components/Header_pc'
 
 export default function Shows() {
   const [eventos, setEventos] = useState([])
