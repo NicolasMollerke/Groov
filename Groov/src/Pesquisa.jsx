@@ -118,7 +118,7 @@ export default function Pesquisa() {
             Não encontramos resultados em **"{modoAtualTexto}"** para a busca: **"{termoPesquisa}"**
           </p>
         )}
-        <section className='grid-cols-2 w-full grid gap-3'> 
+        <section className='grid-cols-2 w-full grid gap-3 md:gap-13 md:flex md:flex-wrap justify-center items-center'> 
           {listaResultados}
         </section>
         <NavBar/>

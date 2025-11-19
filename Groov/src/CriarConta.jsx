@@ -53,7 +53,7 @@ function CriarConta() {
         <>
             <Header />
             <main className='flex flex-col items-center mx-auto justify-center'>
-                <div className="container mx-auto p-6">
+                <div className="container mx-auto p-6 flex flex-col items-center">
                     <h1 className="text-3xl font-bold mb-6 text-roxop">Criar Conta</h1>
 
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-md text-black [&_input::placeholder]:text-gray-400 [&_label]:text-gray-400">
