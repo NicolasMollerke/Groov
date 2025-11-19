@@ -44,7 +44,7 @@ function Evento() {
                         </ul>
                     </nav>
                     {menu === "info" && (
-                        <di className="flex flex-col gap-5 p-6 border border-roxop rounded-2xl mt-6">
+                        <div className="flex flex-col gap-5 p-6 border border-roxop rounded-2xl mt-6">
                             <div className="">
                                 <h4 className="text-white font-semibold">Localização</h4>
                                 <p className="text-roxop font-semibold text-[0.750rem]">{evento?.local ?? "-"}</p>
@@ -53,13 +53,13 @@ function Evento() {
                                 <h4 className="text-white font-semibold mt-2">Data e Hora</h4>
                                 <p className="text-roxop font-semibold text-[0.750rem]">{(evento?.data ?? "-") + " • " + (evento?.hora ?? "-")}</p>
                             </div>
-                        </di>
+                        </div>
                     )}
 
                     {menu === "ingressos" && (
                         <div className="mt-4">
                             {ingressoArray.length ? ingressoArray.map((ing, i) => (
-                                <div key={i}  className="flex gap-5 w-56 py-4 justify-between px-4 border border-roxop rounded-2xl mt-6 w-full">
+                                <div key={i}  className="flex gap-5 py-4 justify-between px-4 border border-roxop rounded-2xl mt-6 w-full">
                                     <IoTicket className="w-16 h-auto text-roxop"/>
                                     <div>
                                         <p className="text-roxop font-semibold">{ing?.tipo ?? "-"}</p>
@@ -91,4 +91,3 @@ function Evento() {
 }
 
 export default Evento
-// ...existing code...

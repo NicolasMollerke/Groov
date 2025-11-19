@@ -15,8 +15,8 @@
         "Trovão Azul"
       ],
       "organizadores": [
-        "Container",
-        "Maximize"
+        "Container Produtora",
+        "Maximize Eventosd"
       ],
       "ingresso": {
         "preco": 40,
@@ -708,7 +708,20 @@
       "email": "jones@jonjones.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        5,
+        4,
+        4,
+        3,
+        2,
+        5,
+        1,
+        3,
+        4,
+        5,
+        2,
+        4
+      ],
       "foto": ""
     },
     {
@@ -717,7 +730,23 @@
       "email": "container@produtora.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        3,
+        4,
+        2,
+        5,
+        5,
+        1,
+        4,
+        4,
+        3,
+        2,
+        5,
+        5,
+        4,
+        3,
+        2
+      ],
       "foto": ""
     },
     {
@@ -726,7 +755,18 @@
       "email": "maximize@eventos.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        4,
+        4,
+        5,
+        3,
+        2,
+        4,
+        1,
+        5,
+        5,
+        3
+      ],
       "foto": ""
     },
     {
@@ -735,7 +775,19 @@
       "email": "caotica@agencia.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        2,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        2,
+        1,
+        3,
+        4
+      ],
       "foto": ""
     },
     {
@@ -744,7 +796,21 @@
       "email": "global@eventos.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        5,
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
+        4,
+        5,
+        5,
+        4,
+        3,
+        4
+      ],
       "foto": ""
     },
     {
@@ -753,7 +819,22 @@
       "email": "sabores@producoes.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        3,
+        2,
+        4,
+        5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        4,
+        3,
+        3,
+        2,
+        5
+      ],
       "foto": ""
     },
     {
@@ -762,7 +843,20 @@
       "email": "pub@oldbarrel.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        4,
+        4,
+        4,
+        5,
+        5,
+        3,
+        3,
+        2,
+        1,
+        4,
+        5,
+        4
+      ],
       "foto": ""
     },
     {
@@ -771,7 +865,18 @@
       "email": "paz@producoes.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        5,
+        5,
+        5,
+        4,
+        4,
+        3,
+        2,
+        3,
+        4,
+        5
+      ],
       "foto": ""
     },
     {
@@ -780,7 +885,19 @@
       "email": "atlantic@events.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        4,
+        3,
+        2,
+        5,
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
+        5
+      ],
       "foto": ""
     },
     {
@@ -789,7 +906,23 @@
       "email": "dac@universidade.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        2,
+        1,
+        4,
+        4,
+        3,
+        5,
+        5,
+        2
+      ],
       "foto": ""
     },
     {
@@ -798,7 +931,20 @@
       "email": "atletica.eng@uni.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        5,
+        4,
+        4,
+        4,
+        3,
+        3,
+        2,
+        2,
+        5,
+        4,
+        3,
+        4
+      ],
       "foto": ""
     },
     {
@@ -807,7 +953,21 @@
       "email": "formatura@turma.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        3,
+        4,
+        5,
+        5,
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        4,
+        3,
+        2
+      ],
       "foto": ""
     },
     {
@@ -816,7 +976,18 @@
       "email": "flashback@eventos.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        4,
+        4,
+        3,
+        3,
+        5,
+        5,
+        4,
+        4,
+        3,
+        4
+      ],
       "foto": ""
     },
     {
@@ -825,7 +996,19 @@
       "email": "mare@producoes.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        5,
+        5,
+        4,
+        4,
+        3,
+        2,
+        1,
+        3,
+        4,
+        5,
+        5
+      ],
       "foto": ""
     },
     {
@@ -834,7 +1017,20 @@
       "email": "espuma@fest.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        3,
+        4,
+        3,
+        4,
+        5,
+        4,
+        3,
+        2,
+        2,
+        4,
+        5,
+        3
+      ],
       "foto": ""
     },
     {
@@ -843,7 +1039,22 @@
       "email": "mundo@mistico.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        2,
+        3,
+        4,
+        5,
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        4,
+        5,
+        3
+      ],
       "foto": ""
     },
     {
@@ -852,7 +1063,18 @@
       "email": "elegance@group.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
+        2,
+        4,
+        5,
+        5
+      ],
       "foto": ""
     },
     {
@@ -861,7 +1083,20 @@
       "email": "jazz@cornerpub.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        4,
+        3,
+        3,
+        2,
+        4,
+        5
+      ],
       "foto": ""
     },
     {
@@ -870,7 +1105,21 @@
       "email": "singers@bar.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        4,
+        5,
+        5,
+        4,
+        3,
+        3,
+        2,
+        2,
+        4,
+        5,
+        5,
+        4,
+        3
+      ],
       "foto": ""
     },
     {
@@ -879,7 +1128,19 @@
       "email": "boteco@zeca.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        5,
+        4,
+        4,
+        5,
+        3,
+        3,
+        2,
+        4,
+        5,
+        4,
+        5
+      ],
       "foto": ""
     },
     {
@@ -888,7 +1149,18 @@
       "email": "geek@lair.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        4,
+        4,
+        3,
+        3,
+        5,
+        4,
+        4,
+        3,
+        2,
+        5
+      ],
       "foto": ""
     },
     {
@@ -897,7 +1169,23 @@
       "email": "cerveja@nossa.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        5,
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
+        1,
+        4,
+        5,
+        5,
+        3,
+        4,
+        4,
+        2
+      ],
       "foto": ""
     },
     {
@@ -906,7 +1194,18 @@
       "email": "rockzone@producoes.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        4,
+        3,
+        3,
+        4,
+        5,
+        5,
+        4,
+        3,
+        2,
+        4
+      ],
       "foto": ""
     },
     {
@@ -915,7 +1214,20 @@
       "email": "centro@cultural.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
+        1,
+        4,
+        5,
+        4,
+        3,
+        4
+      ],
       "foto": ""
     },
     {
@@ -924,7 +1236,18 @@
       "email": "humor@livre.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        4,
+        3,
+        3,
+        4
+      ],
       "foto": ""
     },
     {
@@ -933,7 +1256,19 @@
       "email": "samba@raiz.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        4,
+        4,
+        3,
+        2,
+        1,
+        5,
+        5,
+        4,
+        3,
+        4,
+        4
+      ],
       "foto": ""
     },
     {
@@ -942,7 +1277,20 @@
       "email": "rocklegends@producoes.com",
       "nome_usuario": [],
       "comentário": [],
-      "nota": [],
+      "nota": [
+        5,
+        4,
+        4,
+        3,
+        5,
+        5,
+        4,
+        4,
+        3,
+        2,
+        4,
+        5
+      ],
       "foto": ""
     },
     {
@@ -950,7 +1298,29 @@
       "nome": "teste",
       "email": "teste@etste.com",
       "senha": "teste1234",
-      "foto": "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg"
+      "foto": "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg",
+      "nota": [
+        5,
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
+        2,
+        1,
+        5,
+        4,
+        3,
+        5,
+        5,
+        4,
+        4,
+        3,
+        2,
+        5,
+        4
+      ]
     }
   ]
 }

@@ -2,7 +2,6 @@ import Header from './components/Header'
 import { useState, useEffect } from "react"
 import CardEventoHorinzontal from "./components/CardEventoHorinzontal"
 import Navbar from "./components/NavBar"
-
 export default function Universitaria() {
   const [eventos, setEventos] = useState([])
 
