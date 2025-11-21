@@ -14,11 +14,9 @@ export default function Header() {
     const pesquisa = pathname === "/pesquisa";
     return (
         <>
-        <section>
-            
-                <header className="h-[3.7rem] justify-center flex mt-[2rem] md:mb-[5rem]">
-                    <div className="md:justify-between flex  w-[80%]">
-                        <img src="/img/GROOV.png" className="md:h-12 h-8" alt="" />
+                <header className="justify-center items-center flex md:py-4">
+                    <div className="md:justify-between flex items-center  justify-center w-[80%]">
+                        <h1 className='text-center text-stroke-roxo text-transparent text-[2rem] md:text-8xl uppercase font-black py-3'>Groov</h1>
                         <div className="hidden md:flex">
                                     <ul className="flex justify-center px-4 gap-9 ">
                                     <li>
@@ -50,7 +48,6 @@ export default function Header() {
                                 </div>
                     </div>
                     </header>
-        </section>
         </>
     )
 }

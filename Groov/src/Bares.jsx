@@ -2,6 +2,8 @@ import Header from './components/Header'
 import { useState, useEffect } from "react"
 import CardEventoHorinzontal from "./components/CardEventoHorinzontal"
 import Navbar from "./components/NavBar"
+import CardEvento from './components/Cardevento'
+
 
 export default function Bares() {
   const [eventos, setEventos] = useState([])
@@ -31,17 +33,24 @@ export default function Bares() {
   const listaEventos = eventos.map(evento => (
     <CardEventoHorinzontal key={evento.id} evento={evento} eventos={evento} />
   ))
+  const listaEventosPc = eventos.map(evento => (
+    <CardEvento key={evento.id} evento={evento} eventos={evento} />
+  ))
 
   return (
     <>
       < Header />
-      <main className='flex flex-col items-center mx-auto justify-center'>
-        <h1 className='text-center text-stroke-white text-transparent text-[2rem] uppercase font-black'>Festa</h1>
-        <section className='flex flex-col w-full truncate gap-3'>
+      <main className='flex flex-col items-start mx-auto justify-center'>
+        <h1 className='text-center text-stroke-white text-transparent text-[2rem] md:text-8xl uppercase font-black'>Bares</h1>
+        <section className='flex md:hidden flex-wrap w-full truncate gap-3'>
           {listaEventos}
+        </section>
+        <section className='md:flex flex-wrap w-full truncate hidden gap-3'>
+          {listaEventosPc}
         </section>
       </main>
       < Navbar/>
     </>
   )
 }
+

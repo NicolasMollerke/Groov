@@ -29,7 +29,7 @@ function Evento() {
             <main className="flex flex-col items-center mx-auto justify-center">
                 <section className="w-full">
                     {evento?.imagem?.length ? (
-                        <img className="h-56 max-w-full mx-auto object-cover" src={evento.imagem[0]} alt={evento?.nome ?? ""} />
+                        <img className="h-56 w-full mx-auto object-cover" src={evento.imagem} alt={evento?.nome ?? ""} />
                     ) : null}
                     <h3 className="w-fulltext-lg text-white font-semibold truncate mt-3">{evento?.nome ?? "-"}</h3>
                     <p className="text-sm text-roxos  font-semibold mt-2">{evento?.descricao ?? ""}</p>
