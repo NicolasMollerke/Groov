@@ -4,7 +4,7 @@
       "id": "1",
       "nome": "A Calourada Neon",
       "categoria": "Universitária",
-      "imagem": "https://cdn.pixabay.com/photo/2017/08/10/07/25/people-2618496_1280.jpg",
+      "imagem": "https://i.imgur.com/mmuRFnd.jpg",
       "descricao": "Preparem-se para a noite mais luminosa do semestre! A Calourada Neon está de volta para dar as boas-vindas aos calouros e reunir a galera! Uma noite épica com muita música eletrônica, funk e pop, em um ambiente totalmente transformado por luzes negras e tinta neon. Vista sua roupa branca ou neon e venha brilhar! Teremos distribuição gratuita de tintas e glowsticks para você se jogar na pista. É hora de fazer novas amizades e criar memórias inesquecíveis!",
       "data": "19/11/2025",
       "hora": "22:00h - 04:00h",
@@ -16,7 +16,7 @@
       ],
       "organizadores": [
         "Container Produtora",
-        "Maximize Eventosd"
+        "Maximize Eventos"
       ],
       "ingresso": {
         "preco": 40,
@@ -27,14 +27,13 @@
         "Eletrônica",
         "Funk",
         "Universitário"
-      ],
-      "notas": []
+      ]
     },
     {
       "id": "2",
       "nome": "Ressaca Universitária: Festa à Fantasia",
       "categoria": "Universitária",
-      "imagem": "https://cdn.pixabay.com/photo/2017/08/07/20/07/party-2607147_1280.jpg",
+      "imagem": "https://imgur.com/Ua2Xbq4.jpg",
       "descricao": "O after oficial da semana de provas! Venha fantasiado com o tema 'Heróis e Vilões do Século XXI'. Premiação para as 3 melhores fantasias. Pista 1 (Funk e Pop) e Pista 2 (Eletrônica e Hip Hop). Drinks temáticos e Open Bar de Cerveja por 1h.",
       "data": "05/12/2025",
       "hora": "23:00h - 05:00h",
@@ -57,16 +56,13 @@
         "Open Bar",
         "Funk",
         "Universitário"
-      ],
-      "notas": [
-        "Obrigatória a apresentação de documento com foto."
       ]
     },
     {
       "id": "3",
       "nome": "Festival Sabores do Mundo",
       "categoria": "Festas",
-      "imagem": "https://cdn.pixabay.com/photo/2017/06/20/23/15/food-festival-2424881_1280.jpg",
+      "imagem": "https://imgur.com/EZMAIJN.jpg",
       "descricao": "Uma celebração da cultura global com food trucks de culinária internacional (Mexicana, Tailandesa, Italiana), cervejas artesanais e apresentações folclóricas. Um evento para toda a família e amigos, com espaço kids e muita música ao ar livre.",
       "data": "10/01/2026",
       "hora": "16:00h - 23:00h",
@@ -88,16 +84,13 @@
         "Festivais",
         "Food Trucks",
         "Casual"
-      ],
-      "notas": [
-        "Entrada gratuita para crianças até 12 anos."
       ]
     },
     {
       "id": "4",
       "nome": "Noite de Degustação - Maltes Raros",
       "categoria": "Bares e Pubs",
-      "imagem": "https://cdn.pixabay.com/photo/2016/11/19/11/56/beer-1839556_1280.jpg",
+      "imagem": "https://imgur.com/5y8Couk.jpg",
       "descricao": "Uma experiência exclusiva para apreciadores de cervejas artesanais. Degustação guiada de 5 rótulos raros e premiados, harmonizados com petiscos gourmet. Edição limitada para 30 pessoas, com o sommelier mestre Cervejeiro Rafael Silva.",
       "data": "28/11/2025",
       "hora": "20:00h - 22:30h",
@@ -117,16 +110,13 @@
         "Pub",
         "Cerveja Artesanal",
         "Petiscos"
-      ],
-      "notas": [
-        "Vagas limitadas. Necessário agendamento prévio."
       ]
     },
     {
       "id": "5",
       "nome": "Show Acústico: Marina e o Mar",
       "categoria": "Shows ao vivo",
-      "imagem": "https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_1280.jpg",
+      "imagem": "https://imgur.com/4oDxf6f.jpg",
       "descricao": "Marina e sua banda apresentam um show intimista no formato acústico, revisitando clássicos do MPB e do Pop nacional. Uma noite agradável e cheia de boas vibrações. Ingressos com opção de mesa reservada.",
       "data": "03/01/2026",
       "hora": "21:00h - 23:00h",
@@ -146,16 +136,13 @@
         "MPB",
         "Música ao vivo",
         "Clima Romântico"
-      ],
-      "notas": [
-        "Chegar com 30 minutos de antecedência."
       ]
     },
     {
       "id": "6",
       "nome": "Integração InterCursos: Pool Party",
       "categoria": "Universitária",
-      "imagem": "https://cdn.pixabay.com/photo/2016/11/23/00/01/party-1852441_1280.jpg",
+      "imagem": "https://imgur.com/Mc55ucN.jpg",
       "descricao": "A festa na piscina mais esperada! Traga sua boia e seu biquíni/sunga para um dia inteiro de sol, música, drinks tropicais e jogos aquáticos. Barbecue e DJ Sets de house music.",
       "data": "12/12/2025",
       "hora": "14:00h - 22:00h",
@@ -176,16 +163,13 @@
         "House Party",
         "Drinks Artesanais",
         "Universitário"
-      ],
-      "notas": [
-        "Uso obrigatório de traje de banho."
       ]
     },
     {
       "id": "7",
       "nome": "Trote Solidário: Baile à Caráter",
       "categoria": "Universitária",
-      "imagem": "https://cdn.pixabay.com/photo/2017/06/13/20/00/party-2399238_1280.jpg",
+      "imagem": "https://imgur.com/q7bgT7w.jpg",
       "descricao": "Baile de Gala beneficente. Vista-se com sua melhor roupa social e ajude uma causa! Parte da renda será revertida para o projeto 'Universidade Cidadã'. Jazz e música clássica ao vivo, seguido por DJ set.",
       "data": "20/02/2026",
       "hora": "21:00h - 03:00h",
@@ -206,16 +190,13 @@
         "Música ao vivo",
         "Luxuoso",
         "Universitário"
-      ],
-      "notas": [
-        "Traje social obrigatório."
       ]
     },
     {
       "id": "8",
       "nome": "Batalha de Bandas Universitárias",
       "categoria": "Universitária",
-      "imagem": "https://cdn.pixabay.com/photo/2016/11/22/19/27/acoustic-1850117_1280.jpg",
+      "imagem": "https://imgur.com/9R0Uqep.jpg",
       "descricao": "Quem tem o melhor som? Vote na sua banda favorita! Competição de bandas de rock, pop e indie formadas por alunos da universidade. Entrada gratuita e food trucks no local.",
       "data": "01/03/2026",
       "hora": "18:00h - 23:00h",
@@ -236,16 +217,13 @@
         "Rock",
         "Indie",
         "Gratuito"
-      ],
-      "notas": [
-        "Evento aberto ao público."
       ]
     },
     {
       "id": "9",
       "nome": "Churrasco da Aprovação",
       "categoria": "Universitária",
-      "imagem": "https://cdn.pixabay.com/photo/2016/09/27/12/35/barbecue-1748238_1280.jpg",
+      "imagem": "https://imgur.com/5vZLUho.jpg",
       "descricao": "Para celebrar o fim de mais um semestre, o tradicional churrasco da galera! Carne de qualidade, cerveja gelada (open bar por 2h) e muito pagode. Venda de camisetas personalizadas no local.",
       "data": "15/12/2025",
       "hora": "17:00h - 00:00h",
@@ -265,16 +243,13 @@
         "Pagode",
         "Open Bar",
         "Open Food"
-      ],
-      "notas": [
-        "Evento exclusivo para alunos e convidados."
       ]
     },
     {
       "id": "10",
       "nome": "Mega Baile: A Volta aos Anos 2000",
       "categoria": "Festas",
-      "imagem": "https://cdn.pixabay.com/photo/2017/03/12/10/58/discotheque-2136014_1280.jpg",
+      "imagem": "https://imgur.com/myAHZNR.jpg",
       "descricao": "Prepare seu look mais 'Y2K' e venha reviver a era de Britney, Avril e É o Tchan! Uma viagem nostálgica com os maiores hits do pop, funk e axé dos anos 2000. Open bar de refrigerante e água a noite toda.",
       "data": "01/02/2026",
       "hora": "22:00h - 04:00h",
@@ -295,16 +270,13 @@
         "Pop",
         "Balada",
         "Rolês Temáticos"
-      ],
-      "notas": [
-        "Fantasia temática é bem-vinda."
       ]
     },
     {
       "id": "11",
       "nome": "Luau à Beira-Mar: Eletrônico e Chill",
       "categoria": "Festas",
-      "imagem": "https://cdn.pixabay.com/photo/2017/08/06/08/33/beach-2591694_1280.jpg",
+      "imagem": "https://imgur.com/uxHUn7A.jpg",
       "descricao": "Sinta a brisa do mar com a melhor trilha sonora eletrônica e chillout. Uma festa pé na areia com fogueira, malabares de fogo e drinks tropicais. Ambiente descontraído e mágico.",
       "data": "25/01/2026",
       "hora": "19:00h - 03:00h",
@@ -325,14 +297,13 @@
         "Eletrônica",
         "Chill",
         "Praia"
-      ],
-      "notas": []
+      ]
     },
     {
       "id": "12",
       "nome": "Festa da Espuma: Summer Edition",
       "categoria": "Festas",
-      "imagem": "https://cdn.pixabay.com/photo/2015/06/07/20/00/foam-party-800473_1280.jpg",
+      "imagem": "https://imgur.com/E8iv6uV.jpg",
       "descricao": "A maior e mais molhada festa do verão! Uma pista de dança coberta por muita espuma, com DJ's tocando os hits do momento. Vestiários disponíveis no local.",
       "data": "14/02/2026",
       "hora": "23:00h - 05:00h",
@@ -353,16 +324,13 @@
         "Balada",
         "Alta Energia",
         "DJ ao vivo"
-      ],
-      "notas": [
-        "Recomendado o uso de roupas leves."
       ]
     },
     {
       "id": "13",
       "nome": "Noite Cigana e Mistérios",
       "categoria": "Festas",
-      "imagem": "https://cdn.pixabay.com/photo/2016/09/23/15/22/gypsy-1690021_1280.jpg",
+      "imagem": "https://imgur.com/dFntIB5.jpg",
       "descricao": "Uma festa temática inspirada na cultura cigana e no misticismo. Apresentações de dança, leitura de mãos, tarô e muita música balcânica e latina. Comidas e bebidas típicas.",
       "data": "08/03/2026",
       "hora": "20:00h - 02:00h",
@@ -383,14 +351,13 @@
         "Rolês Temáticos",
         "Música ao vivo",
         "Alternativo"
-      ],
-      "notas": []
+      ]
     },
     {
       "id": "14",
       "nome": "Black & White Party: Elegance Edition",
       "categoria": "Festas",
-      "imagem": "https://cdn.pixabay.com/photo/2015/05/15/10/24/champagne-768131_1280.jpg",
+      "imagem": "https://imgur.com/4cJvzus.jpg",
       "descricao": "Vista-se de preto ou branco para a festa mais elegante do ano. Ambiente sofisticado, drinks premium e música House e R&B. Espaço VIP com serviço de garçom exclusivo.",
       "data": "22/03/2026",
       "hora": "23:00h - 06:00h",
@@ -411,16 +378,13 @@
         "Luxuoso",
         "Eletrônica",
         "Clube Noturno"
-      ],
-      "notas": [
-        "Traje social Black & White obrigatório."
       ]
     },
     {
       "id": "15",
       "nome": "Happy Hour com Cerveja e Jazz",
       "categoria": "Bares e Pubs",
-      "imagem": "https://cdn.pixabay.com/photo/2016/11/29/13/21/band-1869877_1280.jpg",
+      "imagem": "https://imgur.com/h76I0co.jpg",
       "descricao": "Encerre o dia com a melhor seleção de jazz ao vivo e promoções em chopes artesanais. O ambiente perfeito para relaxar e conversar com amigos.",
       "data": "05/12/2025",
       "hora": "18:00h - 22:00h",
@@ -440,14 +404,13 @@
         "Barzinho",
         "Relax",
         "Cerveja Artesanal"
-      ],
-      "notas": []
+      ]
     },
     {
       "id": "16",
       "nome": "Noite de Karaokê e Drinks Clássicos",
       "categoria": "Bares e Pubs",
-      "imagem": "https://cdn.pixabay.com/photo/2018/06/25/08/32/microphone-3497746_1280.jpg",
+      "imagem": "https://imgur.com/eZy9rhL.jpg",
       "descricao": "Solte a voz e brilhe no palco! Uma noite divertida com karaokê livre e promoção de drinks clássicos (Mojito, Negroni e Dry Martini). Prêmios para as melhores apresentações.",
       "data": "19/12/2025",
       "hora": "21:00h - 01:00h",
@@ -467,16 +430,13 @@
         "Karaokê",
         "Drinks Artesanais",
         "Gratuito"
-      ],
-      "notas": [
-        "Entrada gratuita, consumo no local."
       ]
     },
     {
       "id": "17",
       "nome": "Rodízio de Petiscos Brasileiros",
       "categoria": "Bares e Pubs",
-      "imagem": "https://cdn.pixabay.com/photo/2017/03/23/19/57/plate-2169528_1280.jpg",
+      "imagem": "https://imgur.com/G96xq8t.jpg",
       "descricao": "Experimente o melhor da culinária de boteco do Brasil em um rodízio completo: coxinhas, pastéis, bolinhos de feijoada e muito mais. Cerveja super gelada e música popular ao vivo.",
       "data": "07/01/2026",
       "hora": "19:00h - 23:00h",
@@ -496,16 +456,13 @@
         "Boteco",
         "Petiscos",
         "Chopp Gelado"
-      ],
-      "notas": [
-        "Bebidas não inclusas no rodízio."
       ]
     },
     {
       "id": "18",
       "nome": "Trivia Night: Especial Geek",
       "categoria": "Bares e Pubs",
-      "imagem": "https://cdn.pixabay.com/photo/2017/04/10/22/28/list-2219415_1280.jpg",
+      "imagem": "https://imgur.com/Ex4Hexa.jpg",
       "descricao": "Teste seus conhecimentos sobre filmes, séries, games e quadrinhos no nosso 'Trivia Night' temático. Monte sua equipe e concorra a prêmios! Hamburger artesanal em dobro a noite toda.",
       "data": "14/01/2026",
       "hora": "20:30h - 23:30h",
@@ -525,16 +482,13 @@
         "Barzinho",
         "Jogos",
         "Comida de Bar"
-      ],
-      "notas": [
-        "Equipes de 2 a 4 pessoas."
       ]
     },
     {
       "id": "19",
       "nome": "Festival de Chopp Artesanal",
       "categoria": "Bares e Pubs",
-      "imagem": "https://cdn.pixabay.com/photo/2017/04/09/22/02/beer-2216834_1280.jpg",
+      "imagem": "https://imgur.com/HlXI6mZ.jpg",
       "descricao": "Mais de 20 torneiras de chopp de microcervejarias locais e regionais. Música Folk e Blues para acompanhar. Venda de kits de degustação.",
       "data": "28/02/2026",
       "hora": "17:00h - 00:00h",
@@ -554,16 +508,13 @@
         "Cerveja Artesanal",
         "Festivais",
         "Áreas externas"
-      ],
-      "notas": [
-        "Consumo de chopp pago à parte."
       ]
     },
     {
       "id": "20",
       "nome": "Lançamento do Álbum: O Fio",
       "categoria": "Shows ao vivo",
-      "imagem": "https://cdn.pixabay.com/photo/2016/08/17/23/07/concert-1601726_1280.jpg",
+      "imagem": "https://imgur.com/ab9cGx6.jpg",
       "descricao": "Show de lançamento do aguardado novo álbum da banda de indie rock 'O Fio'. Uma apresentação completa com participação especial de outros artistas do cenário local.",
       "data": "10/01/2026",
       "hora": "22:00h - 00:00h",
@@ -584,14 +535,13 @@
         "Rock",
         "Indie",
         "Banda ao vivo"
-      ],
-      "notas": []
+      ]
     },
     {
       "id": "21",
       "nome": "Concerto de Natal da Orquestra Filarmônica",
       "categoria": "Shows ao vivo",
-      "imagem": "https://cdn.pixabay.com/photo/2016/09/21/04/43/violin-1684705_1280.jpg",
+      "imagem": "https://imgur.com/PnBnqa8.jpg",
       "descricao": "O tradicional Concerto de Natal, com a Orquestra Filarmônica executando obras clássicas e canções natalinas. Um espetáculo emocionante para toda a família.",
       "data": "20/12/2025",
       "hora": "20:00h - 21:30h",
@@ -611,16 +561,13 @@
         "Música ao vivo",
         "Clima Romântico",
         "Mais Adulto (25+)"
-      ],
-      "notas": [
-        "Sugere-se traje esporte fino."
       ]
     },
     {
       "id": "22",
       "nome": "Stand-Up Comedy com Lucas Riso",
       "categoria": "Shows ao vivo",
-      "imagem": "https://cdn.pixabay.com/photo/2016/06/03/10/50/microphone-1433898_1280.jpg",
+      "imagem": "https://imgur.com/arD9PDA.jpg",
       "descricao": "Uma noite de risadas garantidas com o comediante Lucas Riso e convidados. Novo show 'Perrengues Modernos'. Classificação indicativa 16 anos.",
       "data": "17/01/2026",
       "hora": "21:30h - 23:00h",
@@ -641,16 +588,13 @@
         "Stand-up",
         "Casual",
         "Shows"
-      ],
-      "notas": [
-        "Chegue cedo para escolher os melhores lugares."
       ]
     },
     {
       "id": "23",
       "nome": "Noite de Samba e Choro",
       "categoria": "Shows ao vivo",
-      "imagem": "https://cdn.pixabay.com/photo/2016/02/09/16/35/guitar-1189440_1280.jpg",
+      "imagem": "https://imgur.com/4MTfRKP.jpg",
       "descricao": "O melhor do samba de raiz e do choro carioca. Uma roda de samba autêntica com músicos tradicionais. Feijoada e caipirinhas disponíveis no bar.",
       "data": "06/02/2026",
       "hora": "20:30h - 01:00h",
@@ -670,14 +614,13 @@
         "Samba",
         "Boteco",
         "Música ao vivo"
-      ],
-      "notas": []
+      ]
     },
     {
       "id": "24",
       "nome": "Tributo a Queen: Banda Mercury",
       "categoria": "Shows ao vivo",
-      "imagem": "https://cdn.pixabay.com/photo/2015/05/02/20/03/concert-749749_1280.jpg",
+      "imagem": "https://imgur.com/PnBnqa8.jpg",
       "descricao": "A banda Mercury, aclamada como um dos melhores tributos ao Queen, apresenta os maiores clássicos da lenda do rock. Um espetáculo visual e sonoro imperdível!",
       "data": "14/03/2026",
       "hora": "21:00h - 23:00h",
@@ -697,6 +640,792 @@
         "Rock",
         "Banda ao vivo",
         "Shows"
+      ]
+    },
+    {
+      "id": "25",
+      "nome": "Festival Universitário Conexões",
+      "categoria": "Universitária",
+      "imagem": "https://imgur.com/ezZO8L9.jpg",
+      "descricao": "Encontro cultural com DJs, pocket-shows e food trucks organizado para integrar calouros e veteranos.",
+      "data": "02/04/2026",
+      "hora": "18:00h - 02:00h",
+      "local": "Praça Central do Campus",
+      "atrações": [
+        "DJ Local",
+        "Banda Cover",
+        "MC Campus"
+      ],
+      "organizadores": [
+        "Container Produtora",
+        "Maximize Eventos"
+      ],
+      "ingresso": {
+        "preco": 25,
+        "lote": "Pré-venda",
+        "tipo": "Pista"
+      },
+      "palavras_chave": [
+        "Universitário",
+        "Eletrônica",
+        "Open Bar"
+      ]
+    },
+    {
+      "id": "26",
+      "nome": "Noite Indie & Artes",
+      "categoria": "Festas",
+      "imagem": "https://imgur.com/B3rPHkn.jpg",
+      "descricao": "Festival com bandas independentes e exposições de artistas locais.",
+      "data": "04/04/2026",
+      "hora": "17:00h - 23:30h",
+      "local": "Espaço Cultural do Mercado",
+      "atrações": [
+        "Banda Indie A",
+        "Banda Indie B",
+        "VJs"
+      ],
+      "organizadores": [
+        "Maximize Eventos",
+        "Agência Caótica"
+      ],
+      "ingresso": {
+        "preco": 30,
+        "lote": "1º lote",
+        "tipo": "Entrada"
+      },
+      "palavras_chave": [
+        "Indie",
+        "Rolês Temáticos",
+        "Música ao vivo"
+      ]
+    },
+    {
+      "id": "27",
+      "nome": "Sabores & Sons - Food Truck Festival",
+      "categoria": "Festas",
+      "imagem": "https://imgur.com/yKmsUGR.jpg",
+      "descricao": "Food trucks com pratos do mundo e palco acústico para artistas locais.",
+      "data": "10/04/2026",
+      "hora": "12:00h - 22:00h",
+      "local": "Parque da Cidade - Área Gourmet",
+      "atrações": [
+        "Chefs convidados",
+        "Acústico Sunset"
+      ],
+      "organizadores": [
+        "Sabores Produções",
+        "The Old Barrel Pub"
+      ],
+      "ingresso": {
+        "preco": 10,
+        "lote": "Entrada",
+        "tipo": "Geral"
+      },
+      "palavras_chave": [
+        "Food Trucks",
+        "Festivais",
+        "Casual"
+      ]
+    },
+    {
+      "id": "28",
+      "nome": "Teatro & Jazz na Praça",
+      "categoria": "Shows ao vivo",
+      "imagem": "https://imgur.com/hDo2QRX.jpg",
+      "descricao": "Noite com pocket-theatre e apresentação de trio de jazz ao ar livre.",
+      "data": "11/04/2026",
+      "hora": "19:30h - 22:30h",
+      "local": "Praça do Coreto",
+      "atrações": [
+        "Trio Bebop",
+        "Peça Curta"
+      ],
+      "organizadores": [
+        "Paz Produções",
+        "Atlantic Events"
+      ],
+      "ingresso": {
+        "preco": 15,
+        "lote": "Único",
+        "tipo": "Plateia"
+      },
+      "palavras_chave": [
+        "Música ao vivo",
+        "Jazz",
+        "Áreas externas"
+      ]
+    },
+    {
+      "id": "29",
+      "nome": "Corrida Noturna Universitária + After",
+      "categoria": "Universitária",
+      "imagem": "https://imgur.com/d9C5LIn.jpg",
+      "descricao": "Mini corrida noturna seguida de after com DJs e food trucks para alunos.",
+      "nome": "Sabores & Sons - Food Truck Festival",
+      "categoria": "Festas",
+      "imagem": "https://cdn.pixabay.com/photo/2017/06/20/23/15/food-festival-2424881_1280.jpg",
+      "descricao": "Food trucks com pratos do mundo e palco acústico para artistas locais.",
+      "data": "10/04/2026",
+      "hora": "12:00h - 22:00h",
+      "local": "Parque da Cidade - Área Gourmet",
+      "atrações": [
+        "Chefs convidados",
+        "Acústico Sunset"
+      ],
+      "organizadores": [
+        "Sabores Produções",
+        "The Old Barrel Pub"
+      ],
+      "ingresso": {
+        "preco": 10,
+        "lote": "Entrada",
+        "tipo": "Geral"
+      },
+      "palavras_chave": [
+        "Food Trucks",
+        "Festivais",
+        "Casual"
+      ],
+      "notas": []
+    },
+    {
+      "id": "30",
+      "nome": "Baile de Formatura - Prévia Solidária",
+      "categoria": "Festas",
+      "imagem": "https://imgur.com/rT1UOdY.jpg",
+      "descricao": "Baile com parte da renda revertida para projetos sociais locais, apresentação de bandas e DJ.",
+      "data": "18/04/2026",
+      "hora": "21:00h - 03:00h",
+      "local": "Salão de Festas Municipal",
+      "atrações": [
+        "Banda ao vivo",
+        "DJ Set"
+      ],
+      "organizadores": [
+        "Comissão de Formatura",
+        "Flashback Eventos"
+      ],
+      "ingresso": {
+        "preco": 60,
+        "lote": "Beneficente",
+        "tipo": "Mesa"
+      },
+      "palavras_chave": [
+        "Música ao vivo",
+        "Luxuoso",
+        "Rolês Temáticos"
+      ],
+      "notas": []
+    },
+    {
+      "id": "31",
+      "nome": "Maré Sunset - Música na Praia",
+      "categoria": "Festas",
+      "imagem": "https://imgur.com/883Ew2f.jpg",
+      "descricao": "Luau de final de tarde com DJs e apresentação de percussão local à beira-mar.",
+      "data": "20/04/2026",
+      "hora": "17:00h - 23:00h",
+      "local": "Praia do Sol - Quiosque 5",
+      "atrações": [
+        "DJ Coast",
+        "Percussionista Léo"
+      ],
+      "organizadores": [
+        "Maré Produções",
+        "Espuma Fest"
+      ],
+      "ingresso": {
+        "preco": 35,
+        "lote": "Sunset",
+        "tipo": "Acesso Luau"
+      },
+      "palavras_chave": [
+        "Praia",
+        "Eletrônica",
+        "Chill"
+      ],
+      "notas": []
+    },
+    {
+      "id": "32",
+      "nome": "Carnaval Off-Season - Groove Sessions",
+      "categoria": "Festas",
+      "imagem": "https://imgur.com/xsxPUj5.jpg",
+      "descricao": "Festa temática com blocos pequenos, DJs e concurso de fantasia fora de temporada.",
+      "data": "22/04/2026",
+      "hora": "22:00h - 04:00h",
+      "local": "Clube Metrópole - Salão Principal",
+      "atrações": [
+        "DJ VJ Flashback",
+        "Bandas locais"
+      ],
+      "organizadores": [
+        "Mundo Místico",
+        "Elegance Group"
+      ],
+      "ingresso": {
+        "preco": 45,
+        "lote": "1º lote",
+        "tipo": "Pista"
+      },
+      "palavras_chave": [
+        "Rolês Temáticos",
+        "Balada",
+        "Alta Energia"
+      ],
+      "notas": []
+    },
+    {
+      "id": "33",
+      "nome": "Noite de Jazz & Vinhos",
+      "categoria": "Bares e Pubs",
+      "imagem": "https://imgur.com/iUWK1TP.jpg",
+      "descricao": "Degustação de vinhos com trio de jazz ao vivo e petiscos harmonizados.",
+      "data": "24/04/2026",
+      "hora": "19:00h - 22:30h",
+      "local": "Jazz & Beer Corner",
+      "atrações": [
+        "Trio Bebop",
+        "Sommelier convidado"
+      ],
+      "organizadores": [
+        "Jazz Corner Pub",
+        "The Singer's Bar"
+      ],
+      "ingresso": {
+        "preco": 80,
+        "lote": "Experiência",
+        "tipo": "Camarote"
+      },
+      "palavras_chave": [
+        "Jazz",
+        "Wine Bar",
+        "Petiscos"
+      ],
+      "notas": []
+    },
+    {
+      "id": "34",
+      "nome": "GeekFest - Cultura Pop e Games",
+      "categoria": "Festas",
+      "imagem": "https://imgur.com/pDyCwrC.jpg",
+      "descricao": "Feira temática com torneios, palestras e show para a comunidade geek.",
+      "data": "01/05/2026",
+      "hora": "10:00h - 20:00h",
+      "local": "Centro de Convenções",
+      "atrações": [
+        "Torneio de Games",
+        "Palestras",
+        "Show Nerd"
+      ],
+      "organizadores": [
+        "Boteco do Zeca",
+        "The Geek's Lair"
+      ],
+      "ingresso": {
+        "preco": 20,
+        "lote": "Meia",
+        "tipo": "Inscrição"
+      },
+      "palavras_chave": [
+        "Jogos",
+        "Barzinho",
+        "Comida de Bar"
+      ],
+      "notas": []
+    },
+    {
+      "id": "35",
+      "nome": "Rota do Chopp - Festival de Microcervejarias",
+      "categoria": "Bares e Pubs",
+      "imagem": "https://imgur.com/XLdeHbC.jpg",
+      "descricao": "Roda de degustação com torneiras de cervejarias locais e food pairing.",
+      "data": "03/05/2026",
+      "hora": "16:00h - 22:00h",
+      "local": "Pátio Cervejeiro",
+      "atrações": [
+        "Banda Blues",
+        "Estações de Degustação"
+      ],
+      "organizadores": [
+        "Cerveja Nossa",
+        "RockZone Produções"
+      ],
+      "ingresso": {
+        "preco": 35,
+        "lote": "Degustação",
+        "tipo": "Acesso"
+      },
+      "palavras_chave": [
+        "Cerveja Artesanal",
+        "Petiscos",
+        "Festivais"
+      ],
+      "notas": []
+    },
+    {
+      "id": "36",
+      "nome": "Circuito Cultural Urbano",
+      "categoria": "Shows ao vivo",
+      "imagem": "https://imgur.com/VIHpEat.jpg",
+      "descricao": "Roteiro de intervenções artísticas e mini-shows em espaços culturais da cidade.",
+      "data": "05/05/2026",
+      "hora": "15:00h - 22:00h",
+      "local": "Vários pontos do Centro",
+      "atrações": [
+        "Bandas locais",
+        "Intervenções de Rua"
+      ],
+      "organizadores": [
+        "Centro Cultural",
+        "Humor Livre Produções"
+      ],
+      "ingresso": {
+        "preco": 12,
+        "lote": "Roteiro",
+        "tipo": "Passaporte"
+      },
+      "palavras_chave": [
+        "Centro",
+        "Música ao vivo",
+        "Rolês Temáticos"
+      ],
+      "notas": []
+    },
+    {
+      "id": "37",
+      "nome": "Samba & Feijoada - Tarde Tradicional",
+      "categoria": "Bares e Pubs",
+      "imagem": "https://imgur.com/SeLiHx2.jpg",
+      "descricao": "Tarde com roda de samba de raiz, feijoada e bebidas típicas.",
+      "data": "09/05/2026",
+      "hora": "12:00h - 18:00h",
+      "local": "Quintal Cultural",
+      "atrações": [
+        "Roda de Samba Pura Tradição"
+      ],
+      "organizadores": [
+        "Samba Raiz",
+        "Rock Legends Produções"
+      ],
+      "ingresso": {
+        "preco": 40,
+        "lote": "Almoço+Show",
+        "tipo": "Mesa"
+      },
+      "palavras_chave": [
+        "Samba",
+        "Boteco",
+        "Comida de Bar"
+      ],
+      "notas": []
+    },
+    {
+      "id": "38",
+      "nome": "Tributo Acústico - Clássicos do Rock",
+      "categoria": "Shows ao vivo",
+      "imagem": "https://imgur.com/nip6qfp.jpg",
+      "descricao": "Tributo acústico com clássicos do rock e convidados especiais.",
+      "data": "12/05/2026",
+      "hora": "20:00h - 22:30h",
+      "local": "Casa de Shows RockZone",
+      "atrações": [
+        "Tributo Mercury",
+        "Convidados"
+      ],
+      "organizadores": [
+        "teste",
+        "Container Produtora"
+      ],
+      "ingresso": {
+        "preco": 50,
+        "lote": "1º Lote",
+        "tipo": "Cadeira"
+      },
+      "palavras_chave": [
+        "Rock",
+        "Banda ao vivo",
+        "Clube Noturno"
+      ],
+      "notas": []
+    },
+    {
+      "id": "39",
+      "nome": "Noite Eletrônica: Deep Sessions",
+      "categoria": "Festas",
+      "imagem": "https://imgur.com/amkKM7e.jpg",
+      "descricao": "Line up de DJs com sets de deep/house e luzes cenográficas.",
+      "data": "14/05/2026",
+      "hora": "22:00h - 05:00h",
+      "local": "Galpão Central",
+      "atrações": [
+        "DJ Lumina",
+        "DJ Vibe"
+      ],
+      "organizadores": [
+        "Maximize Eventos",
+        "Agência Caótica"
+      ],
+      "ingresso": {
+        "preco": 60,
+        "lote": "2º lote",
+        "tipo": "Pista"
+      },
+      "palavras_chave": [
+        "Eletrônica",
+        "Clube Noturno",
+        "DJ ao vivo"
+      ],
+      "notas": []
+    },
+    {
+      "id": "40",
+      "nome": "Gastronomia ao Vivo - Festival de Sabores",
+      "categoria": "Festas",
+      "imagem": "https://imgur.com/ygsYwCD.jpg",
+      "descricao": "Festival com chefs, harmonizações e palco com pocket-shows.",
+      "data": "16/05/2026",
+      "hora": "11:00h - 21:00h",
+      "local": "Parque da Cidade - Área Gourmet",
+      "atrações": [
+        "Chefs convidados",
+        "Banda Terra Brasilis"
+      ],
+      "organizadores": [
+        "Eventos Global",
+        "Sabores Produções"
+      ],
+      "ingresso": {
+        "preco": 18,
+        "lote": "Meia",
+        "tipo": "Entrada"
+      },
+      "palavras_chave": [
+        "Food Trucks",
+        "Festivais",
+        "Casual"
+      ],
+      "notas": []
+    },
+    {
+      "id": "41",
+      "nome": "Pub Night - Rótulos & Petiscos",
+      "categoria": "Bares e Pubs",
+      "imagem": "https://imgur.com/Yg93HK2.jpg",
+      "descricao": "Degustação de rótulos especiais acompanhada de petiscos selecionados.",
+      "data": "18/05/2026",
+      "hora": "18:00h - 23:00h",
+      "local": "The Old Barrel Pub",
+      "atrações": [
+        "Sommelier Rafael Silva",
+        "Petiscos Gourmet"
+      ],
+      "organizadores": [
+        "The Old Barrel Pub",
+        "Paz Produções"
+      ],
+      "ingresso": {
+        "preco": 70,
+        "lote": "Único",
+        "tipo": "Experiência"
+      },
+      "palavras_chave": [
+        "Pub",
+        "Petiscos",
+        "Cerveja Artesanal"
+      ],
+      "notas": []
+    },
+    {
+      "id": "42",
+      "nome": "Afterwork Eletrônico - Rooftop",
+      "categoria": "Bares e Pubs",
+      "imagem": "https://imgur.com/6tvlPC7.jpg",
+      "descricao": "Sessão afterwork com DJs e drinks artesanais em rooftop central.",
+      "data": "20/05/2026",
+      "hora": "18:00h - 01:00h",
+      "local": "Rooftop Central",
+      "atrações": [
+        "DJ Sol",
+        "DJ Caos"
+      ],
+      "organizadores": [
+        "Atlantic Events",
+        "Diretório Acadêmico Central"
+      ],
+      "ingresso": {
+        "preco": 35,
+        "lote": "Rooftop",
+        "tipo": "Pista"
+      },
+      "palavras_chave": [
+        "Rooftop",
+        "Drinks Artesanais",
+        "Good Vibes"
+      ],
+      "notas": []
+    },
+    {
+      "id": "43",
+      "nome": "Gala Acadêmico - Música & Premiações",
+      "categoria": "Universitária",
+      "imagem": "https://imgur.com/uPAfAch.jpg",
+      "descricao": "Gala com premiações estudantis, apresentações musicais e coquetel.",
+      "data": "22/05/2026",
+      "hora": "20:00h - 00:00h",
+      "local": "Salão Nobre da Reitoria",
+      "atrações": [
+        "Quinteto de Jazz",
+        "DJ Lux"
+      ],
+      "organizadores": [
+        "Atlética das Engenharias",
+        "Comissão de Formatura"
+      ],
+      "ingresso": {
+        "preco": 80,
+        "lote": "Gala",
+        "tipo": "Mesa Individual"
+      },
+      "palavras_chave": [
+        "Universitário",
+        "Música ao vivo",
+        "Luxuoso"
+      ],
+      "notas": []
+    },
+    {
+      "id": "44",
+      "nome": "Flashback Sunset - Hits & Covers",
+      "categoria": "Festas",
+      "imagem": "https://imgur.com/h7gl844.jpg",
+      "descricao": "Tarde/noite com covers, DJs e ambientação retrô.",
+      "data": "24/05/2026",
+      "hora": "17:00h - 01:00h",
+      "local": "Clube Metrópole",
+      "atrações": [
+        "Cover Spice Girls",
+        "DJ VJ Flashback"
+      ],
+      "organizadores": [
+        "Flashback Eventos",
+        "Maré Produções"
+      ],
+      "ingresso": {
+        "preco": 40,
+        "lote": "Sunset",
+        "tipo": "Pista Nostalgia"
+      },
+      "palavras_chave": [
+        "Pop",
+        "Rolês Temáticos",
+        "Balada"
+      ],
+      "notas": []
+    },
+    {
+      "id": "45",
+      "nome": "Espuma & Beats - Pool Edition",
+      "categoria": "Festas",
+      "imagem": "https://imgur.com/4JALkrc.jpg",
+      "descricao": "Edição especial com pista de espuma próxima à piscina e DJs convidados.",
+      "data": "26/05/2026",
+      "hora": "16:00h - 22:00h",
+      "local": "Clube Campestre",
+      "atrações": [
+        "DJ Bubble",
+        "MC Molhado"
+      ],
+      "organizadores": [
+        "Espuma Fest",
+        "Mundo Místico"
+      ],
+      "ingresso": {
+        "preco": 50,
+        "lote": "Pool",
+        "tipo": "Pista Espuma"
+      },
+      "palavras_chave": [
+        "Balada",
+        "House Party",
+        "Alta Energia"
+      ],
+      "notas": []
+    },
+    {
+      "id": "46",
+      "nome": "Elegance By Night - Drinks & Sax",
+      "categoria": "Bares e Pubs",
+      "imagem": "https://imgur.com/I6q1t1u",
+      "descricao": "Noite sofisticada com sax ao vivo, carta de drinks e serviço VIP.",
+      "data": "28/05/2026",
+      "hora": "20:00h - 02:00h",
+      "local": "Salão Crystal Prime",
+      "atrações": [
+        "Sax Live",
+        "DJ Gold"
+      ],
+      "organizadores": [
+        "Elegance Group",
+        "Jazz Corner Pub"
+      ],
+      "ingresso": {
+        "preco": 160,
+        "lote": "VIP",
+        "tipo": "Camarote"
+      },
+      "palavras_chave": [
+        "Luxuoso",
+        "Drinks Artesanais",
+        "Sax Live"
+      ],
+      "notas": []
+    },
+    {
+      "id": "47",
+      "nome": "Karaokê Solidário - Vozes da Cidade",
+      "categoria": "Bares e Pubs",
+      "imagem": "https://imgur.com/a8Q76FX.jpg",
+      "descricao": "Torneio de karaokê com renda para projetos culturais, participação aberta ao público.",
+      "data": "30/05/2026",
+      "hora": "20:00h - 01:00h",
+      "local": "The Singer's Bar",
+      "atrações": [
+        "Karaokê ao vivo",
+        "Prêmios ao público"
+      ],
+      "organizadores": [
+        "The Singer's Bar",
+        "Boteco do Zeca"
+      ],
+      "ingresso": {
+        "preco": 5,
+        "lote": "Geral",
+        "tipo": "Couvert"
+      },
+      "palavras_chave": [
+        "Karaokê",
+        "Barzinho",
+        "Comida de Bar"
+      ],
+      "notas": []
+    },
+    {
+      "id": "48",
+      "nome": "Geek & Beer - Encontro de Criadores",
+      "categoria": "Bares e Pubs",
+      "imagem": "https://imgur.com/zMXAX1B.jpg",
+      "descricao": "Encontro com palestras, estandes e chopes artesanais para público geek.",
+      "data": "02/06/2026",
+      "hora": "18:00h - 23:00h",
+      "local": "Praça de Eventos",
+      "atrações": [
+        "Palestras",
+        "Torneios",
+        "Banda local"
+      ],
+      "organizadores": [
+        "The Geek's Lair",
+        "Cerveja Nossa"
+      ],
+      "ingresso": {
+        "preco": 22,
+        "lote": "1º lote",
+        "tipo": "Inscrição"
+      },
+      "palavras_chave": [
+        "Jogos",
+        "Cerveja Artesanal",
+        "Barzinho"
+      ],
+      "notas": []
+    },
+    {
+      "id": "49",
+      "nome": "Noite Rock & Roots",
+      "categoria": "Shows ao vivo",
+      "imagem": "https://imgur.com/qXSbNnw.jpg",
+      "descricao": "Apresentações de bandas de rock autoral e clássicos em uma noite especial.",
+      "data": "05/06/2026",
+      "hora": "20:00h - 00:30h",
+      "local": "Arena ShowZone",
+      "atrações": [
+        "Banda O Fio",
+        "Convidados Regionais"
+      ],
+      "organizadores": [
+        "RockZone Produções",
+        "Centro Cultural"
+      ],
+      "ingresso": {
+        "preco": 75,
+        "lote": "2º lote",
+        "tipo": "Pista Premium"
+      },
+      "palavras_chave": [
+        "Rock",
+        "Banda ao vivo",
+        "Shows"
+      ],
+      "notas": []
+    },
+    {
+      "id": "50",
+      "nome": "Stand-up Festival - Risos ao Vivo",
+      "categoria": "Shows ao vivo",
+      "imagem": "https://imgur.com/VVvwunY.jpg",
+      "descricao": "Maratona de stand-up com comediantes locais e convidados.",
+      "data": "08/06/2026",
+      "hora": "19:30h - 23:30h",
+      "local": "Teatro do Riso",
+      "atrações": [
+        "Lucas Riso",
+        "Comediantes Convidados"
+      ],
+      "organizadores": [
+        "Humor Livre Produções",
+        "Samba Raiz"
+      ],
+      "ingresso": {
+        "preco": 35,
+        "lote": "1º lote",
+        "tipo": "Cadeira"
+      },
+      "palavras_chave": [
+        "Stand-up",
+        "Casa de Shows",
+        "Casual"
+      ],
+      "notas": []
+    },
+    {
+      "id": "51",
+      "nome": "Festival de Encerramento - Cidade em Cena",
+      "categoria": "Festas",
+      "imagem": "https://imgur.com/Afw3gZa.jpg",
+      "descricao": "Grande festival de encerramento com múltiplos palcos, gastronomia e programação familiar.",
+      "data": "12/06/2026",
+      "hora": "10:00h - 23:59h",
+      "local": "Parque Metropolitano",
+      "atrações": [
+        "Palco Principal",
+        "Palco Alternativo",
+        "Food Village"
+      ],
+      "organizadores": [
+        "Rock Legends Produções",
+        "teste"
+      ],
+      "ingresso": {
+        "preco": 60,
+        "lote": "Festival",
+        "tipo": "Geral"
+      },
+      "palavras_chave": [
+        "Festivais",
+        "Música ao vivo",
+        "Áreas externas"
       ],
       "notas": []
     }
@@ -704,32 +1433,42 @@
   "usuarios": [
     {
       "id": "1",
-      "nome": "jones",
-      "email": "jones@jonjones.com",
-      "nome_usuario": [],
-      "comentário": [],
-      "nota": [
-        5,
-        4,
-        4,
-        3,
-        2,
-        5,
-        1,
-        3,
-        4,
-        5,
-        2,
-        4
-      ],
-      "foto": ""
-    },
-    {
-      "id": "2",
       "nome": "Container Produtora",
       "email": "container@produtora.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Marcos Almeida",
+        "Laura Martins",
+        "Bruno Rodrigues",
+        "Paula Fernandes",
+        "Eduardo Moreira",
+        "Marina Nascimento",
+        "Victor Carvalho",
+        "Letícia Barros",
+        "Gustavo Azevedo",
+        "Daniela Teixeira",
+        "Felipe Lopes",
+        "Isabela Castro",
+        "Ricardo Duarte",
+        "Bianca Santana",
+        "André Pires"
+      ],
+      "comentarios": [
+        "Organização muito boa, parabéns.",
+        "Som agradável, boa experiência.",
+        "Problemas pontuais, mas aceitável.",
+        "Ótima estrutura em geral.",
+        "Não atendeu às expectativas.",
+        "Equipe atenciosa e eficiente.",
+        "Serviço fraco em alguns setores.",
+        "Boa experiência, retorno provável.",
+        "Evento divertido e bem produzido.",
+        "Ingressos bem gerenciados.",
+        "Pouca sinalização, confuso.",
+        "Produção competente, pequenos ajustes.",
+        "Mix de som poderia melhorar.",
+        "Público satisfeito, boa repercussão.",
+        "Logística falhou em horários de pico."
+      ],
       "nota": [
         3,
         4,
@@ -750,11 +1489,33 @@
       "foto": ""
     },
     {
-      "id": "3",
+      "id": "2",
       "nome": "Maximize Eventos",
       "email": "maximize@eventos.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Mateus Cardoso",
+        "Priscila Ramos",
+        "Fábio Moura",
+        "Sofia Lopes",
+        "Diego Andrade",
+        "Lívia Freitas",
+        "Renato Silva",
+        "Carolina Vieira",
+        "Vítor Teixeira",
+        "Simone Pinto"
+      ],
+      "comentarios": [
+        "Ótimo público e clima.",
+        "Boa sonorização.",
+        "Espaço bem aproveitado.",
+        "Poderia ter mais organização.",
+        "Preço alto para o que ofereceu.",
+        "Experiência agradável no geral.",
+        "Controle de acesso falho.",
+        "Equipe muito profissional.",
+        "Show memorável, ótima direção.",
+        "Produção competente e segura."
+      ],
       "nota": [
         4,
         4,
@@ -770,11 +1531,35 @@
       "foto": ""
     },
     {
-      "id": "4",
+      "id": "3",
       "nome": "Agência Caótica",
       "email": "caotica@agencia.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Hugo Nunes",
+        "Melina Duarte",
+        "Geraldo Rocha",
+        "Rafaela Alves",
+        "Nicolas Pinto",
+        "Camila Araújo",
+        "Sérgio Ramos",
+        "Aline Barbosa",
+        "Bruna Moreira",
+        "Leandro Costa",
+        "Patrícia Gomes"
+      ],
+      "comentarios": [
+        "Organização ok, público satisfeito.",
+        "Entretenimento de qualidade.",
+        "Alguns atrasos, mas recuperaram.",
+        "Boa comunicação com público.",
+        "Estrutura adequada ao evento.",
+        "Equipe bastante prestativa.",
+        "Sem grandes problemas.",
+        "Pontos negativos no acessos.",
+        "Atendimento melhorou ao longo do evento.",
+        "Som adequado e claro.",
+        "Precisa melhorar sinalização."
+      ],
       "nota": [
         2,
         3,
@@ -785,6 +1570,57 @@
         5,
         2,
         1,
+        3,
+        4
+      ],
+      "foto": ""
+    },
+    {
+      "id": "4",
+      "nome": "Eventos Global",
+      "email": "global@eventos.com",
+      "nome_usuario": [
+        "Mariana Faria",
+        "Roberto Carreira",
+        "Vanessa Sena",
+        "César Oliveira",
+        "Lara Mendes",
+        "Igor Ribeiro",
+        "Nina Rocha",
+        "Otávio Santos",
+        "Priscila Lima",
+        "Murilo Almeida",
+        "Helena Cruz",
+        "Lucas Monteiro",
+        "Sara Pinto"
+      ],
+      "comentarios": [
+        "Excelente curadoria culinária.",
+        "Ótimo ambiente familiar.",
+        "Cardápio variado e saboroso.",
+        "Boa organização geral.",
+        "Fila grande em food trucks.",
+        "Bebidas bem servidas.",
+        "Atendimento lento em alguns stands.",
+        "Estrutura confortável e limpa.",
+        "Música ao vivo agradável.",
+        "Voltaria com a família.",
+        "Evento bem recomendado.",
+        "Ótima diversidade cultural.",
+        "Logística eficiente na entrada."
+      ],
+      "nota": [
+        5,
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
+        4,
+        5,
+        5,
+        4,
         3,
         4
       ],
@@ -792,33 +1628,40 @@
     },
     {
       "id": "5",
-      "nome": "Eventos Global",
-      "email": "global@eventos.com",
-      "nome_usuario": [],
-      "comentário": [],
-      "nota": [
-        5,
-        5,
-        4,
-        4,
-        3,
-        3,
-        2,
-        4,
-        5,
-        5,
-        4,
-        3,
-        4
-      ],
-      "foto": ""
-    },
-    {
-      "id": "6",
       "nome": "Sabores Produções",
       "email": "sabores@producoes.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Ronaldo Ferreira",
+        "Renata Campos",
+        "Cauã Borges",
+        "Érica Nunes",
+        "Guilherme Rocha",
+        "Bianca Mello",
+        "Thiago Duarte",
+        "Clara Vasconcelos",
+        "Rafael Torres",
+        "Lívia Carvalho",
+        "Diego Fonseca",
+        "Marisa Pinto",
+        "Sandro Gomes",
+        "Yara Martins"
+      ],
+      "comentarios": [
+        "Boa seleção de chefs.",
+        "Serviço atencioso.",
+        "Comidas saborosas.",
+        "Experiência muito agradável.",
+        "Pratos caros para o porte do evento.",
+        "Atendimento com boas práticas.",
+        "Demora no preparo em alguns pontos.",
+        "Diversidade ótima para paladares.",
+        "Bebidas bem selecionadas.",
+        "Equipe simpática com visitantes.",
+        "Local confortável e acolhedor.",
+        "Ótima curadoria de pratos.",
+        "Espaço bem organizado.",
+        "Muito bem avaliado pelo público."
+      ],
       "nota": [
         3,
         2,
@@ -838,11 +1681,37 @@
       "foto": ""
     },
     {
-      "id": "7",
+      "id": "6",
       "nome": "The Old Barrel Pub",
       "email": "pub@oldbarrel.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Otto Silva",
+        "Patrícia Lopes",
+        "Caio Ribeiro",
+        "Marta Nogueira",
+        "Rafael Moretti",
+        "Denise Amaral",
+        "Eduardo Bastos",
+        "Fabiana Reis",
+        "Rogério Souza",
+        "Juliana Teixeira",
+        "Humberto Alves",
+        "Monica Campos"
+      ],
+      "comentarios": [
+        "Boa carta de cervejas.",
+        "Ambiente aconchegante.",
+        "Música ao vivo agradável.",
+        "Atendimento excelente.",
+        "Cervejas deliciosas e bem tiradas.",
+        "Mesa indisponível no horário.",
+        "Petiscos saborosos.",
+        "Som muito alto em alguns momentos.",
+        "Faltou estacionamento.",
+        "Ambiente seguro e limpo.",
+        "Recomendo para encontro com amigos.",
+        "Boa seleção de rótulos."
+      ],
       "nota": [
         4,
         4,
@@ -860,11 +1729,33 @@
       "foto": ""
     },
     {
-      "id": "8",
+      "id": "7",
       "nome": "Paz Produções",
       "email": "paz@producoes.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Luan Pereira",
+        "Adriana Silva",
+        "Paulo Freitas",
+        "Lorena Mendes",
+        "Anderson Rocha",
+        "Talita Costa",
+        "Marcelo Gomes",
+        "Luciana Oliveira",
+        "Sérgio Nascimento",
+        "Raquel Azevedo"
+      ],
+      "comentarios": [
+        "Apresentação emotiva e bela.",
+        "Excelente repertório.",
+        "Ótima ambientação do teatro.",
+        "Boa acústica no espaço.",
+        "Execução primorosa dos músicos.",
+        "Atendimento cordial ao público.",
+        "Ingressos bem geridos.",
+        "Experiência intimista positiva.",
+        "Produção cuidadosa com detalhes.",
+        "Altamente recomendável para família."
+      ],
       "nota": [
         5,
         5,
@@ -875,84 +1766,194 @@
         2,
         3,
         4,
+        5
+      ],
+      "foto": ""
+    },
+    {
+      "id": "8",
+      "nome": "Atlantic Events",
+      "email": "atlantic@events.com",
+      "nome_usuario": [
+        "Fernando Carvalho",
+        "Isabela Ramos",
+        "Rafael Henrique",
+        "Mônica Duarte",
+        "Alex Silva",
+        "Cíntia Barbosa",
+        "Eduarda Pinto",
+        "Levi Santos",
+        "Renata Vieira",
+        "Gerson Lopes",
+        "Adriana Moreira"
+      ],
+      "comentarios": [
+        "Boa animação na piscina.",
+        "Drinks ótimos e refrescantes.",
+        "Segurança visível e eficiente.",
+        "Música bem selecionada.",
+        "Estrutura confortável e limpa.",
+        "Atendimento rápido no bar.",
+        "Espaço limitado em horários de pico.",
+        "Público animado e receptivo.",
+        "Política de entrada clara.",
+        "Catering variado e bem servido.",
+        "Ótima relação custo-benefício."
+      ],
+      "nota": [
+        4,
+        3,
+        2,
+        5,
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
         5
       ],
       "foto": ""
     },
     {
       "id": "9",
-      "nome": "Atlantic Events",
-      "email": "atlantic@events.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome": "Diretório Acadêmico Central",
+      "email": "dac@universidade.com",
+      "nome_usuario": [
+        "Murilo Rocha",
+        "Camila Sousa",
+        "Gustavo Lima",
+        "Tatiana Araújo",
+        "Rodrigo Carlos",
+        "Vanessa Duarte",
+        "Pablo Menezes",
+        "Silmara Campos",
+        "Igor Nunes",
+        "Patrícia Santos",
+        "Bruno Matos",
+        "Júlia Ribeiro",
+        "Marcela Pinto",
+        "Cauã Silva",
+        "Letícia Barreto"
+      ],
+      "comentarios": [
+        "Evento bem organizado e festivo.",
+        "Boa interação com público.",
+        "Diversão garantida nas atrações.",
+        "Estrutura adequada para estudantes.",
+        "Atendimento e equipe muito bons.",
+        "Atrações programadas com qualidade.",
+        "Algumas falhas na logística.",
+        "Boa iniciativa acadêmica.",
+        "Nem tudo saiu como esperado.",
+        "Espaço bem aproveitado.",
+        "Atividades inclusivas e diversas.",
+        "Comunicação eficiente.",
+        "Ótima receptividade dos organizadores.",
+        "Público satisfeito com programa.",
+        "Muitos pontos positivos apesar de contratempos."
+      ],
       "nota": [
-        4,
         3,
-        2,
+        3,
+        4,
+        4,
         5,
         5,
-        4,
-        4,
-        3,
-        3,
+        5,
         2,
-        5
+        1,
+        4,
+        4,
+        3,
+        5,
+        5,
+        2
       ],
       "foto": ""
     },
     {
       "id": "10",
-      "nome": "Diretório Acadêmico Central",
-      "email": "dac@universidade.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome": "Atlética das Engenharias",
+      "email": "atletica.eng@uni.com",
+      "nome_usuario": [
+        "Thiago Alves",
+        "Mariana Souza",
+        "Carlos Henrique",
+        "Vanessa Rocha",
+        "André Lima",
+        "Camila Torres",
+        "Lucas Cardoso",
+        "Bianca Ferreira",
+        "Diego Martins",
+        "Bruna Costa",
+        "Paulo Henrique",
+        "Aline Pires"
+      ],
+      "comentarios": [
+        "Boa organização esportiva.",
+        "Excelente integração entre cursos.",
+        "Atividades bem planejadas.",
+        "Estrutura compatível com o público.",
+        "Ambiente divertido e seguro.",
+        "Serviços oferecidos satisfatórios.",
+        "Pontos de melhoria na sinalização.",
+        "Baixa adesão em algumas atividades.",
+        "Muita energia e participação.",
+        "Boa música e alimentação.",
+        "Equipe engajada e proativa.",
+        "Evento válido e recomendado."
+      ],
       "nota": [
-        3,
-        3,
+        5,
         4,
         4,
-        5,
-        5,
-        5,
+        4,
+        3,
+        3,
         2,
-        1,
-        4,
+        2,
+        5,
         4,
         3,
-        5,
-        5,
-        2
+        4
       ],
       "foto": ""
     },
     {
       "id": "11",
-      "nome": "Atlética das Engenharias",
-      "email": "atletica.eng@uni.com",
-      "nome_usuario": [],
-      "comentário": [],
-      "nota": [
-        5,
-        4,
-        4,
-        4,
-        3,
-        3,
-        2,
-        2,
-        5,
-        4,
-        3,
-        4
-      ],
-      "foto": ""
-    },
-    {
-      "id": "12",
       "nome": "Comissão de Formatura",
       "email": "formatura@turma.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Marcelo Silva",
+        "Lívia Campos",
+        "Andréa Monteiro",
+        "Rafael Gomes",
+        "Sabrina Nunes",
+        "Fábio Reis",
+        "Catarina Rocha",
+        "Guilherme Duarte",
+        "Bianca Serra",
+        "Vitor Lopes",
+        "Emanoela Costa",
+        "Renan Barros",
+        "Paula Moreira"
+      ],
+      "comentarios": [
+        "Boa festa de formatura.",
+        "Ótima energia entre colegas.",
+        "Música e buffet de qualidade.",
+        "Detalhes bem executados.",
+        "Ótima organização do evento.",
+        "Serviço cordial e eficiente.",
+        "Poderia haver mais opções de acessibilidade.",
+        "Pontos logísticos a melhorar.",
+        "Muita animação durante o evento.",
+        "Equipa de apoio bem treinada.",
+        "Local bonito e funcional.",
+        "Produção correta, sem surpresas.",
+        "Valor compatível com serviços prestados."
+      ],
       "nota": [
         3,
         4,
@@ -971,11 +1972,33 @@
       "foto": ""
     },
     {
-      "id": "13",
+      "id": "12",
       "nome": "Flashback Eventos",
       "email": "flashback@eventos.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Roberta Lima",
+        "Guilherme Souza",
+        "Sofia Martins",
+        "Henrique Alves",
+        "Daniela Rocha",
+        "Felipe Ramos",
+        "Mariana Silva",
+        "Rafael Pinto",
+        "Lorena Costa",
+        "Vitor Azevedo"
+      ],
+      "comentarios": [
+        "Noite nostálgica incrível.",
+        "Ótima curadoria musical.",
+        "Boa organização de pista.",
+        "Clima de festa perfeito.",
+        "Público muito receptivo.",
+        "Serviço rápido e eficiente.",
+        "Produção bem coordenada.",
+        "Muita diversão e nostalgia.",
+        "Som e iluminação muito bem feitos.",
+        "Recomendo para fãs do estilo."
+      ],
       "nota": [
         4,
         4,
@@ -991,11 +2014,35 @@
       "foto": ""
     },
     {
-      "id": "14",
+      "id": "13",
       "nome": "Maré Produções",
       "email": "mare@producoes.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Lucas Nogueira",
+        "Isabela Silva",
+        "Caio Santana",
+        "Mariana Carvalho",
+        "Sandro Oliveira",
+        "Tatiane Mendes",
+        "André Braga",
+        "Lara Costa",
+        "Guilherme Torres",
+        "Mônica Duarte",
+        "Bruno Araújo"
+      ],
+      "comentarios": [
+        "Festa praiana com boa vibe.",
+        "DJ acertou a seleção.",
+        "Boa estrutura de quiosques.",
+        "Ambiente mágico ao anoitecer.",
+        "Alguns detalhes a ajustar.",
+        "Atendimento cordial e eficiente.",
+        "Público satisfeito e tranquilo.",
+        "Logística clássica de praia bem feita.",
+        "Fogueira e malabares encantaram.",
+        "Bebidas refrescantes e bem servidas.",
+        "Experiência recomendada no verão."
+      ],
       "nota": [
         5,
         5,
@@ -1012,11 +2059,37 @@
       "foto": ""
     },
     {
-      "id": "15",
+      "id": "14",
       "nome": "Espuma Fest",
       "email": "espuma@fest.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Mateus Lima",
+        "Carla Ferreira",
+        "Brenda Alves",
+        "Rafael Nascimento",
+        "Beatriz Moreira",
+        "Rodrigo Castro",
+        "Priscila Rocha",
+        "Diego Andrade",
+        "Viviane Sousa",
+        "Marcos Pinto",
+        "Larissa Gomes",
+        "Paulo Teixeira"
+      ],
+      "comentarios": [
+        "Pista animada e divertida.",
+        "Boa seleção musical.",
+        "Algumas filas longas para vestiário.",
+        "Atendimento eficiente no bar.",
+        "Atmosfera contagiante.",
+        "Segurança presente e ativa.",
+        "Organização ok dentro do esperado.",
+        "Pontos a melhorar na limpeza.",
+        "Recomendado para quem gosta de diversão.",
+        "Ingressos com bom custo-benefício.",
+        "Produção atenta aos detalhes.",
+        "Experiência em família positiva."
+      ],
       "nota": [
         3,
         4,
@@ -1027,6 +2100,60 @@
         3,
         2,
         2,
+        4,
+        5,
+        3
+      ],
+      "foto": ""
+    },
+    {
+      "id": "15",
+      "nome": "Mundo Místico",
+      "email": "mundo@mistico.com",
+      "nome_usuario": [
+        "Helena Rocha",
+        "Victor Carvalho",
+        "Amanda Silva",
+        "Claudio Moreira",
+        "Lívia Pereira",
+        "Samuel Costa",
+        "Patrícia Ramos",
+        "Roberto Torres",
+        "Carolina Mendes",
+        "Diego Santos",
+        "Monique Oliveira",
+        "Fabrício Lima",
+        "Elisa Nunes",
+        "Marcos Carvalho"
+      ],
+      "comentarios": [
+        "Tema místico bem explorado.",
+        "Atuações envolventes.",
+        "Boa variedade de atividades.",
+        "Apresentações muito interessantes.",
+        "Algumas filas demoradas.",
+        "Atendimento atencioso.",
+        "Programação densa e boa.",
+        "Atendimento ao público falhou às vezes.",
+        "Leituras de tarô competentes.",
+        "Comidas típicas saborosas.",
+        "Ambiente imersivo e criativo.",
+        "Detalhes cenográficos ótimos.",
+        "Público engajado e curioso.",
+        "Experiência positiva, recomendo."
+      ],
+      "nota": [
+        2,
+        3,
+        4,
+        5,
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
         4,
         5,
         3
@@ -1035,76 +2162,128 @@
     },
     {
       "id": "16",
-      "nome": "Mundo Místico",
-      "email": "mundo@mistico.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome": "Elegance Group",
+      "email": "elegance@group.com",
+      "nome_usuario": [
+        "Renata Freitas",
+        "Gustavo Mendes",
+        "Mariana Alves",
+        "Eduardo Sousa",
+        "Fernanda Castro",
+        "Ricardo Moraes",
+        "Patrícia Vidal",
+        "Bruno Carvalho",
+        "Letícia Teixeira",
+        "Andréa Ramos"
+      ],
+      "comentarios": [
+        "Evento sofisticado e elegante.",
+        "Boa seleção de drinks.",
+        "Ambiente requintado.",
+        "Atendimento de alta qualidade.",
+        "Detalhes premium bem executados.",
+        "Pontos de melhoria em guarda-volumes.",
+        "Clima apropriado para público VIP.",
+        "Serviço rápido e discreto.",
+        "Espaço muito bem decorado.",
+        "Experiência muito satisfatória."
+      ],
       "nota": [
+        5,
+        4,
+        4,
+        3,
+        3,
         2,
-        3,
-        4,
-        5,
-        4,
-        3,
         2,
-        1,
-        5,
-        4,
-        3,
         4,
         5,
-        3
+        5
       ],
       "foto": ""
     },
     {
       "id": "17",
-      "nome": "Elegance Group",
-      "email": "elegance@group.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome": "Jazz Corner Pub",
+      "email": "jazz@cornerpub.com",
+      "nome_usuario": [
+        "Sérgio Lima",
+        "Bianca Moreira",
+        "Ronaldo Silva",
+        "Márcia Oliveira",
+        "Paulo Mendes",
+        "Adriana Carvalho",
+        "Leandro Rocha",
+        "Natália Gomes",
+        "Igor Pinto",
+        "Tatiana Souza",
+        "Roberto Nunes",
+        "Lara Azevedo"
+      ],
+      "comentarios": [
+        "Clima perfeito para relaxar.",
+        "Música ao vivo de qualidade.",
+        "Boa seleção de chopes.",
+        "Ambiente acolhedor e agradável.",
+        "Serviço atencioso e eficiente.",
+        "Ótima acústica para jazz.",
+        "Preço justo pelos serviços.",
+        "Fidelizaria como cliente.",
+        "Bebidas muito bem servidas.",
+        "Local bem localizado e aconchegante.",
+        "Equipe preparada e simpática.",
+        "Experiência cultural enriquecedora."
+      ],
       "nota": [
-        5,
+        3,
+        3,
         4,
+        4,
+        5,
+        5,
         4,
         3,
         3,
         2,
-        2,
         4,
-        5,
         5
       ],
       "foto": ""
     },
     {
       "id": "18",
-      "nome": "Jazz Corner Pub",
-      "email": "jazz@cornerpub.com",
-      "nome_usuario": [],
-      "comentário": [],
-      "nota": [
-        3,
-        3,
-        4,
-        4,
-        5,
-        5,
-        4,
-        3,
-        3,
-        2,
-        4,
-        5
-      ],
-      "foto": ""
-    },
-    {
-      "id": "19",
       "nome": "The Singer's Bar",
       "email": "singers@bar.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Júlio Santos",
+        "Mariana Alves",
+        "César Rocha",
+        "Natália Ribeiro",
+        "Fabio Costa",
+        "Bruna Martins",
+        "Leonardo Silva",
+        "Vanessa Pinto",
+        "Diego Moreira",
+        "Camila Lopes",
+        "Ronaldo Teixeira",
+        "Isabela Duarte",
+        "Helena Fernandes"
+      ],
+      "comentarios": [
+        "Noite de karaokê animada.",
+        "Vozes de qualidade entre os participantes.",
+        "Bebidas bem preparadas.",
+        "Ambiente descontraído e divertido.",
+        "Atendimento cordial.",
+        "Alguns problemas de microfone.",
+        "Público muito participativo.",
+        "Boa gestão do evento.",
+        "Espaço acolhedor e convidativo.",
+        "Música variada e acessível.",
+        "Boa opção para socializar.",
+        "Organização consistente.",
+        "Experiência geral muito positiva."
+      ],
       "nota": [
         4,
         5,
@@ -1123,11 +2302,35 @@
       "foto": ""
     },
     {
-      "id": "20",
+      "id": "19",
       "nome": "Boteco do Zeca",
       "email": "boteco@zeca.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Zeca Alves",
+        "Ana Paula Souza",
+        "Mateus Rocha",
+        "Lúcia Mendes",
+        "João Pedro Costa",
+        "Marta Lima",
+        "André Fernandes",
+        "Carla Teixeira",
+        "Victor Souza",
+        "Paula Duarte",
+        "Ricardo Silva"
+      ],
+      "comentarios": [
+        "Comida de boteco excelente.",
+        "Atendimento simpático.",
+        "Preços justos e porções generosas.",
+        "Música ao vivo empolgante.",
+        "Ambiente descontraído e tradicional.",
+        "Boa variedade de petiscos.",
+        "Tempo de espera aceitável.",
+        "Cerveja bem tirada.",
+        "Serviço confiável e rápido.",
+        "Local acolhedor e típico.",
+        "Experiência clássica de boteco."
+      ],
       "nota": [
         5,
         4,
@@ -1139,36 +2342,90 @@
         4,
         5,
         4,
+        5
+      ],
+      "foto": ""
+    },
+    {
+      "id": "20",
+      "nome": "The Geek's Lair",
+      "email": "geek@lair.com",
+      "nome_usuario": [
+        "Rafael Almeida",
+        "Carolina Faria",
+        "Igor Nunes",
+        "Patrícia Carvalho",
+        "Guilherme Pinto",
+        "Larissa Rocha",
+        "Daniel Silva",
+        "Mariana Lopes",
+        "Felipe Costa",
+        "Sofia Ramos"
+      ],
+      "comentarios": [
+        "Trivia muito divertida.",
+        "Perguntas bem elaboradas.",
+        "Ambiente temático muito bom.",
+        "Equipe animada e interativa.",
+        "Prêmios interessantes.",
+        "Bom equilíbrio entre níveis de dificuldade.",
+        "Espaço acolhedor para grupos.",
+        "Comida de bar saborosa.",
+        "Atendimento rápido no balcão.",
+        "Voltaria com amigos com certeza."
+      ],
+      "nota": [
+        4,
+        4,
+        3,
+        3,
+        5,
+        4,
+        4,
+        3,
+        2,
         5
       ],
       "foto": ""
     },
     {
       "id": "21",
-      "nome": "The Geek's Lair",
-      "email": "geek@lair.com",
-      "nome_usuario": [],
-      "comentário": [],
-      "nota": [
-        4,
-        4,
-        3,
-        3,
-        5,
-        4,
-        4,
-        3,
-        2,
-        5
-      ],
-      "foto": ""
-    },
-    {
-      "id": "22",
       "nome": "Cerveja Nossa",
       "email": "cerveja@nossa.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Bruno Santos",
+        "Vanessa Costa",
+        "Rodrigo Lima",
+        "Tatiane Alves",
+        "Hugo Menezes",
+        "Cecília Rocha",
+        "Rômulo Pereira",
+        "Priscila Barros",
+        "Marcus Azevedo",
+        "Julia Fernandes",
+        "Anderson Moreira",
+        "Nathalia Teixeira",
+        "Renato Silva",
+        "Isabel Costa",
+        "Eduarda Souza"
+      ],
+      "comentarios": [
+        "Grande variedade de rótulos.",
+        "Experiência de degustação rica.",
+        "Ambiente muito agradável.",
+        "Equipe bem preparada.",
+        "Algumas torneiras com problemas.",
+        "Boa interação com produtores locais.",
+        "Preço adequado para a seleção.",
+        "Atendimento atento e prestativo.",
+        "Layout do espaço agradável.",
+        "Recomendo para apreciadores de chopp.",
+        "Programação musical coerente.",
+        "Bons kits de degustação.",
+        "Clima festivo e controlado.",
+        "Público satisfeito e participativo.",
+        "Organização eficiente durante o evento."
+      ],
       "nota": [
         5,
         5,
@@ -1189,11 +2446,33 @@
       "foto": ""
     },
     {
-      "id": "23",
+      "id": "22",
       "nome": "RockZone Produções",
       "email": "rockzone@producoes.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Heitor Ramos",
+        "Sabrina Oliveira",
+        "Bruno Pereira",
+        "Vanessa Fonseca",
+        "Maurício Lima",
+        "Letícia Santos",
+        "Igor Matos",
+        "Patrícia Duarte",
+        "Rafael Castro",
+        "Marina Rocha"
+      ],
+      "comentarios": [
+        "Banda com ótima performance.",
+        "Som potente e bem mixado.",
+        "Show muito energizante.",
+        "Produção de palco impecável.",
+        "Público muito animado.",
+        "Boa escolha de convidados.",
+        "Ritmo agradável do começo ao fim.",
+        "Palco bem iluminado.",
+        "Ingressos com preço justo.",
+        "Noite memorável para fãs."
+      ],
       "nota": [
         4,
         3,
@@ -1204,38 +2483,86 @@
         4,
         3,
         2,
+        4
+      ],
+      "foto": ""
+    },
+    {
+      "id": "23",
+      "nome": "Centro Cultural",
+      "email": "centro@cultural.com",
+      "nome_usuario": [
+        "Lúcio Barbosa",
+        "Catarina Souza",
+        "Rogério Mendes",
+        "Evelyn Costa",
+        "Marco Aurélio",
+        "Andreia Gomes",
+        "Tânia Ribeiro",
+        "Sérgio Martins",
+        "Bianca Rocha",
+        "Lucas Dias",
+        "Helena Silva",
+        "Fábio Pereira"
+      ],
+      "comentarios": [
+        "Auditório com ótima acústica.",
+        "Serviço de bilheteria eficiente.",
+        "Equipe simpática e atenciosa.",
+        "Boa programação cultural.",
+        "Estrutura confortável para público adulto.",
+        "Pontos negativos em sinalização.",
+        "Atendimento rápido no bar.",
+        "Local bem conservado.",
+        "Repertório bem selecionado.",
+        "Ótimo para eventos familiares.",
+        "Programação diversificada e rica.",
+        "Experiência cultural muito válida."
+      ],
+      "nota": [
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
+        1,
+        4,
+        5,
+        4,
+        3,
         4
       ],
       "foto": ""
     },
     {
       "id": "24",
-      "nome": "Centro Cultural",
-      "email": "centro@cultural.com",
-      "nome_usuario": [],
-      "comentário": [],
-      "nota": [
-        5,
-        4,
-        4,
-        3,
-        3,
-        2,
-        1,
-        4,
-        5,
-        4,
-        3,
-        4
-      ],
-      "foto": ""
-    },
-    {
-      "id": "25",
       "nome": "Humor Livre Produções",
       "email": "humor@livre.com",
-      "nome_usuario": [],
-      "comentário": [],
+      "nome_usuario": [
+        "Fábio Vieira",
+        "Carolina Moreira",
+        "Adriano Lopes",
+        "Juliana Costa",
+        "Marco Silva",
+        "Bruna Figueiredo",
+        "Paulo Renato",
+        "Fernanda Nogueira",
+        "Guilherme Rocha",
+        "Marcela Azevedo"
+      ],
+      "comentarios": [
+        "Noite de muitas risadas.",
+        "Comediantes com boa química.",
+        "Roteiro bem amarrado.",
+        "Público envolvido e participativo.",
+        "Apresentações com ótimo timing.",
+        "Produção eficiente do evento.",
+        "Boa seleção de piadas.",
+        "Local confortável para comédia.",
+        "Ingressos com bom custo-benefício.",
+        "Vale a pena para amantes de stand-up."
+      ],
       "nota": [
         3,
         3,
@@ -1249,78 +2576,6 @@
         4
       ],
       "foto": ""
-    },
-    {
-      "id": "26",
-      "nome": "Samba Raiz",
-      "email": "samba@raiz.com",
-      "nome_usuario": [],
-      "comentário": [],
-      "nota": [
-        4,
-        4,
-        3,
-        2,
-        1,
-        5,
-        5,
-        4,
-        3,
-        4,
-        4
-      ],
-      "foto": ""
-    },
-    {
-      "id": "27",
-      "nome": "Rock Legends Produções",
-      "email": "rocklegends@producoes.com",
-      "nome_usuario": [],
-      "comentário": [],
-      "nota": [
-        5,
-        4,
-        4,
-        3,
-        5,
-        5,
-        4,
-        4,
-        3,
-        2,
-        4,
-        5
-      ],
-      "foto": ""
-    },
-    {
-      "id": "fbde",
-      "nome": "teste",
-      "email": "teste@etste.com",
-      "senha": "teste1234",
-      "foto": "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg",
-      "nota": [
-        5,
-        5,
-        4,
-        4,
-        3,
-        3,
-        2,
-        2,
-        1,
-        5,
-        4,
-        3,
-        5,
-        5,
-        4,
-        4,
-        3,
-        2,
-        5,
-        4
-      ]
     }
   ]
 }
