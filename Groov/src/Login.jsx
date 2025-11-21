@@ -54,7 +54,7 @@ function Login() {
 
     return (
         <>
-            <main className="flex flex-col justify-center items-center mx-auto">
+            <main className="fixed inset-0 flex justify-center items-center flex-col w-full max-w-sm mx-auto gap-4">
                 <div className="container mx-auto p-6 flex flex-col items-center">
                     <h1 className="text-3xl font-bold mb-6 text-roxop">Login</h1>
 
