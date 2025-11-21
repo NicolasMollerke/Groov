@@ -3,6 +3,8 @@ import Header from "./components/Header"
 import CardEvento from "./components/CardEvento"
 import { Link } from "react-router"
 import { useEffect, useState } from "react"
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+
 
 function Home() {
    const[eventos, setEventos] = useState([])
@@ -64,9 +66,13 @@ function Home() {
                         </div>
                         </Link>
                     </section>
-                    <section className="flex items-start w-full mt-5 md:mt-8 ">
-                        <h2></h2>
-                        <div className="flex w-full md:gap-8 truncate">{listaEventos}</div>
+                    <section className="flex flex-col items-start w-full mt-5 md:mt-8 ">
+                        <h2 className="text-3xl text-white">Reocomendados</h2>
+                        <div className="flex w-full items-center">
+                            <MdChevronLeft className="text-[8rem] text-roxop"/>
+                            <div className="flex gap-3 overflow-x-auto">{listaEventos}</div>
+                            <MdChevronRight className="hidden md:block text-[32rem] text-roxop"/>
+                        </div>
                     </section>
                     <NavBar/>
                 </main>

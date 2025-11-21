@@ -70,6 +70,23 @@ function Usuario() {
         localStorage.setItem("meusFavoritos", JSON.stringify(favoritos2))
     }
     
+    const listaComentarios = []
+        if (usuario.comentarios) {
+            for (let i = 0; i < usuario.comentarios.length; i++) {
+            listaComentarios.push(
+                <div className="flex">
+                    <div>
+                        <CgProfile className="text-4xl text-roxop" />
+                        <h3 className="text-white">{usuario.nome_usuario[i]}</h3>
+                    </div>
+                    <div>
+                        <Estrelas num={usuario.nota[i]} />
+                        <p>{usuario.comentarios[i]}</p>
+                    </div>
+                </div>
+            )
+            }
+    }
     return(
         <>
            < Header />
@@ -83,13 +100,14 @@ function Usuario() {
                 <h1 className="text-white font-bold text-[1rem]">{usuario.nome}</h1>
                 <Estrelas num={calculaMedia()} />
             </section>
-            <section>
+            <section className="flex w-full truncate">
                 {listaEventos}
             </section>
-            <section>
-                
+            <section className="flex flex-col">
+                {listaComentarios}
             </section>
            </main>
+           <NavBar/>
         </>
     )
 
