@@ -166,7 +166,7 @@ function Usuario() {
                 <h1 className="text-white font-semibold">Eventos realizados por {usuario.nome}</h1>
                 <div className="flex gap-3 overflow-x-auto">{listaEventos}</div>
             </section>
-            <section>
+            <section className="mt-6 rounded-lg">
                 <button className='p-3 bg-roxop textwh' onClick={avaliarUsuario}>Avaliar</button>
             </section>
             <section className="flex flex-col w-full gap-6 mt-6">

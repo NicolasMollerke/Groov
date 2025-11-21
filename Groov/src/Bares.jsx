@@ -41,7 +41,7 @@ export default function Bares() {
     <>
       < Header />
       <main className='flex flex-col items-start mx-auto justify-center'>
-        <h1 className='text-center text-stroke-white text-transparent text-[2rem] md:text-8xl uppercase font-black'>Bares</h1>
+        <h1 className='text-center text-stroke-white text-transparent text-[2rem] md:text-8xl uppercase font-black'>Bares e Pubs</h1>
         <section className='flex md:hidden flex-wrap w-full truncate gap-3'>
           {listaEventos}
         </section>

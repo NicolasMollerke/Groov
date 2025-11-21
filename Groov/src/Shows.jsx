@@ -40,7 +40,7 @@ export default function Shows() {
     <>
       < Header />
       <main className='flex flex-col items-start mx-auto justify-center'>
-        <h1 className='text-center text-stroke-white text-transparent text-[2rem] md:text-8xl uppercase font-black'>Shows</h1>
+        <h1 className='text-center text-stroke-white text-transparent text-[2rem] md:text-8xl uppercase font-black'>Shows ao Vivo</h1>
         <section className='flex md:hidden flex-wrap w-full truncate gap-3'>
           {listaEventos}
         </section>
