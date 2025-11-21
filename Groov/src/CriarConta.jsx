@@ -59,8 +59,7 @@ function CriarConta() {
 
     return (
         <>
-            <Header />
-            <main className='flex flex-col items-center mx-auto justify-center'>
+            <main className="fixed inset-0 flex justify-center items-center flex-col w-full max-w-sm mx-auto gap-4">
                 <div className="container mx-auto p-6 flex flex-col items-center">
                     <h1 className="text-3xl font-bold mb-6 text-roxop">Criar Conta</h1>
 
