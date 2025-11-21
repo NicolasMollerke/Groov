@@ -29,7 +29,7 @@ export default function Festas() {
   }, [])
 
   const listaEventos = eventos.map(evento => (
-    <CardEvento key={evento.id} evento={evento} eventos={evento} />
+    <CardEventoHorinzontal key={evento.id} evento={evento} eventos={evento} />
   ))
 
   return (

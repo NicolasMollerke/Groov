@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import Header from "./components/Header";
 
 function Login() {
     const { register, handleSubmit, formState: { errors } } = useForm({
@@ -52,7 +51,6 @@ function Login() {
 
     return (
         <>
-            <Header />
             <main className="flex flex-col justify-center items-center mx-auto">
                 <div className="container mx-auto p-6 flex flex-col items-center">
                     <h1 className="text-3xl font-bold mb-6 text-roxop">Login</h1>
