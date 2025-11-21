@@ -163,7 +163,7 @@ function Usuario() {
                 <Estrelas num={calculaMedia()} />
             </section>
             <section className="flex w-full truncate mt-5 md:mt-8 flex-col">
-                <h1 className="text-white font-semibold">Eventos realidos por {usuario.nome}</h1>
+                <h1 className="text-white font-semibold">Eventos realizados por {usuario.nome}</h1>
                 <div className="flex gap-3 overflow-x-auto">{listaEventos}</div>
             </section>
             <section>

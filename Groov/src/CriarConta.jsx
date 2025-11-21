@@ -36,6 +36,14 @@ function CriarConta() {
 
             const created = await res.json();
             console.log("Usuário criado:", created);
+            
+            const userData = {
+                nome: created.nome,
+                email: created.email,
+                foto: created.foto || "", // Caso a foto não seja obrigatória
+            };
+            localStorage.setItem("user", JSON.stringify(userData));
+            
             setSuccessMessage("Conta criada com sucesso!");
             navigate("/home");
             reset();

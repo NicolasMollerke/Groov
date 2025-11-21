@@ -40,6 +40,9 @@ function Login() {
                 throw new Error("Senha inválida.");
             }
 
+            const userData = { nome: usuarioEncontrado.nome, email: usuarioEncontrado.email };
+            localStorage.setItem("user", JSON.stringify(userData));
+
             setSuccessMessage("Login realizado com sucesso!");
             navigate("/home");
         } catch (err) {

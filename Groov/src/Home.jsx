@@ -80,9 +80,9 @@ function Home() {
                     <NavBar/>
                     <section className="flex flex-col items-start w-full mt-5 md:mt-8 ">
                         <h2 className=" text-white font-semibold">Reocomendados</h2>
-                        <div className="flex w-full items-center">
+                        <div className="flex w-full items-center truncate">
                             <MdChevronLeft className="hidden md:block text-[8rem] text-roxop"/>
-                            <div className="flex gap-3 ">{listaEventos}</div>
+                            <div className="w-full flex gap-3 overflow-x-auto">{listaEventos}</div>
                             <MdChevronRight className="hidden md:block text-[32rem] text-roxop"/>
                         </div>
                     </section>
