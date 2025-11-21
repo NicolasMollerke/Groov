@@ -12,7 +12,7 @@ export function Estrelas({num}) {
   }
 
   return (
-    <div className="w-32 h-auto text-roxop flex justify-center">
+    <div className="text-roxop flex">
       {icones}
     </div>
   )

@@ -40,7 +40,7 @@ export default function Bares() {
   return (
     <>
       < Header />
-      <main className='flex flex-col items-center mx-auto justify-center'>
+      <main className='flex flex-col items-start mx-auto justify-center'>
         <h1 className='text-center text-stroke-white text-transparent text-[2rem] md:text-8xl uppercase font-black'>Bares</h1>
         <section className='flex md:hidden flex-wrap w-full truncate gap-3'>
           {listaEventos}

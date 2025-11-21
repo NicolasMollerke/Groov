@@ -8,6 +8,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 function Home() {
    const[eventos, setEventos] = useState([])
+   const[eventosG, setEventosG] = useState([])
    
     useEffect(() => {
         async function buscarEventos() {
@@ -15,6 +16,12 @@ function Home() {
                 const resposta = await fetch("http://localhost:3000/eventos")
                 if (!resposta.ok) throw new Error("Erro ao consultar eventos")
                 const dados = await resposta.json()
+                const dadosG = dados.filter(ev => 
+                    ev.palavras_chave?.some(
+                        k => String(k).toLowerCase().trim() === "gratuito"
+                    )
+                ) 
+                setEventosG(dadosG)
     
                 setEventos(dados.reverse())
             } catch (erro) {
@@ -26,6 +33,10 @@ function Home() {
 
     const listaEventos = eventos.map( evento => (
         <CardEvento key={evento.id} evento ={evento} setEventos={setEventos}/>
+    ))
+    
+    const listaEventosG = eventosG.map( evento => (
+        <CardEvento key={evento.id} evento ={evento} setEventosG={setEventosG}/>
     ))
 
     return(
@@ -66,15 +77,23 @@ function Home() {
                         </div>
                         </Link>
                     </section>
+                    <NavBar/>
                     <section className="flex flex-col items-start w-full mt-5 md:mt-8 ">
-                        <h2 className="text-3xl text-white">Reocomendados</h2>
+                        <h2 className=" text-white font-semibold">Reocomendados</h2>
                         <div className="flex w-full items-center">
-                            <MdChevronLeft className="text-[8rem] text-roxop"/>
-                            <div className="flex gap-3 overflow-x-auto">{listaEventos}</div>
+                            <MdChevronLeft className="hidden md:block text-[8rem] text-roxop"/>
+                            <div className="flex gap-3 ">{listaEventos}</div>
                             <MdChevronRight className="hidden md:block text-[32rem] text-roxop"/>
                         </div>
                     </section>
-                    <NavBar/>
+                    <section className="flex flex-col items-start w-full mt-5 md:mt-8 ">
+                        <h2 className=" text-white font-semibold">Eventos Gratuitos</h2>
+                        <div className="flex w-full items-center">
+                            <MdChevronLeft className="hidden md:block text-[8rem] text-roxop"/>
+                            <div className="flex gap-3 ">{listaEventosG}</div>
+                            <MdChevronRight className="hidden md:block text-[32rem] text-roxop"/>
+                        </div>
+                    </section>
                 </main>
             </>
         )
