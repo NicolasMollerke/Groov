@@ -81,17 +81,13 @@ function Home() {
                     <section className="flex flex-col items-start w-full mt-5 md:mt-8 ">
                         <h2 className=" text-white font-semibold">Reocomendados</h2>
                         <div className="flex w-full items-center truncate">
-                            <MdChevronLeft className="hidden md:block text-[8rem] text-roxop"/>
                             <div className="w-full flex gap-3 overflow-x-auto">{listaEventos}</div>
-                            <MdChevronRight className="hidden md:block text-[32rem] text-roxop"/>
                         </div>
                     </section>
                     <section className="flex flex-col items-start w-full mt-5 md:mt-8 ">
                         <h2 className=" text-white font-semibold">Eventos Gratuitos</h2>
                         <div className="flex w-full items-center">
-                            <MdChevronLeft className="hidden md:block text-[8rem] text-roxop"/>
                             <div className="flex gap-3 ">{listaEventosG}</div>
-                            <MdChevronRight className="hidden md:block text-[32rem] text-roxop"/>
                         </div>
                     </section>
                 </main>
