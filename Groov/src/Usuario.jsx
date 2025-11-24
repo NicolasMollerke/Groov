@@ -7,15 +7,17 @@ import { CgProfile } from "react-icons/cg";
 import { Estrelas } from './components/Estrelas'
 import { FaStar, FaRegStar  } from "react-icons/fa";
 import Swal from 'sweetalert2'
+import withReactContent from "sweetalert2-react-content"
+import { useForm } from "react-hook-form"
 
+const MySwal = withReactContent(Swal)
 
 function Usuario() {
     const { usuarioId } = useParams()
-    const [ usuario, setUsuario ] = useState({ nota: [] })
+    const [ usuario, setUsuario ] = useState({ nome_usuario: [], comentarios: [], nota: [] })
     const [favoritos, setFavoritos] = useState([])
     const[eventos, setEventos] = useState([])
-    
-    
+    const { register, handleSubmit, reset } = useForm()
 
     useEffect(() => {
         async function getUsuario() {
@@ -36,69 +38,92 @@ function Usuario() {
             } 
         }
         buscarEventos()
+
+        if (localStorage.getItem("meusFavoritos")) {
+        try {
+            const favoritosSalvos = JSON.parse(localStorage.getItem("meusFavoritos"));
+            setFavoritos(favoritosSalvos);
+        } catch (e) {
+            console.error("Erro ao carregar favoritos do localStorage:", e);
+            setFavoritos([]); // Reseta se houver erro no parsing
+        }
+    }
     }, [])
 
     async function enviarComentario(data) {
         const { nome, comentario, nota } = data
 
         const usuarioAlterado = {
-        ...usuario,
-        nomes: [...ususario.nome_usuario, nome],
-        comentarios: [...usuario.comentarios, comentario],
-        notas: [...usuario.nota, Number(nota)]
+            ...usuario,
+            // Usamos || [] aqui, o que é crucial, para garantir que nunca seja undefined.
+            nome_usuario: [...(usuario.nome_usuario || []), nome], 
+            comentarios: [...(usuario.comentarios || []), comentario],
+            nota: [...(usuario.nota || []), Number(nota)]
         }
 
         try {
-        const resposta = await fetch(`http://localhost:3000/usuarios/${usuario.id}`, {
-            method: "PUT",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(usuarioAlterado),
-        })
-        if (!resposta.ok) throw new Error("Erro ao incluir avaliação do usuario...")
+            const resposta = await fetch(`http://localhost:3000/usuarios/${usuario.id}`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(usuarioAlterado),
+            })
+            
+            if (!resposta.ok) throw new Error("Erro ao incluir avaliação do usuario...")
 
-        Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: `<span style="font-family: 'Arial'">Ok! Avaliação cadastrada com sucesso</span>`,
-            showConfirmButton: false,
-            timer: 2000,
-        })
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `<span style="font-family: 'Arial'">Ok! Avaliação cadastrada com sucesso</span>`,
+                showConfirmButton: false,
+                timer: 2000,
+            })
 
-        // Atualiza lista
-        const respostaLista = await fetch("http://localhost:3000/usuarios")
-        const dados = await respostaLista.json()
-        setFilmes(dados.reverse())
+            // *** AQUI ESTÁ A CHAVE DA CORREÇÃO: ATUALIZAÇÃO LOCAL ***
+            // Definimos o estado 'usuario' com o objeto atualizado.
+            setUsuario(usuarioAlterado)
+            
+            // As linhas de busca de lista foram removidas!
+            
         } catch (erro) {
-        console.error("Erro: " + erro.message)
+            console.error("Erro: " + erro.message)
+            Swal.fire({
+                icon: "error",
+                title: "Ops...",
+                text: `Erro ao enviar comentário: ${erro.message}`,
+            })
         }
-        reset()    // limpa o form
+        reset() 
     }
 
      function avaliarUsuario() {
-       Swal.fire({
-         title: `Avaliação: ${usuario.nome}`,
-         html: `
-           <input id="swal-nome" class="swal2-input" placeholder="Seu nome" />
-           <input id="swal-comentario" class="swal2-input" placeholder="Comentário" />
-           <input id="swal-nota" type="number" class="swal2-input" placeholder="Nota (1 a 5)" min="1" max="5" />
-         `,
-         showCancelButton: true,
-         confirmButtonText: "Enviar",
-         preConfirm: () => {
-           const nome = document.getElementById("swal-nome").value;
-           const comentario = document.getElementById("swal-comentario").value;
-           const nota = document.getElementById("swal-nota").value;
-           if (!nome || !comentario || !nota) {
-             Swal.showValidationMessage("Preencha todos os campos");
-             return false;
-           }
-           return { nome, comentario, nota };
-         },
-       }).then((result) => {
-         if (result.isConfirmed && result.value) {
-           enviarComentario(result.value);
-         }
-       });
+        MySwal.fire({
+        title: <span style={{ fontFamily: "Arial" }}>Avaliação: {usuario.nome}</span>,
+        html: (
+            <form onSubmit={handleSubmit(enviarComentario)}
+            style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+            >
+            <input type="text" placeholder="Seu nome"
+                className="swal2-input" style={{ width: 300 }}
+                required
+                {...register("nome")}
+            />
+            <input type="text" placeholder="Comentário"
+                className="swal2-input" style={{ width: 300 }}
+                required
+                {...register("comentario")}
+            />
+            <input type="number" placeholder="Nota (1 a 5)"
+                className="swal2-input" style={{ width: 300 }}
+                min="1" max="5" required
+                {...register("nota")}
+            />
+            <button type="submit" className="swal2-confirm swal2-styled" style={{ marginTop: "20px" }}>
+                Enviar
+            </button>
+            </form>
+        ),
+        showConfirmButton: false,
+        })
      }
         
     const Username = usuario?.nome?.toUpperCase().trim();
@@ -153,7 +178,7 @@ function Usuario() {
         <>
            < Header />
            <main className='flex flex-col items-center mx-auto justify-center'>
-            <section className="w-full border flex flex-col items-center py-11 gap-3 relative justify-center mx-auto">
+            <section className="w-full flex flex-col items-center py-11 gap-3 relative justify-center mx-auto">
                 {favoritos.includes(usuario.nome) ? 
                 <FaStar onClick={desfavoritaOrganizador} className='absolute top-2 right-2 z-10 w-14 md:w-28 h-auto transition-transform duration-200 ease-in-out text-roxop hover:scale-110' /> :
                 <FaRegStar onClick={favoritaOrganizador} className='absolute top-2 right-2 z-10 w-14 md:w-28 h-auto transition-transform duration-200 ease-in-out text-roxop' />
@@ -163,11 +188,11 @@ function Usuario() {
                 <Estrelas num={calculaMedia()} />
             </section>
             <section className="flex w-full truncate mt-5 md:mt-8 flex-col">
-                <h1 className="text-white font-semibold">Eventos realizados por {usuario.nome}</h1>
+                <h1 className="text-white font-semibold md:text-[3rem]">Eventos realizados por {usuario.nome}</h1>
                 <div className="flex gap-3 overflow-x-auto">{listaEventos}</div>
             </section>
             <section className="mt-6 rounded-lg">
-                <button className='p-3 bg-roxop textwh' onClick={avaliarUsuario}>Avaliar</button>
+                <button className='p-3 bg-roxop rounded-2xl text-white md:text-[1.5rem] md:p-5' onClick={avaliarUsuario}>Avaliar</button>
             </section>
             <section className="flex flex-col w-full gap-6 mt-6">
                 {listaComentarios}

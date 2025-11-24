@@ -45,9 +45,9 @@ function Favoritos() {
       <main className='flex flex-col mx-auto justify-center items-start'>
           <h2 className='text-start text-stroke-white text-transparent text-[1.7rem] md:text-8xl uppercase font-black w-full'>Eventos Favoritos</h2>
           {usuarios.length == 0 ?
-            <h2 className='text-white font-bold'>*Obs.: Não há filmes na sua lista de favoritos</h2>
+            <h2 className='text-white font-bold'>*Obs.: Não há organizadores na sua lista de favoritos</h2>
             :
-            <section>{listaEventos}</section>
+            <section className='flex flex-col gap-2'>{listaEventos}</section>
           }
       </main>
       <NavBar/>

@@ -90,7 +90,7 @@ export default function Pesquisa() {
         <div className='flex justify-center mx-auto w-full' style={{marginBottom: '20px'}}>
           <input 
             type="text" 
-            className='w-[20rem] h-8 text-white bg-gray-800 text-[15px] text-center rounded-[1.25rem] border-solid border-2 border-roxop' 
+            className='w-80 h-8 text-white bg-gray-800 text-[15px] text-center rounded-[1.25rem] border-solid border-2 border-roxop md:w-160 md:text-3xl md:h-16' 
             placeholder={placeholderText} 
             value={termoPesquisa}
             onChange={(e) => setTermoPesquisa(e.target.value)}
@@ -99,7 +99,7 @@ export default function Pesquisa() {
         <div className="flex justify-center p-4 gap-4">
           <button 
             onClick={() => setModoFiltro(MODOS_PESQUISA.EVENTO)}
-            className={`px-4 py-2 rounded-lg font-bold ${modoFiltro === MODOS_PESQUISA.EVENTO ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
+            className={`px-4 py-2 rounded-lg font-bold md:px-8 md:py-4  ${modoFiltro === MODOS_PESQUISA.EVENTO ? 'bg-roxop text-white' : 'bg-gray-700 text-gray-300'}`}
           >
             Eventos
           </button>

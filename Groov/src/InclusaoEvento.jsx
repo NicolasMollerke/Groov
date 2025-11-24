@@ -143,9 +143,9 @@ function InclusaoEvento() {
                         className="w-full px-3 py-2 bg-[#1A1A1A] border border-purple-500/40 rounded-md text-white
                         focus:outline-none focus:ring-2 focus:ring-purple-500 appearance-none"
                     >
-                        <option value="shows">Shows</option>
+                        <option value="shows">Shows ao Vivo</option>
                         <option value="festas">Festas</option>
-                        <option value="bares">Bares</option>
+                        <option value="bares">Bares e Pubs</option>
                         <option value="universitarias">Universitárias</option>
                     </select>
                     {/* Triângulo da seta */}

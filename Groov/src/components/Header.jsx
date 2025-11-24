@@ -16,7 +16,9 @@ export default function Header() {
         <>
                 <header className="justify-center items-center flex md:py-4">
                     <div className="md:justify-between flex items-center  justify-center w-[80%]">
-                        <h1 className='text-center text-stroke-roxo text-transparent text-[2rem] md:text-8xl uppercase font-black py-3'>Groov</h1>
+                        <Link to="/home">
+                            <h1 className='text-center text-stroke-roxo text-transparent text-[2rem] md:text-8xl uppercase font-black py-3'>Groov</h1>
+                        </Link>
                         <div className="hidden md:flex">
                                     <ul className="flex justify-center px-4 gap-9 ">
                                     <li>

@@ -9,7 +9,7 @@
       "data": "19/11/2025",
       "hora": "22:00h - 04:00h",
       "local": "Espaço Universitário Prime (Rua da Alegria, 123 - Próximo ao Campus Central)",
-      "atrações": [
+      "atracoes": [
         "DJ Lumina",
         "DJ Vibe",
         "Trovão Azul"
@@ -38,7 +38,7 @@
       "data": "05/12/2025",
       "hora": "23:00h - 05:00h",
       "local": "Clube Universitário Central (Avenida dos Estudantes, 404)",
-      "atrações": [
+      "atracoes": [
         "DJ Caos",
         "MC Profeta",
         "Banda Zero"
@@ -67,7 +67,7 @@
       "data": "10/01/2026",
       "hora": "16:00h - 23:00h",
       "local": "Parque da Cidade (Área Gourmet)",
-      "atrações": [
+      "atracoes": [
         "Grupo de Dança Andaluz",
         "Banda Terra Brasilis"
       ],
@@ -95,7 +95,7 @@
       "data": "28/11/2025",
       "hora": "20:00h - 22:30h",
       "local": "The Old Barrel Pub (Rua da Gole, 333 - Centro Histórico)",
-      "atrações": [
+      "atracoes": [
         "Rafael Silva (Sommelier)"
       ],
       "organizadores": [
@@ -121,7 +121,7 @@
       "data": "03/01/2026",
       "hora": "21:00h - 23:00h",
       "local": "Teatro Municipal da Paz (Praça Central, S/N)",
-      "atrações": [
+      "atracoes": [
         "Marina e o Mar (Show Acústico)"
       ],
       "organizadores": [
@@ -147,7 +147,7 @@
       "data": "12/12/2025",
       "hora": "14:00h - 22:00h",
       "local": "Clube Campestre Universitário (Rodovia Sul, KM 10)",
-      "atrações": [
+      "atracoes": [
         "DJ Sol",
         "MC Praia"
       ],
@@ -174,7 +174,7 @@
       "data": "20/02/2026",
       "hora": "21:00h - 03:00h",
       "local": "Salão Nobre da Reitoria (Rua Central, 500)",
-      "atrações": [
+      "atracoes": [
         "Quinteto de Jazz da Cidade",
         "DJ Lux"
       ],
@@ -201,7 +201,7 @@
       "data": "01/03/2026",
       "hora": "18:00h - 23:00h",
       "local": "Praça de Eventos do Campus",
-      "atrações": [
+      "atracoes": [
         "Banda Vencedora",
         "Bandas competidoras"
       ],
@@ -228,7 +228,7 @@
       "data": "15/12/2025",
       "hora": "17:00h - 00:00h",
       "local": "Sítio da Turma (Estrada da Fazenda, 78)",
-      "atrações": [
+      "atracoes": [
         "Grupo Pagode Universitário"
       ],
       "organizadores": [
@@ -254,7 +254,7 @@
       "data": "01/02/2026",
       "hora": "22:00h - 04:00h",
       "local": "Clube Metrópole (Rua do Passado, 2000)",
-      "atrações": [
+      "atracoes": [
         "DJ VJ Flashback",
         "Cover Spice Girls"
       ],
@@ -281,7 +281,7 @@
       "data": "25/01/2026",
       "hora": "19:00h - 03:00h",
       "local": "Praia do Sol (Quiosque 7)",
-      "atrações": [
+      "atracoes": [
         "DJ Coast",
         "Percussionista Léo"
       ],
@@ -308,7 +308,7 @@
       "data": "14/02/2026",
       "hora": "23:00h - 05:00h",
       "local": "Galpão Central de Eventos (Av. da Indústria, 99)",
-      "atrações": [
+      "atracoes": [
         "DJ Bubble",
         "MC Molhado"
       ],
@@ -335,7 +335,7 @@
       "data": "08/03/2026",
       "hora": "20:00h - 02:00h",
       "local": "Espaço Cultural Ouro Preto (Rua do Místico, 7)",
-      "atrações": [
+      "atracoes": [
         "Trio Balcânico",
         "Leitores de Tarô"
       ],
@@ -362,7 +362,7 @@
       "data": "22/03/2026",
       "hora": "23:00h - 06:00h",
       "local": "Salão Crystal Prime (Av. da Elegância, 50)",
-      "atrações": [
+      "atracoes": [
         "DJ Gold",
         "Sax Live"
       ],
@@ -389,7 +389,7 @@
       "data": "05/12/2025",
       "hora": "18:00h - 22:00h",
       "local": "Jazz & Beer Corner (Rua do Sax, 45)",
-      "atrações": [
+      "atracoes": [
         "Trio Bebop"
       ],
       "organizadores": [
@@ -415,7 +415,7 @@
       "data": "19/12/2025",
       "hora": "21:00h - 01:00h",
       "local": "The Singer's Bar (Avenida do Palco, 10)",
-      "atrações": [
+      "atracoes": [
         "Animação Karaokê"
       ],
       "organizadores": [
@@ -441,7 +441,7 @@
       "data": "07/01/2026",
       "hora": "19:00h - 23:00h",
       "local": "Boteco do Zeca (Praça da Matriz, 22)",
-      "atrações": [
+      "atracoes": [
         "Duo Caipira"
       ],
       "organizadores": [
@@ -467,7 +467,7 @@
       "data": "14/01/2026",
       "hora": "20:30h - 23:30h",
       "local": "The Geek's Lair (Rua das Invenções, 42)",
-      "atrações": [
+      "atracoes": [
         "Mestre de Cerimônias Nerd"
       ],
       "organizadores": [
@@ -493,7 +493,7 @@
       "data": "28/02/2026",
       "hora": "17:00h - 00:00h",
       "local": "Pátio Cervejeiro (Rua do Malte, 101)",
-      "atrações": [
+      "atracoes": [
         "Banda Blues do Rio"
       ],
       "organizadores": [
@@ -519,7 +519,7 @@
       "data": "10/01/2026",
       "hora": "22:00h - 00:00h",
       "local": "Casa de Shows RockZone (Av. do Som, 77)",
-      "atrações": [
+      "atracoes": [
         "Banda O Fio",
         "Banda Convidada: A Linha"
       ],
@@ -546,7 +546,7 @@
       "data": "20/12/2025",
       "hora": "20:00h - 21:30h",
       "local": "Auditório Principal do Centro Cultural (Rua da Cultura, 33)",
-      "atrações": [
+      "atracoes": [
         "Orquestra Filarmônica da Cidade"
       ],
       "organizadores": [
@@ -572,7 +572,7 @@
       "data": "17/01/2026",
       "hora": "21:30h - 23:00h",
       "local": "Teatro do Riso (Rua do Humor, 12)",
-      "atrações": [
+      "atracoes": [
         "Lucas Riso",
         "Comediantes Convidados"
       ],
@@ -599,7 +599,7 @@
       "data": "06/02/2026",
       "hora": "20:30h - 01:00h",
       "local": "Casa do Samba (Largo da Bateria, 8)",
-      "atrações": [
+      "atracoes": [
         "Roda de Samba Pura Tradição"
       ],
       "organizadores": [
@@ -625,7 +625,7 @@
       "data": "14/03/2026",
       "hora": "21:00h - 23:00h",
       "local": "Arena ShowTime (Estrada dos Ídolos, 20)",
-      "atrações": [
+      "atracoes": [
         "Banda Mercury (Tributo a Queen)"
       ],
       "organizadores": [
@@ -651,7 +651,7 @@
       "data": "02/04/2026",
       "hora": "18:00h - 02:00h",
       "local": "Praça Central do Campus",
-      "atrações": [
+      "atracoes": [
         "DJ Local",
         "Banda Cover",
         "MC Campus"
@@ -680,7 +680,7 @@
       "data": "04/04/2026",
       "hora": "17:00h - 23:30h",
       "local": "Espaço Cultural do Mercado",
-      "atrações": [
+      "atracoes": [
         "Banda Indie A",
         "Banda Indie B",
         "VJs"
@@ -709,7 +709,7 @@
       "data": "10/04/2026",
       "hora": "12:00h - 22:00h",
       "local": "Parque da Cidade - Área Gourmet",
-      "atrações": [
+      "atracoes": [
         "Chefs convidados",
         "Acústico Sunset"
       ],
@@ -737,7 +737,7 @@
       "data": "11/04/2026",
       "hora": "19:30h - 22:30h",
       "local": "Praça do Coreto",
-      "atrações": [
+      "atracoes": [
         "Trio Bebop",
         "Peça Curta"
       ],
@@ -762,14 +762,10 @@
       "categoria": "Universitária",
       "imagem": "https://imgur.com/d9C5LIn.jpg",
       "descricao": "Mini corrida noturna seguida de after com DJs e food trucks para alunos.",
-      "nome": "Sabores & Sons - Food Truck Festival",
-      "categoria": "Festas",
-      "imagem": "https://cdn.pixabay.com/photo/2017/06/20/23/15/food-festival-2424881_1280.jpg",
-      "descricao": "Food trucks com pratos do mundo e palco acústico para artistas locais.",
       "data": "10/04/2026",
       "hora": "12:00h - 22:00h",
       "local": "Parque da Cidade - Área Gourmet",
-      "atrações": [
+      "atracoes": [
         "Chefs convidados",
         "Acústico Sunset"
       ],
@@ -798,7 +794,7 @@
       "data": "18/04/2026",
       "hora": "21:00h - 03:00h",
       "local": "Salão de Festas Municipal",
-      "atrações": [
+      "atracoes": [
         "Banda ao vivo",
         "DJ Set"
       ],
@@ -827,7 +823,7 @@
       "data": "20/04/2026",
       "hora": "17:00h - 23:00h",
       "local": "Praia do Sol - Quiosque 5",
-      "atrações": [
+      "atracoes": [
         "DJ Coast",
         "Percussionista Léo"
       ],
@@ -856,7 +852,7 @@
       "data": "22/04/2026",
       "hora": "22:00h - 04:00h",
       "local": "Clube Metrópole - Salão Principal",
-      "atrações": [
+      "atracoes": [
         "DJ VJ Flashback",
         "Bandas locais"
       ],
@@ -885,7 +881,7 @@
       "data": "24/04/2026",
       "hora": "19:00h - 22:30h",
       "local": "Jazz & Beer Corner",
-      "atrações": [
+      "atracoes": [
         "Trio Bebop",
         "Sommelier convidado"
       ],
@@ -914,7 +910,7 @@
       "data": "01/05/2026",
       "hora": "10:00h - 20:00h",
       "local": "Centro de Convenções",
-      "atrações": [
+      "atracoes": [
         "Torneio de Games",
         "Palestras",
         "Show Nerd"
@@ -944,7 +940,7 @@
       "data": "03/05/2026",
       "hora": "16:00h - 22:00h",
       "local": "Pátio Cervejeiro",
-      "atrações": [
+      "atracoes": [
         "Banda Blues",
         "Estações de Degustação"
       ],
@@ -973,7 +969,7 @@
       "data": "05/05/2026",
       "hora": "15:00h - 22:00h",
       "local": "Vários pontos do Centro",
-      "atrações": [
+      "atracoes": [
         "Bandas locais",
         "Intervenções de Rua"
       ],
@@ -1002,7 +998,7 @@
       "data": "09/05/2026",
       "hora": "12:00h - 18:00h",
       "local": "Quintal Cultural",
-      "atrações": [
+      "atracoes": [
         "Roda de Samba Pura Tradição"
       ],
       "organizadores": [
@@ -1030,7 +1026,7 @@
       "data": "12/05/2026",
       "hora": "20:00h - 22:30h",
       "local": "Casa de Shows RockZone",
-      "atrações": [
+      "atracoes": [
         "Tributo Mercury",
         "Convidados"
       ],
@@ -1059,7 +1055,7 @@
       "data": "14/05/2026",
       "hora": "22:00h - 05:00h",
       "local": "Galpão Central",
-      "atrações": [
+      "atracoes": [
         "DJ Lumina",
         "DJ Vibe"
       ],
@@ -1088,7 +1084,7 @@
       "data": "16/05/2026",
       "hora": "11:00h - 21:00h",
       "local": "Parque da Cidade - Área Gourmet",
-      "atrações": [
+      "atracoes": [
         "Chefs convidados",
         "Banda Terra Brasilis"
       ],
@@ -1117,7 +1113,7 @@
       "data": "18/05/2026",
       "hora": "18:00h - 23:00h",
       "local": "The Old Barrel Pub",
-      "atrações": [
+      "atracoes": [
         "Sommelier Rafael Silva",
         "Petiscos Gourmet"
       ],
@@ -1146,7 +1142,7 @@
       "data": "20/05/2026",
       "hora": "18:00h - 01:00h",
       "local": "Rooftop Central",
-      "atrações": [
+      "atracoes": [
         "DJ Sol",
         "DJ Caos"
       ],
@@ -1175,7 +1171,7 @@
       "data": "22/05/2026",
       "hora": "20:00h - 00:00h",
       "local": "Salão Nobre da Reitoria",
-      "atrações": [
+      "atracoes": [
         "Quinteto de Jazz",
         "DJ Lux"
       ],
@@ -1204,7 +1200,7 @@
       "data": "24/05/2026",
       "hora": "17:00h - 01:00h",
       "local": "Clube Metrópole",
-      "atrações": [
+      "atracoes": [
         "Cover Spice Girls",
         "DJ VJ Flashback"
       ],
@@ -1233,7 +1229,7 @@
       "data": "26/05/2026",
       "hora": "16:00h - 22:00h",
       "local": "Clube Campestre",
-      "atrações": [
+      "atracoes": [
         "DJ Bubble",
         "MC Molhado"
       ],
@@ -1262,7 +1258,7 @@
       "data": "28/05/2026",
       "hora": "20:00h - 02:00h",
       "local": "Salão Crystal Prime",
-      "atrações": [
+      "atracoes": [
         "Sax Live",
         "DJ Gold"
       ],
@@ -1291,7 +1287,7 @@
       "data": "30/05/2026",
       "hora": "20:00h - 01:00h",
       "local": "The Singer's Bar",
-      "atrações": [
+      "atracoes": [
         "Karaokê ao vivo",
         "Prêmios ao público"
       ],
@@ -1320,7 +1316,7 @@
       "data": "02/06/2026",
       "hora": "18:00h - 23:00h",
       "local": "Praça de Eventos",
-      "atrações": [
+      "atracoes": [
         "Palestras",
         "Torneios",
         "Banda local"
@@ -1350,7 +1346,7 @@
       "data": "05/06/2026",
       "hora": "20:00h - 00:30h",
       "local": "Arena ShowZone",
-      "atrações": [
+      "atracoes": [
         "Banda O Fio",
         "Convidados Regionais"
       ],
@@ -1379,7 +1375,7 @@
       "data": "08/06/2026",
       "hora": "19:30h - 23:30h",
       "local": "Teatro do Riso",
-      "atrações": [
+      "atracoes": [
         "Lucas Riso",
         "Comediantes Convidados"
       ],
@@ -1408,7 +1404,7 @@
       "data": "12/06/2026",
       "hora": "10:00h - 23:59h",
       "local": "Parque Metropolitano",
-      "atrações": [
+      "atracoes": [
         "Palco Principal",
         "Palco Alternativo",
         "Food Village"
@@ -1428,6 +1424,61 @@
         "Áreas externas"
       ],
       "notas": []
+    },
+    {
+      "id": "e23a",
+      "tipo": "shows",
+      "nome": "Festival Sons da Cidade",
+      "categoria": "shows",
+      "imagem": "https://imgur.com/e3uSXql.jpg",
+      "descricao": "Prepare-se para uma imersão sonora no coração da metrópole! O Festival Sons da Cidade chega para vibrar com os ritmos mais quentes e as vozes mais marcantes da cena independente e de grandes nomes. Dois dias de pura energia, com palcos simultâneos, food trucks variados e intervenções artísticas que farão você sentir a pulsação da cidade. Venha celebrar a música em todas as suas formas e viva experiências inesquecíveis. Não perca o festival que vai parar a cidade!",
+      "data": "2024-08-10",
+      "hora": "14:00",
+      "local": "\"Parque da Música (Avenida Central, 456 - Antigo Terreno da Fábrica)",
+      "atracoes": [
+        "Banda Raízes Urbanas\nCantora Aurora\nDJ Synapse\nProjeto Eko Sound\nConvidado Surpresa Nacional"
+      ],
+      "organizadores": [
+        "Diretório Acadêmico Central",
+        "Maré Produções"
+      ],
+      "palavras_chave": [
+        "Gratuito",
+        "Pet Friendly",
+        "Música ao vivo"
+      ],
+      "ingresso": {
+        "tipo": "",
+        "lote": "",
+        "preco": null
+      }
+    },
+    {
+      "id": "7aed",
+      "tipo": "shows",
+      "nome": "Cervejaria Artesanal e Blues: Edição Inverno",
+      "categoria": "bares",
+      "imagem": "https://imgur.com/ExWZXGv.jpg",
+      "descricao": "Aqueça seu inverno com a melhor combinação: blues de raiz ao vivo e 15 torneiras de chopes artesanais raros, selecionados de microcervejarias da região. O evento acontece no aconchegante galpão cervejeiro do centro, com food trucks de comida de inverno (caldos, hambúrgueres gourmet e churrasco de parrilla). O mestre cervejeiro fará um bate-papo sobre harmonização de cervejas escuras e maltadas. Ambiente perfeito para relaxar e apreciar o bom som e a boa bebida.",
+      "data": "2026-07-19",
+      "hora": "18:00",
+      "local": "Galpão Cervejeiro Central (Rua dos Fabricantes, 47 - Bairro Industrial)",
+      "atracoes": [
+        "Banda Rota 66 (Blues/Rock)\nSommelier Mestre Cervejeiro Ivo\nDJ Smoke"
+      ],
+      "organizadores": [
+        "Cerveja Nossa"
+      ],
+      "palavrasChave": [
+        "Barzinho",
+        "Casual",
+        "Open Bar"
+      ],
+      "ingresso": {
+        "tipo": "Acesso ao Show",
+        "lote": "Lote Único",
+        "preco": 45
+      }
     }
   ],
   "usuarios": [
@@ -1450,7 +1501,8 @@
         "Isabela Castro",
         "Ricardo Duarte",
         "Bianca Santana",
-        "André Pires"
+        "André Pires",
+        "Nicolas Mollerke"
       ],
       "comentarios": [
         "Organização muito boa, parabéns.",
@@ -1467,7 +1519,8 @@
         "Produção competente, pequenos ajustes.",
         "Mix de som poderia melhorar.",
         "Público satisfeito, boa repercussão.",
-        "Logística falhou em horários de pico."
+        "Logística falhou em horários de pico.",
+        "Muito bom"
       ],
       "nota": [
         3,
@@ -1484,7 +1537,8 @@
         5,
         4,
         3,
-        2
+        2,
+        5
       ],
       "foto": ""
     },

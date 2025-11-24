@@ -6,14 +6,14 @@ import { FaPlusCircle } from "react-icons/fa";
 
 
 function Perfil() {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const user = JSON.parse(localStorage.getItem("user") || "null") || {};
     
     return(
         <>
             <Header/>
             <main className='flex flex-col items-center mx-auto justify-center'>
                 <section className="flex w-full items-end justify-between relative">
-                <Link to="/inclusaoEvento"><FaPlusCircle className="text-roxop text-3xl absolute top-2 right-0 z-10 w-14"/></Link>
+                <Link to="/inclusaoEvento"><FaPlusCircle className="text-roxop text-3xl absolute top-2 right-0 z-10 w-14 md:text-6xl"/></Link>
                     {user.foto? (<img className="w-16 h-16 md:h-64 md:w-64" src={user.foto}/>) : (<CgProfile className="text-[6rem] md:text-[16rem] text-roxop" />)}
                     <div className="flex flex-col items-center mt-4">
                         <h2 className="text-white text-start text-[0.875rem] font-semibold">{user.nome}</h2>
@@ -23,15 +23,15 @@ function Perfil() {
                 <section className="w-full mt-8">
                     <ul>
                         <hr className="w-full text-gray-500 border"/>
-                        <li className="py-4 text-gray-500 font-semibold">Meus ingressos</li>
+                        <li className="py-4 text-gray-500 font-semibold md:text-[2rem] md:py-8">Meus ingressos</li>
                         <hr className="w-full text-gray-500 border"/>
-                        <li className="py-4 text-gray-500 font-semibold">Meus eventos</li>
+                        <li className="py-4 text-gray-500 font-semibold md:text-[2rem] md:py-8">Meus eventos</li>
                         <hr className="w-full text-gray-500 border"/>
-                        <li className="py-4 text-gray-500 font-semibold">Minhas informações</li>
+                        <li className="py-4 text-gray-500 font-semibold md:text-[2rem] md:py-8">Minhas informações</li>
                         <hr className="w-full text-gray-500 border"/>
-                        <li className="py-4 text-gray-500 font-semibold">Formas de pagamento</li>
+                        <li className="py-4 text-gray-500 font-semibold md:text-[2rem] md:py-8">Formas de pagamento</li>
                         <hr className="w-full text-gray-500 border"/>
-                        <li className="py-4 text-gray-500 font-semibold">Política de privacidade</li>
+                        <li className="py-4 text-gray-500 font-semibold md:text-[2rem] md:py-8">Política de privacidade</li>
                         <hr className="w-full text-gray-500 border"/>
                     </ul>
                 </section>

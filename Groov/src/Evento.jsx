@@ -23,21 +23,30 @@ function Evento() {
         ? (Array.isArray(evento.ingresso) ? evento.ingresso : [evento.ingresso])
         : []
 
+    const listaatracoes = (evento?.atracoes ?? []).map((a, i) => (
+        <p
+            key={i}
+            className="text-roxop font-semibold text-[0.750rem] md:text-[1.5rem]"
+        >
+            {a}
+        </p>
+    ))
+
     return (
         <>
             <Header/>
-            <main className="flex flex-col items-center mx-auto justify-center">
-                <section className="w-full">
+            <main className="flex flex-col items-center mx-auto justify-center md:gap-3">
+                <section className="w-full md:flex md:flex-col md:gap-3">
                     {evento?.imagem?.length ? (
-                        <img className="h-56 w-full mx-auto object-cover" src={evento.imagem} alt={evento?.nome ?? ""} />
+                        <img className="h-56 w-full mx-auto object-cover md:h-112" src={evento.imagem} alt={evento?.nome ?? ""} />
                     ) : null}
-                    <h3 className="w-fulltext-lg text-white font-semibold truncate mt-3">{evento?.nome ?? "-"}</h3>
-                    <p className="text-sm text-roxos  font-semibold mt-2">{evento?.descricao ?? ""}</p>
+                    <h3 className="w-fulltext-lg md:text-4xl text-white font-semibold truncate mt-3">{evento?.nome ?? "-"}</h3>
+                    <p className="text-sm md:text-3xl text-roxos  font-semibold mt-2">{evento?.descricao ?? ""}</p>
                 </section>
 
                 <section className="w-full mx-auto mt-4 gap-4">
                     <nav>
-                        <ul className="flex w-full justify-between text-[0.9rem]">
+                        <ul className="flex w-full justify-between text-[0.9rem] md:text-[1.8rem]">
                             <li className={`cursor-pointer ${menu === "info" ? "font-bold text-roxop" : "text-white"}`} onClick={() => setMenu("info")} >Informações</li>
                             <li className={`cursor-pointer ${menu === "ingressos" ? "font-bold text-roxop" : "text-white"}`} onClick={() => setMenu("ingressos")}>Ingressos</li>
                             <li className={`cursor-pointer ${menu === "organizadores" ? "font-bold text-roxop" : "text-white"}`} onClick={() => setMenu("organizadores")}>Organizadores</li>
@@ -46,39 +55,43 @@ function Evento() {
                     {menu === "info" && (
                         <div className="flex flex-col gap-5 p-6 border border-roxop rounded-2xl mt-6">
                             <div className="">
-                                <h4 className="text-white font-semibold">Localização</h4>
-                                <p className="text-roxop font-semibold text-[0.750rem]">{evento?.local ?? "-"}</p>
+                                <h4 className="text-white font-semibold md:text-[2rem]">Localização</h4>
+                                <p className="text-roxop font-semibold text-[0.750rem] md:text-[1.5rem]">{evento?.local ?? "-"}</p>
                             </div>
                             <div>
-                                <h4 className="text-white font-semibold mt-2">Data e Hora</h4>
-                                <p className="text-roxop font-semibold text-[0.750rem]">{(evento?.data ?? "-") + " • " + (evento?.hora ?? "-")}</p>
+                                <h4 className="text-white font-semibold mt-2 md:text-[2rem]" >Data e Hora</h4>
+                                <p className="text-roxop font-semibold text-[0.750rem] md:text-[1.5rem]">{(evento?.data ?? "-") + " • " + (evento?.hora ?? "-")}</p>
+                            </div>
+                            <div>
+                                <h4 className="text-white font-semibold mt-2 md:text-[2rem]" >Atrações</h4>
+                                {listaatracoes}
                             </div>
                         </div>
                     )}
 
                     {menu === "ingressos" && (
                         <div className="mt-4">
-                            {ingressoArray.length ? ingressoArray.map((ing, i) => (
-                                <div key={i}  className="flex gap-5 py-4 justify-between px-4 border border-roxop rounded-2xl mt-6 w-full">
-                                    <IoTicket className="w-16 h-auto text-roxop"/>
+                            {evento.ingresso.preco !=null ? ingressoArray.map((ing, i) => (
+                                <div key={i}  className="flex py-4 justify-between md:justify-center md:gap-32 px-4 md:w-154 border border-roxop rounded-2xl mt-6 w-full">
+                                    <IoTicket className="w-16 h-auto text-roxop md:w-32 "/>
                                     <div>
-                                        <p className="text-roxop font-semibold">{ing?.tipo ?? "-"}</p>
-                                        <p className="text-roxop font-semibold">{ing?.lote ?? "-"}</p>
-                                        <p className="text-roxop font-semibold">R${ing?.preco ?? "-"}</p>
+                                        <p className="text-roxop font-semibold text-[2rem]">{ing?.tipo ?? "-"}</p>
+                                        <p className="text-roxop font-semibold text-[2rem]">{ing?.lote ?? "-"}</p>
+                                        <p className="text-roxop font-semibold text-[2rem]">R${ing?.preco ?? "-"}</p>
                                     </div>
                                 </div>
-                            )) : <p>Sem ingressos</p>}
+                            )) : <p className="text-white font-semibold md:text-[2rem] text-center">Sem ingressos, o evento é gratuito!</p>}
                         </div>
                     )}
 
                     {menu === "organizadores" && (
                         <div className="mt-4">
                             {(evento?.organizadores ?? []).length
-                                ? (evento.organizadores.map((o, i) => <p key={i}>{o}</p>))
+                                ? (evento.organizadores.map((o, i) => <p className="text-roxop font-semibold text-[0.750rem] md:text-[1.5rem]" key={i}>{o}</p>))
                                 : 
                                 <div className="flex items-center gap-2">
                                     <MdAccountCircle className="w-10.25 h-auto text-roxop"/>
-                                    <p>Sem organizadores</p>
+                                    <p className="text-roxop font-semibold text-[0.750rem] md:text-[1.5rem]">Sem organizadores</p>
                                 </div>
                             }
                         </div>
