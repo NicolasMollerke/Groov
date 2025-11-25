@@ -14,7 +14,7 @@ function Perfil() {
             <main className='flex flex-col items-center mx-auto justify-center'>
                 <section className="flex w-full items-end justify-start relative">
                 <Link to="/inclusaoEvento"><FaPlusCircle className="text-roxop text-3xl absolute top-2 right-0 z-10 w-14 md:text-6xl"/></Link>
-                    {user.foto? (<img className="w-24 h-24 md:h-64 md:w-64 rounded-full object-cove" src={user.foto}/>) : (<CgProfile className="text-[6rem] md:text-[16rem] text-roxop" />)}
+                    {user.foto? (<img className="w-24 h-24 md:h-64 md:w-64 rounded-full object-cover" src={user.foto}/>) : (<CgProfile className="text-[6rem] md:text-[16rem] text-roxop" />)}
                     <div className="flex flex-col items-start mt-4">
                         <h2 className="text-white text-start text-[0.875rem] md:text-[1.7rem] font-semibold">{user.nome}</h2>
                         <h3 className="text-white text-start text-[0.875rem] md:text-[1.7rem] font-semibold">{user.email}</h3>
