@@ -97,8 +97,7 @@ function CriarConta() {
                                 type="password"
                                 placeholder="Sua senha"
                                 {...register("senha", {
-                                    required: "Senha é obrigatória",
-                                    pattern: { value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/, message: "Senha inválida" }
+                                    required: "Senha é obrigatória"
                                 })}
                                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />

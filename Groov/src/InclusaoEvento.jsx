@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Controller } from "react-hook-form";
-
+import Header from "./components/Header"
 
 function InclusaoEvento() {
     const { register, handleSubmit, reset, control, setValue, formState: { errors } } = useForm({
@@ -118,7 +118,9 @@ function InclusaoEvento() {
 
 
     return (
-        <div className="min-h-screen bg-[#0F0F0F] text-white p-6">
+        <>
+        <Header />
+        <main className="flex flex-col items-center mx-auto justify-center text-white">
             <h1 className="text-3xl font-bold mb-8 text-purple-400">Criar Novo Evento</h1>
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 max-w-xl mx-auto">
@@ -421,7 +423,8 @@ function InclusaoEvento() {
                     </button>
                 </div>
             </form>
-        </div>
+        </main>
+        </>
     );
 }
 

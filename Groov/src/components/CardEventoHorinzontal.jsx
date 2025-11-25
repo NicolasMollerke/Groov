@@ -2,14 +2,12 @@ import { Link } from "react-router"
 
 export default function CardEventoHorizontal({evento}) {
     
-    const listaPalavrasChave = []
-    if (evento.palavras_chave) {
-    for (let i = 0; i < evento.palavras_chave.length; i++) {
-      listaPalavrasChave.push(
-          <p className="text-[0.4375rem] md:text-[0.8750rem] text-white py-[0.06rem] px-[0.3rem] bg-roxop rounded-[0.625rem] border-roxos border-2">{evento.palavras_chave[i]}</p>
-      )
-    }
-  }
+    const palavras = evento?.palavras_chave || evento?.palavrasChave || []
+    const listaPalavrasChave = palavras.map((k, i) => (
+      <p key={i} className="text-[0.4375rem] md:text-[0.8750rem] text-white py-[0.06rem] px-[0.3rem] bg-roxop rounded-[0.625rem] border-roxos border-2">
+        {k}
+      </p>
+    ))
 
     return (
         <>
